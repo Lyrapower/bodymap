@@ -10,7 +10,8 @@
     "preview": "vite preview",
     "test": "vitest run",
     "e2e": "node e2e/d0.e2e.mjs",
-    "model:placeholder": "node scripts/make-placeholder.mjs"
+    "model:placeholder": "node scripts/make-placeholder.mjs",
+    "e2e:webkit": "e2e/run-webkit.sh 390x844 full && e2e/run-webkit.sh 375x667 layout"
   },
   "dependencies": {
     "three": "0.186.1"

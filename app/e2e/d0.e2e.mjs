@@ -29,6 +29,8 @@ const OVERLAP = () => {
   if (hit(P, B)) out.push("panel×header");
   if (hit(B, L)) out.push("brand×lang");
   if (F.bottom > innerHeight + 0.5) out.push("footer below screen");
+  const bm = window.__bodymap; const feet = bm && bm.screenOf(0.105, 0.0, 0.05);
+  if (feet && feet.y > r(".hint").top) out.push(`feet under hint (${Math.round(feet.y)}>${Math.round(r(".hint").top)})`);
   return out;
 };
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
@@ -239,7 +241,7 @@ try {
   // S. small phone (iPhone SE size), both languages
   for (const loc of ["zh-CN", "en-US"]) {
     const sp = await (await browser.newContext({ viewport: { width: 375, height: 667 }, deviceScaleFactor: 2, isMobile: true, hasTouch: true, locale: loc })).newPage();
-    await sp.goto(base);
+    await sp.goto(base + "?e2e=1");
     await sp.waitForFunction(() => document.documentElement.dataset.ready === "1", null, { timeout: 30000 });
     const o = await sp.evaluate(OVERLAP);
     ok(`S no overlap (${loc}, 375×667)`, o.length === 0, o.join(","));

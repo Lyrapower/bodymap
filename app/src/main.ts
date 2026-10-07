@@ -73,7 +73,8 @@ motion.addEventListener("change", () => {
 function measure() {
   const H = window.innerHeight;
   const wide = window.innerWidth >= 760; // panel sits to the right on wide screens
-  viewer.setInsets(header.getBoundingClientRect().bottom + 4, wide ? 56 : H - panel.getBoundingClientRect().top + 8);
+  // The hint keeps its place after it fades (opacity only), so framing never jumps after the first tap.
+  viewer.setInsets(header.getBoundingClientRect().bottom + 4, wide ? 56 : H - hint.getBoundingClientRect().top + 6);
 }
 new ResizeObserver(measure).observe(panel);
 window.addEventListener("resize", measure);

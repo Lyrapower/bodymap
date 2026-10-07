@@ -129,6 +129,8 @@ export class Viewer {
     if (dir.lengthSq() < 1e-8) dir.set(0, 0, 1);
     dir.normalize();
     const tTo = new THREE.Vector3(0, cy, 0);
+    // Zoom-out limit follows the framing, so a short screen can always fit the whole body.
+    this.controls.maxDistance = Math.max(7, dist * 1.3);
     const to = tTo.clone().addScaledVector(dir, dist);
     if (!animate || this.reducedMotion) {
       this.tween = null; this.camera.position.copy(to); this.controls.target.copy(tTo); this.controls.update(); this.dirty = true; return;
