@@ -1,0 +1,58 @@
+{
+  "_note": "Pain quality words. Subset of the McGill Pain Questionnaire vocabulary, grouped as the MPQ groups them. ids are stable; add, never rename.",
+  "groups": [
+    { "id": "temporal", "zh": "节律", "en": "Rhythm",
+      "items": [
+        { "id": "flickering", "zh": "一闪一闪", "en": "flickering" },
+        { "id": "pulsing", "zh": "一跳一跳", "en": "pulsing" },
+        { "id": "throbbing", "zh": "胀跳", "en": "throbbing" },
+        { "id": "pounding", "zh": "重击感", "en": "pounding" }
+      ]},
+    { "id": "spatial", "zh": "走向", "en": "Direction",
+      "items": [
+        { "id": "shooting", "zh": "窜痛", "en": "shooting" },
+        { "id": "radiating", "zh": "放射", "en": "radiating" },
+        { "id": "spreading", "zh": "扩散", "en": "spreading" }
+      ]},
+    { "id": "pressure", "zh": "压力", "en": "Pressure",
+      "items": [
+        { "id": "pricking", "zh": "针扎", "en": "pricking" },
+        { "id": "stabbing", "zh": "刺痛", "en": "stabbing" },
+        { "id": "sharp", "zh": "锐痛", "en": "sharp" },
+        { "id": "cramping", "zh": "绞痛", "en": "cramping" },
+        { "id": "crushing", "zh": "压榨感", "en": "crushing" },
+        { "id": "pulling", "zh": "拉扯", "en": "pulling" },
+        { "id": "tight", "zh": "发紧", "en": "tight" }
+      ]},
+    { "id": "thermal", "zh": "温度", "en": "Temperature",
+      "items": [
+        { "id": "hot", "zh": "发热", "en": "hot" },
+        { "id": "burning", "zh": "灼痛", "en": "burning" },
+        { "id": "cold", "zh": "发凉", "en": "cold" }
+      ]},
+    { "id": "dullness", "zh": "钝感", "en": "Dullness",
+      "items": [
+        { "id": "dull", "zh": "钝痛", "en": "dull" },
+        { "id": "sore", "zh": "酸痛", "en": "sore" },
+        { "id": "aching", "zh": "隐痛", "en": "aching" },
+        { "id": "heavy", "zh": "沉重", "en": "heavy" }
+      ]},
+    { "id": "sensory", "zh": "感觉", "en": "Sensation",
+      "items": [
+        { "id": "tingling", "zh": "发麻", "en": "tingling" },
+        { "id": "numb", "zh": "麻木", "en": "numb" },
+        { "id": "itchy", "zh": "发痒", "en": "itchy" },
+        { "id": "tender", "zh": "一碰就痛", "en": "tender" }
+      ]},
+    { "id": "whole_body", "zh": "全身", "en": "Whole body",
+      "items": [
+        { "id": "dizzy", "zh": "头晕", "en": "dizzy" },
+        { "id": "nausea", "zh": "恶心", "en": "nauseous" },
+        { "id": "short_breath", "zh": "气短", "en": "short of breath" },
+        { "id": "palpitations", "zh": "心慌", "en": "palpitations" },
+        { "id": "sweating", "zh": "出汗", "en": "sweating" },
+        { "id": "shaky", "zh": "发抖", "en": "shaky" },
+        { "id": "weak", "zh": "无力", "en": "weak" }
+      ]}
+  ]
+}

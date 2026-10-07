@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "bodymap/backup/1.0",
+  "title": "BodyMap backup file v1.0",
+  "description": "What export-backup writes and import-backup reads. Plain JSON, no compression, no encryption at v1 (the user chooses where the file lives).",
+  "type": "object",
+  "required": ["format", "schema_version", "exported_at", "records"],
+  "additionalProperties": false,
+  "properties": {
+    "format": { "const": "bodymap-backup" },
+    "schema_version": { "const": "1.0" },
+    "exported_at": { "type": "string", "format": "date-time" },
+    "app_version": { "type": "string" },
+    "locale": { "enum": ["zh", "en"] },
+    "region": { "enum": ["CN", "US", "other"], "description": "Drives the routing view wording only" },
+    "records": { "type": "array", "items": { "$ref": "bodymap/record/1.0" } }
+  }
+}

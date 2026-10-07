@@ -1,0 +1,15 @@
+{
+  "_note": "Section order and headings for the doctor export. SOCRATES is the standard pain-history mnemonic clinicians are trained on. Each entry maps to record fields.",
+  "sections": [
+    { "id": "S", "zh": "部位", "en": "Site", "from": "marks[].location" },
+    { "id": "O", "zh": "起始", "en": "Onset", "from": "started_at, context.onset" },
+    { "id": "C", "zh": "性质", "en": "Character", "from": "marks[].descriptors, marks[].shape" },
+    { "id": "R", "zh": "放射", "en": "Radiation", "from": "marks[].shape in (line, radiating), marks[].to" },
+    { "id": "A", "zh": "伴随", "en": "Associations", "from": "context.associated, mind" },
+    { "id": "T", "zh": "时间规律", "en": "Time course", "from": "started_at, ended_at, context.pattern, record frequency" },
+    { "id": "E", "zh": "诱发与缓解", "en": "Exacerbating / relieving", "from": "context.triggers, context.relief" },
+    { "id": "S2", "zh": "强度", "en": "Severity", "from": "marks[].intensity (listed, never averaged into a verdict)" },
+    { "id": "X", "zh": "已经查过", "en": "Already checked", "from": "tests[]" },
+    { "id": "V", "zh": "上次就诊", "en": "Last visit", "from": "latest visit record" }
+  ]
+}

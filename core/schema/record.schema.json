@@ -1,0 +1,117 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "bodymap/record/1.0",
+  "title": "BodyMap record v1.0",
+  "description": "One record. Three kinds: episode (something felt), visit (saw a clinician), note (anything else). All times ISO-8601 with offset. Records are append-only; a correction is a new record with supersedes set.",
+  "type": "object",
+  "required": ["schema_version", "id", "kind", "created_at", "started_at"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": { "const": "1.0" },
+    "id": { "type": "string", "minLength": 8, "description": "UUID v4" },
+    "kind": { "enum": ["episode", "visit", "note"] },
+    "created_at": { "type": "string", "format": "date-time", "description": "When the record was saved" },
+    "started_at": { "type": "string", "format": "date-time", "description": "When it began. For quick capture this is the only required time." },
+    "ended_at": { "type": ["string", "null"], "format": "date-time", "description": "When it passed. null = still going or not recorded. Never guessed." },
+    "supersedes": { "type": ["string", "null"], "description": "id of an earlier record this one corrects. The earlier record is kept." },
+    "model_version": { "type": "string", "description": "Body model the marks were placed on, e.g. z-anatomy-2024.1-lowpoly-v1" },
+    "marks": {
+      "type": "array",
+      "maxItems": 12,
+      "items": { "$ref": "#/$defs/mark" }
+    },
+    "context": { "$ref": "#/$defs/context" },
+    "mind": { "$ref": "#/$defs/mind" },
+    "visit": { "$ref": "#/$defs/visit" },
+    "tests": {
+      "type": "array",
+      "description": "Checks already done. This is the 'already ruled out' column on the doctor export.",
+      "items": { "$ref": "#/$defs/test" }
+    },
+    "note": { "type": "string", "maxLength": 2000 }
+  },
+  "$defs": {
+    "location": {
+      "type": "object",
+      "description": "Body coordinate. Independent of camera, device and screen. part_id comes from the model's mesh names; local is the hit position normalized inside that part's bounding box.",
+      "required": ["part_id", "side", "local", "depth"],
+      "additionalProperties": false,
+      "properties": {
+        "part_id": { "type": "string", "description": "Stable id from the model, e.g. vastus_lateralis" },
+        "side": { "enum": ["left", "right", "midline"] },
+        "local": {
+          "type": "array", "minItems": 3, "maxItems": 3,
+          "items": { "type": "number", "minimum": 0, "maximum": 1 },
+          "description": "[x,y,z] in the part's local bounding box, 0..1"
+        },
+        "depth": { "enum": ["skin", "muscle", "bone", "deep"] },
+        "view": { "enum": ["anterior", "posterior", "lateral_left", "lateral_right", "superior", "inferior"], "description": "Camera side the mark was placed from. Display hint only." }
+      }
+    },
+    "mark": {
+      "type": "object",
+      "required": ["location", "shape", "intensity"],
+      "additionalProperties": false,
+      "properties": {
+        "location": { "$ref": "#/$defs/location" },
+        "shape": { "enum": ["point", "patch", "line", "radiating"] },
+        "intensity": { "type": "integer", "minimum": 0, "maximum": 10 },
+        "radius": { "type": "number", "minimum": 0, "maximum": 1, "description": "Mark extent relative to the part, 0..1. Patch and radiating only." },
+        "to": { "$ref": "#/$defs/location", "description": "Line and radiating: where it goes" },
+        "descriptors": {
+          "type": "array", "maxItems": 6,
+          "items": { "type": "string", "description": "ids from i18n/descriptors.json (McGill subset)" }
+        },
+        "note": { "type": "string", "maxLength": 500 }
+      }
+    },
+    "context": {
+      "type": "object",
+      "description": "SOCRATES fields not covered by marks. All optional. Free text stays free text.",
+      "additionalProperties": false,
+      "properties": {
+        "activity": { "type": "string", "maxLength": 300, "description": "What I was doing when it started" },
+        "onset": { "enum": ["sudden", "gradual", "unknown"] },
+        "triggers": { "type": "array", "items": { "type": "string", "maxLength": 100 }, "description": "What makes it worse / brings it on" },
+        "relief": { "type": "array", "items": { "type": "string", "maxLength": 100 }, "description": "What makes it better" },
+        "associated": { "type": "array", "items": { "type": "string", "maxLength": 100 }, "description": "What came with it (e.g. nausea, dizziness)" },
+        "pattern": { "enum": ["constant", "comes_and_goes", "once"], "description": "Within this record" }
+      }
+    },
+    "mind": {
+      "type": "object",
+      "description": "Same timeline as the body. Optional on every record. Numbers only, no labels like 'severe'.",
+      "additionalProperties": false,
+      "properties": {
+        "stress": { "type": ["integer", "null"], "minimum": 0, "maximum": 10 },
+        "mood": { "type": ["integer", "null"], "minimum": 0, "maximum": 10, "description": "0 low .. 10 high. No valence words in UI." },
+        "sleep_hours": { "type": ["number", "null"], "minimum": 0, "maximum": 24 },
+        "note": { "type": "string", "maxLength": 500 }
+      }
+    },
+    "visit": {
+      "type": "object",
+      "description": "kind = visit. The doctor export uses the latest visit as the start of 'since last visit'.",
+      "required": ["department"],
+      "additionalProperties": false,
+      "properties": {
+        "clinician": { "type": "string", "maxLength": 100 },
+        "department": { "type": "string", "maxLength": 100, "description": "Free text or an id from routing/departments.json" },
+        "said": { "type": "string", "maxLength": 1000, "description": "What the clinician said" },
+        "did": { "type": "string", "maxLength": 1000, "description": "What was done / prescribed / advised" },
+        "next": { "type": ["string", "null"], "format": "date", "description": "Follow-up date if given" }
+      }
+    },
+    "test": {
+      "type": "object",
+      "required": ["name", "result"],
+      "additionalProperties": false,
+      "properties": {
+        "name": { "type": "string", "maxLength": 100, "description": "e.g. ECG, blood panel, MRI lumbar" },
+        "result": { "enum": ["normal", "abnormal", "pending", "unknown"] },
+        "date": { "type": ["string", "null"], "format": "date" },
+        "note": { "type": "string", "maxLength": 300 }
+      }
+    }
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "_note": "Transparent lookup table. Every rule names its basis. The view shows 2-3 entries, never one; the first is usually an entry point; red flags always show last. No rule names a disease. Region changes wording and order, not the rule.",
+  "red_flags": {
+    "_note": "If any matches, show footer.emergency first and the emergency department. Based on widely published emergency warning-sign lists (chest pain, stroke signs, head injury, anaphylaxis).",
+    "rules": [
+      { "id": "chest_breath", "when": { "region": ["chest"], "any_descriptor": ["short_breath", "crushing", "sweating"] }, "zh": "胸部不适伴气短、出汗或压榨感，正在发生时", "en": "Chest discomfort with shortness of breath, sweating or crushing feeling, happening now" },
+      { "id": "head_sudden", "when": { "region": ["head"], "onset": "sudden", "min_intensity": 8 }, "zh": "突然出现的、从未有过的剧烈头痛", "en": "Sudden, worst-ever headache" },
+      { "id": "one_sided", "when": { "any_descriptor": ["numb", "weak"], "one_sided_face_or_limb": true, "onset": "sudden" }, "zh": "一侧脸、手臂或腿突然麻木无力，说话不清", "en": "Sudden one-sided numbness or weakness, trouble speaking" },
+      { "id": "abdomen_rigid", "when": { "region": ["abdomen"], "min_intensity": 8, "onset": "sudden" }, "zh": "突发剧烈腹痛", "en": "Sudden severe abdominal pain" }
+    ]
+  },
+  "rules": [
+    {
+      "id": "limb_muscle_activity",
+      "when": { "region": ["arm", "leg", "shoulder", "hip"], "depth": ["muscle", "skin"], "triggers_like": ["运动", "健身", "跑", "exercise", "run", "workout", "lift"] },
+      "basis_zh": "四肢肌肉层、与运动相关",
+      "basis_en": "Limb, muscle layer, linked to activity",
+      "CN": ["sports_med", "orthopedics"],
+      "US": ["general", "sports_med", "orthopedics"],
+      "also": ["chiro"]
+    },
+    {
+      "id": "joint_or_bone",
+      "when": { "region": ["arm", "leg", "shoulder", "hip", "hand", "foot", "knee"], "depth": ["bone"] },
+      "basis_zh": "骨或关节深度",
+      "basis_en": "Bone or joint depth",
+      "CN": ["orthopedics"],
+      "US": ["general", "orthopedics"]
+    },
+    {
+      "id": "back_neck",
+      "when": { "region": ["back", "neck", "lower_back"] },
+      "basis_zh": "颈、背、腰部",
+      "basis_en": "Neck, back, lower back",
+      "CN": ["orthopedics", "sports_med"],
+      "US": ["general", "sports_med", "orthopedics"],
+      "also": ["chiro"],
+      "escalate_if": { "any_descriptor": ["numb", "tingling", "weak", "shooting"], "add": ["neurology"], "zh": "伴麻木、放射或无力时加看", "en": "If with numbness, shooting or weakness, add" }
+    },
+    {
+      "id": "head_recurrent",
+      "when": { "region": ["head"], "min_records": 3 },
+      "basis_zh": "头部，反复出现",
+      "basis_en": "Head, recurring",
+      "CN": ["neurology"],
+      "US": ["general", "neurology"],
+      "escalate_if": { "any_descriptor": ["dizzy", "nausea"], "add": ["ent"], "zh": "伴头晕时也可看", "en": "If with dizziness, also" }
+    },
+    {
+      "id": "chest_recurrent_tests_normal",
+      "when": { "region": ["chest"], "min_records": 3, "tests_normal_any": ["ECG", "心电图", "echo", "心脏彩超", "troponin", "cardiac"] },
+      "basis_zh": "胸部反复发作，心脏相关检查已正常",
+      "basis_en": "Chest, recurring, cardiac tests already normal",
+      "CN": ["mental_health", "neurology", "gastro"],
+      "US": ["general", "mental_health", "gastro"],
+      "note_zh": "心脏查过正常而发作还在反复，下一扇门通常不是再查一次心脏。",
+      "note_en": "When cardiac tests are normal and episodes keep returning, the next door is usually not another cardiac test."
+    },
+    {
+      "id": "chest_first",
+      "when": { "region": ["chest"] },
+      "basis_zh": "胸部，尚未做过心脏相关检查",
+      "basis_en": "Chest, no cardiac tests recorded yet",
+      "CN": ["cardiology", "urgent_care"],
+      "US": ["urgent_care", "general", "cardiology"]
+    },
+    {
+      "id": "episodes_whole_body",
+      "when": { "any_descriptor": ["palpitations", "short_breath", "shaky", "dizzy", "sweating"], "min_records": 3, "pattern": "comes_and_goes", "typical_duration_min_max": 60 },
+      "basis_zh": "反复的、几十分钟内过去的全身性发作（心慌、气短、发抖、头晕）",
+      "basis_en": "Recurring whole-body episodes that pass within the hour (palpitations, breathlessness, shaking, dizziness)",
+      "CN": ["cardiology", "mental_health", "neurology"],
+      "US": ["general", "mental_health", "cardiology"],
+      "note_zh": "先排除心脏；排除后还在反复，心理/精神科和神经内科是常见的下一步。",
+      "note_en": "Rule out the heart first; if episodes continue after that, mental health and neurology are the usual next steps."
+    },
+    {
+      "id": "abdomen",
+      "when": { "region": ["abdomen"] },
+      "basis_zh": "腹部",
+      "basis_en": "Abdomen",
+      "CN": ["gastro"],
+      "US": ["general", "gastro"],
+      "escalate_if": { "region_sub": ["lower_abdomen"], "add": ["gyn", "urology"], "zh": "下腹部也可看", "en": "Lower abdomen, also" }
+    },
+    {
+      "id": "skin",
+      "when": { "depth": ["skin"], "any_descriptor": ["itchy", "burning", "tender"] },
+      "basis_zh": "皮肤层，痒、灼、触痛",
+      "basis_en": "Skin layer: itch, burn, tenderness",
+      "CN": ["dermatology"],
+      "US": ["general", "dermatology"]
+    },
+    {
+      "id": "many_joints",
+      "when": { "distinct_parts_min": 3, "depth": ["bone"], "min_records": 3 },
+      "basis_zh": "多处关节反复",
+      "basis_en": "Several joints, recurring",
+      "CN": ["rheumatology", "orthopedics"],
+      "US": ["general", "rheumatology"]
+    },
+    {
+      "id": "long_running",
+      "when": { "min_records": 10, "span_days_min": 90 },
+      "basis_zh": "同一问题持续超过三个月",
+      "basis_en": "The same issue for more than three months",
+      "CN": ["pain_clinic"],
+      "US": ["general", "pain_clinic"],
+      "note_zh": "持续三个月以上的疼痛，疼痛科是专门的科室。",
+      "note_en": "Pain lasting over three months has its own specialty."
+    },
+    {
+      "id": "fallback",
+      "when": {},
+      "basis_zh": "没有更具体的匹配",
+      "basis_en": "No closer match",
+      "CN": ["general"],
+      "US": ["general"]
+    }
+  ],
+  "us_notes": {
+    "referral_zh": "美国多数专科需要 PCP 转诊。带上导出的那一页，PCP 可以直接转。",
+    "referral_en": "Most US specialists need a PCP referral. Bring the exported page; the PCP can refer directly.",
+    "ppo_zh": "如果你的保险是 PPO，多数专科可以自己预约，不用转诊。",
+    "ppo_en": "On a PPO plan you can usually book specialists directly, without a referral."
+  },
+  "cn_notes": {
+    "same_trip_zh": "可以同一趟挂两个科，按上面的顺序。",
+    "same_trip_en": "Both departments can be seen in one trip, in the order shown."
+  }
+}

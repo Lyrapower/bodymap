@@ -1,0 +1,20 @@
+{
+  "_note": "Maps part_id (model mesh names) to the coarse regions used in rules.json. The frontend fills this from the model's mesh list; entries below are the expected coarse set. Unknown part_id -> region 'other'.",
+  "regions": ["head", "neck", "chest", "abdomen", "lower_abdomen", "back", "lower_back", "shoulder", "arm", "hand", "hip", "leg", "knee", "foot", "other"],
+  "part_prefixes": {
+    "head": ["frontalis", "temporalis", "occipitalis", "skull", "cranium", "face", "jaw", "masseter", "orbit"],
+    "neck": ["sternocleidomastoid", "scalene", "cervical", "trapezius_upper", "hyoid"],
+    "chest": ["pectoralis", "sternum", "rib", "intercostal", "clavicle"],
+    "abdomen": ["rectus_abdominis", "oblique", "transversus"],
+    "lower_abdomen": ["pubis", "inguinal", "iliacus", "psoas"],
+    "back": ["latissimus", "rhomboid", "trapezius", "thoracic", "erector_spinae_thoracic", "scapula"],
+    "lower_back": ["lumbar", "quadratus_lumborum", "erector_spinae_lumbar", "sacrum", "iliac_crest"],
+    "shoulder": ["deltoid", "supraspinatus", "infraspinatus", "humerus_head", "acromion"],
+    "arm": ["biceps", "triceps", "brachialis", "humerus", "forearm", "radius", "ulna", "flexor_carpi", "extensor_carpi"],
+    "hand": ["carpal", "metacarpal", "phalanx_hand", "thenar"],
+    "hip": ["gluteus", "piriformis", "femur_head", "greater_trochanter", "ilium"],
+    "leg": ["vastus", "rectus_femoris", "hamstring", "biceps_femoris", "semitendinosus", "femur", "tibialis", "gastrocnemius", "soleus", "tibia", "fibula", "adductor"],
+    "knee": ["patella", "patellar", "knee"],
+    "foot": ["calcaneus", "metatarsal", "phalanx_foot", "plantar", "achilles"]
+  }
+}

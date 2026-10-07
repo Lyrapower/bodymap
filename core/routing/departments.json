@@ -1,0 +1,24 @@
+{
+  "_note": "Department ids and names. CN = direct registration (挂号). US = entry points and specialists; most specialists need a referral unless the user's plan allows self-referral.",
+  "departments": [
+    { "id": "general", "zh": "全科 / 内科", "en": "Primary care (PCP)", "us_entry": true },
+    { "id": "urgent_care", "zh": "急诊", "en": "Urgent care", "us_entry": true },
+    { "id": "emergency", "zh": "急诊（120）", "en": "Emergency (911 / ER)", "us_entry": true },
+    { "id": "orthopedics", "zh": "骨科", "en": "Orthopedics" },
+    { "id": "sports_med", "zh": "运动医学 / 康复科", "en": "Sports medicine / Physical therapy" },
+    { "id": "neurology", "zh": "神经内科", "en": "Neurology" },
+    { "id": "cardiology", "zh": "心内科", "en": "Cardiology" },
+    { "id": "gastro", "zh": "消化内科", "en": "Gastroenterology" },
+    { "id": "pulmonary", "zh": "呼吸内科", "en": "Pulmonology" },
+    { "id": "rheumatology", "zh": "风湿免疫科", "en": "Rheumatology" },
+    { "id": "dermatology", "zh": "皮肤科", "en": "Dermatology" },
+    { "id": "ent", "zh": "耳鼻喉科", "en": "ENT" },
+    { "id": "ophthalmology", "zh": "眼科", "en": "Ophthalmology" },
+    { "id": "dental", "zh": "口腔科", "en": "Dentist" },
+    { "id": "gyn", "zh": "妇科", "en": "Gynecology" },
+    { "id": "urology", "zh": "泌尿外科", "en": "Urology" },
+    { "id": "mental_health", "zh": "心理科 / 精神科", "en": "Mental health (psychiatry / therapy)" },
+    { "id": "pain_clinic", "zh": "疼痛科", "en": "Pain clinic" },
+    { "id": "chiro", "zh": "正骨 / 推拿", "en": "Chiropractor / manual therapy" }
+  ]
+}
