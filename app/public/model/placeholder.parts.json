@@ -1,0 +1,513 @@
+{
+ "model_version": "placeholder-0.1",
+ "nodes": {
+  "Skin": {
+   "part_id": "skin",
+   "side": "midline",
+   "layer": "skin",
+   "generic": true
+  },
+  "frontalis": {
+   "part_id": "frontalis",
+   "side": "midline",
+   "layer": "muscle"
+  },
+  "temporalis_L": {
+   "part_id": "temporalis",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "temporalis_R": {
+   "part_id": "temporalis",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "sternocleidomastoid_L": {
+   "part_id": "sternocleidomastoid",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "sternocleidomastoid_R": {
+   "part_id": "sternocleidomastoid",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "trapezius": {
+   "part_id": "trapezius",
+   "side": "midline",
+   "layer": "muscle"
+  },
+  "deltoid_L": {
+   "part_id": "deltoid",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "deltoid_R": {
+   "part_id": "deltoid",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "pectoralis_major_L": {
+   "part_id": "pectoralis_major",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "pectoralis_major_R": {
+   "part_id": "pectoralis_major",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "biceps_brachii_L": {
+   "part_id": "biceps_brachii",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "biceps_brachii_R": {
+   "part_id": "biceps_brachii",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "triceps_brachii_L": {
+   "part_id": "triceps_brachii",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "triceps_brachii_R": {
+   "part_id": "triceps_brachii",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "flexor_carpi_L": {
+   "part_id": "flexor_carpi",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "flexor_carpi_R": {
+   "part_id": "flexor_carpi",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "extensor_carpi_L": {
+   "part_id": "extensor_carpi",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "extensor_carpi_R": {
+   "part_id": "extensor_carpi",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "rectus_abdominis": {
+   "part_id": "rectus_abdominis",
+   "side": "midline",
+   "layer": "muscle"
+  },
+  "external_oblique_L": {
+   "part_id": "external_oblique",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "external_oblique_R": {
+   "part_id": "external_oblique",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "latissimus_dorsi_L": {
+   "part_id": "latissimus_dorsi",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "latissimus_dorsi_R": {
+   "part_id": "latissimus_dorsi",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "erector_spinae_lumbar_L": {
+   "part_id": "erector_spinae_lumbar",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "erector_spinae_lumbar_R": {
+   "part_id": "erector_spinae_lumbar",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "gluteus_maximus_L": {
+   "part_id": "gluteus_maximus",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "gluteus_maximus_R": {
+   "part_id": "gluteus_maximus",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "rectus_femoris_L": {
+   "part_id": "rectus_femoris",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "rectus_femoris_R": {
+   "part_id": "rectus_femoris",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "vastus_lateralis_L": {
+   "part_id": "vastus_lateralis",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "vastus_lateralis_R": {
+   "part_id": "vastus_lateralis",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "adductor_longus_L": {
+   "part_id": "adductor_longus",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "adductor_longus_R": {
+   "part_id": "adductor_longus",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "biceps_femoris_L": {
+   "part_id": "biceps_femoris",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "biceps_femoris_R": {
+   "part_id": "biceps_femoris",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "tibialis_anterior_L": {
+   "part_id": "tibialis_anterior",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "tibialis_anterior_R": {
+   "part_id": "tibialis_anterior",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "gastrocnemius_L": {
+   "part_id": "gastrocnemius",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "gastrocnemius_R": {
+   "part_id": "gastrocnemius",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Skull": {
+   "part_id": "skull",
+   "side": "midline",
+   "layer": "bone"
+  },
+  "Cervical vertebrae": {
+   "part_id": "cervical_vertebrae",
+   "side": "midline",
+   "layer": "bone"
+  },
+  "Thoracic vertebrae": {
+   "part_id": "thoracic_vertebrae",
+   "side": "midline",
+   "layer": "bone"
+  },
+  "Lumbar vertebrae": {
+   "part_id": "lumbar_vertebrae",
+   "side": "midline",
+   "layer": "bone"
+  },
+  "Sacrum": {
+   "part_id": "sacrum",
+   "side": "midline",
+   "layer": "bone"
+  },
+  "Sternum": {
+   "part_id": "sternum",
+   "side": "midline",
+   "layer": "bone"
+  },
+  "Rib cage": {
+   "part_id": "rib_cage",
+   "side": "midline",
+   "layer": "bone"
+  },
+  "Clavicle.l": {
+   "part_id": "clavicle",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Clavicle.r": {
+   "part_id": "clavicle",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Scapula.l": {
+   "part_id": "scapula",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Scapula.r": {
+   "part_id": "scapula",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Humerus.l": {
+   "part_id": "humerus",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Humerus.r": {
+   "part_id": "humerus",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Radius.l": {
+   "part_id": "radius",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Radius.r": {
+   "part_id": "radius",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Metacarpals.l": {
+   "part_id": "metacarpals",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Metacarpals.r": {
+   "part_id": "metacarpals",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Ilium.l": {
+   "part_id": "ilium",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Ilium.r": {
+   "part_id": "ilium",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Femur.l": {
+   "part_id": "femur",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Femur.r": {
+   "part_id": "femur",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Patella.l": {
+   "part_id": "patella",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Patella.r": {
+   "part_id": "patella",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Tibia.l": {
+   "part_id": "tibia",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Tibia.r": {
+   "part_id": "tibia",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Calcaneus.l": {
+   "part_id": "calcaneus",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Calcaneus.r": {
+   "part_id": "calcaneus",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Metatarsals.l": {
+   "part_id": "metatarsals",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Metatarsals.r": {
+   "part_id": "metatarsals",
+   "side": "right",
+   "layer": "bone"
+  }
+ },
+ "labels": {
+  "skin": {
+   "zh": "皮肤",
+   "en": "Skin"
+  },
+  "frontalis": {
+   "zh": "额肌",
+   "en": "Frontalis"
+  },
+  "temporalis": {
+   "zh": "颞肌",
+   "en": "Temporalis"
+  },
+  "sternocleidomastoid": {
+   "zh": "胸锁乳突肌",
+   "en": "Sternocleidomastoid"
+  },
+  "trapezius": {
+   "zh": "斜方肌",
+   "en": "Trapezius"
+  },
+  "deltoid": {
+   "zh": "三角肌",
+   "en": "Deltoid"
+  },
+  "pectoralis_major": {
+   "zh": "胸大肌",
+   "en": "Pectoralis major"
+  },
+  "biceps_brachii": {
+   "zh": "肱二头肌",
+   "en": "Biceps brachii"
+  },
+  "triceps_brachii": {
+   "zh": "肱三头肌",
+   "en": "Triceps brachii"
+  },
+  "flexor_carpi": {
+   "zh": "前臂屈肌",
+   "en": "Forearm flexors"
+  },
+  "extensor_carpi": {
+   "zh": "前臂伸肌",
+   "en": "Forearm extensors"
+  },
+  "rectus_abdominis": {
+   "zh": "腹直肌",
+   "en": "Rectus abdominis"
+  },
+  "external_oblique": {
+   "zh": "腹外斜肌",
+   "en": "External oblique"
+  },
+  "latissimus_dorsi": {
+   "zh": "背阔肌",
+   "en": "Latissimus dorsi"
+  },
+  "erector_spinae_lumbar": {
+   "zh": "腰段竖脊肌",
+   "en": "Erector spinae (lumbar)"
+  },
+  "gluteus_maximus": {
+   "zh": "臀大肌",
+   "en": "Gluteus maximus"
+  },
+  "rectus_femoris": {
+   "zh": "股直肌",
+   "en": "Rectus femoris"
+  },
+  "vastus_lateralis": {
+   "zh": "股外侧肌",
+   "en": "Vastus lateralis"
+  },
+  "adductor_longus": {
+   "zh": "长收肌",
+   "en": "Adductor longus"
+  },
+  "biceps_femoris": {
+   "zh": "股二头肌",
+   "en": "Biceps femoris"
+  },
+  "tibialis_anterior": {
+   "zh": "胫骨前肌",
+   "en": "Tibialis anterior"
+  },
+  "gastrocnemius": {
+   "zh": "腓肠肌",
+   "en": "Gastrocnemius"
+  },
+  "skull": {
+   "zh": "颅骨",
+   "en": "Skull"
+  },
+  "cervical_vertebrae": {
+   "zh": "颈椎",
+   "en": "Cervical vertebrae"
+  },
+  "thoracic_vertebrae": {
+   "zh": "胸椎",
+   "en": "Thoracic vertebrae"
+  },
+  "lumbar_vertebrae": {
+   "zh": "腰椎",
+   "en": "Lumbar vertebrae"
+  },
+  "sacrum": {
+   "zh": "骶骨",
+   "en": "Sacrum"
+  },
+  "sternum": {
+   "zh": "胸骨",
+   "en": "Sternum"
+  },
+  "rib_cage": {
+   "zh": "胸廓",
+   "en": "Rib cage"
+  },
+  "clavicle": {
+   "zh": "锁骨",
+   "en": "Clavicle"
+  },
+  "scapula": {
+   "zh": "肩胛骨",
+   "en": "Scapula"
+  },
+  "humerus": {
+   "zh": "肱骨",
+   "en": "Humerus"
+  },
+  "radius": {
+   "zh": "桡骨",
+   "en": "Radius"
+  },
+  "metacarpals": {
+   "zh": "掌骨",
+   "en": "Metacarpals"
+  },
+  "ilium": {
+   "zh": "髂骨",
+   "en": "Ilium"
+  },
+  "femur": {
+   "zh": "股骨",
+   "en": "Femur"
+  },
+  "patella": {
+   "zh": "髌骨",
+   "en": "Patella"
+  },
+  "tibia": {
+   "zh": "胫骨",
+   "en": "Tibia"
+  },
+  "calcaneus": {
+   "zh": "跟骨",
+   "en": "Calcaneus"
+  },
+  "metatarsals": {
+   "zh": "跖骨",
+   "en": "Metatarsals"
+  }
+ }
+}
