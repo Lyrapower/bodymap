@@ -34,7 +34,7 @@ const OVERLAP = () => {
   return out;
 };
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
-const watchdog = setTimeout(() => { console.log("FAIL watchdog: e2e did not finish in 120 s"); process.exit(2); }, 120000);
+const watchdog = setTimeout(() => { console.log("FAIL watchdog: e2e did not finish in 300 s"); process.exit(2); }, 300000); // real model: ~0.5 M triangles in software GL
 watchdog.unref();
 
 const server = await preview({ root: new URL("..", import.meta.url).pathname, preview: { port: 4173, strictPort: false, host: "127.0.0.1" }, logLevel: "error" });
@@ -70,7 +70,10 @@ try {
   }
   const loadMs = Date.now() - tNav;
   ok("model loaded", true, `nav→ready ${loadMs} ms (sandbox, software GL; not a phone number)`);
-  ok("model version from parts file", (await page.evaluate(() => window.__bodymap.modelVersion())) === "placeholder-0.1");
+  // the model the app is configured to load (src/config.ts, the uncommented MODEL line)
+  const cfgParts = readFileSync(new URL("../src/config.ts", import.meta.url), "utf8").split("\n").find((l) => /^export const MODEL/.test(l)).match(/model\/([\w.-]+\.parts\.json)/)[1];
+  const wantVersion = JSON.parse(readFileSync(new URL(`../public/model/${cfgParts}`, import.meta.url))).model_version;
+  ok("model version from parts file", (await page.evaluate(() => window.__bodymap.modelVersion())) === wantVersion, wantVersion);
   await sleep(400);
   await page.screenshot({ path: OUT + "01_loaded_zh.png" });
 
@@ -81,12 +84,26 @@ try {
   ok("built with line", (await page.locator(".built").innerText()) === ui["built_with"].zh);
   ok("no anthropic logo / image assets", (await page.locator("img, svg").count()) === 0);
 
+  // the body re-frames with a tween; with ~0.5 M triangles in software GL a frame can take 100+ ms, so wait for the tween itself
+  const idle = () => page.waitForFunction(() => !window.__bodymap.viewer.tween, null, { timeout: 20000 });
+  // Turn to an azimuth and make sure it stuck. A re-frame tween that starts after a tap (panel grows, D1) keeps the old direction
+  // and can undo the turn; that is reported to the app owner, the test only needs the camera where it asked for it.
+  let refitUndidTurn = 0;
+  const face = async (r) => {
+    for (let i = 0; i < 4; i++) {
+      await idle(); await page.evaluate((r) => window.__bodymap.faceAzimuth(r), r); await sleep(400); await idle();
+      const az = await page.evaluate(() => { const v = window.__bodymap.viewer; const d = v.camera.position.clone().sub(v.controls.target); return Math.atan2(d.x, d.z); });
+      if (Math.abs(Math.atan2(Math.sin(az - r), Math.cos(az - r))) < 0.05) return;
+      refitUndidTurn++;
+    }
+  };
   const tapWorld = async (x, y, z) => {
+    await idle();
     const p = await page.evaluate(([x, y, z]) => window.__bodymap.screenOf(x, y, z), [x, y, z]);
     await page.touchscreen.tap(p.x, p.y);
     await sleep(120);
     // D1: the panel grows when a record opens and the body re-frames (650 ms); wait for it so the next screenOf is current
-    await page.waitForFunction(() => !window.__bodymap.viewer.tween, null, { timeout: 3000 }).catch(() => {});
+    await idle();
     await sleep(80);
     return p;
   };
@@ -159,17 +176,18 @@ try {
 
   // H. back view, skin on
   await page.locator('[data-layer="skin"]').click();
-  await page.evaluate(() => window.__bodymap.faceAzimuth(Math.PI)); await sleep(300);
+  await face(Math.PI); await sleep(300);
   await tapWorld(0.085, 0.915, -0.07);
   await expectPick("H tap buttock L from behind -> gluteus_maximus / left / posterior", { part_id: "gluteus_maximus", side: "left", depth: "skin", view: "posterior" });
   await page.screenshot({ path: OUT + "05_back_view.png" });
 
   // I. from the patient's left side
-  await page.evaluate(() => window.__bodymap.faceAzimuth(Math.PI / 2)); await sleep(300);
-  await tapWorld(0.21, 1.40, 0.0);
+  await face(Math.PI / 2); await sleep(300);
+  await tapWorld(0.159, 1.337, -0.041); // deltoid L centre in the Z-Anatomy export (placeholder: 0.21, 1.40, 0.0)
   await expectPick("I tap shoulder L from the left -> deltoid / left / lateral_left", { part_id: "deltoid", side: "left", view: "lateral_left" });
-  await page.evaluate(() => window.__bodymap.faceAzimuth(0)); await sleep(200);
+  await face(0); await sleep(200);
 
+  console.log(`· re-frame tween undid a camera turn ${refitUndidTurn} time(s) in this run`);
   // J/K. coordinates: local in 0..1, round trip location -> surface point
   const all = await picks();
   ok("K every local is [x,y,z] in 0..1", all.every((p) => p.location.local.length === 3 && p.location.local.every((v) => v >= 0 && v <= 1)));
@@ -178,7 +196,7 @@ try {
   ok("J round trip skin < 15 mm", all.filter((p) => p.location.depth === "skin").every((p) => p.roundTripMm < 15), "");
 
   // L. breathing, and reduced motion
-  const b1 = await page.evaluate(() => window.__bodymap.breath()); await sleep(700);
+  const b1 = await page.evaluate(() => window.__bodymap.breath()); await sleep(2000);
   const b2 = await page.evaluate(() => window.__bodymap.breath());
   ok("L marks breathe (motion on)", b1.some((v, i) => Math.abs(v - b2[i]) > 0.01), `${b1[0].toFixed(3)}→${b2[0].toFixed(3)}`);
   ok("L marks do not breathe in lockstep", new Set(b2.map((v) => v.toFixed(3))).size > 1);
@@ -193,7 +211,8 @@ try {
 
   // P. view presets
   for (const [v, y] of [["upper", 1.37], ["lower", 0.47], ["full", 0.93]]) {
-    await page.locator(`[data-view="${v}"]`).click(); await sleep(900);
+    await page.locator(`[data-view="${v}"]`).click();
+    await sleep(100); await idle();
     const ty = (await page.evaluate(() => window.__bodymap.cameraTarget()))[1];
     ok(`P view ${v} frames y≈${y}`, Math.abs(ty - y) < 0.01, `target.y=${ty.toFixed(3)}`);
     if (v === "upper") await page.screenshot({ path: OUT + "06_upper_view.png" });
@@ -255,7 +274,7 @@ try {
   // T. model file missing -> calm message, no crash
   {
     const tp = await (await browser.newContext({ viewport: { width: 390, height: 844 }, locale: "zh-CN" })).newPage();
-    await tp.route("**/placeholder.glb", (r) => r.fulfill({ status: 404, body: "" }));
+    await tp.route("**/model/*.glb", (r) => r.fulfill({ status: 404, body: "" }));
     await tp.goto(base);
     await tp.waitForSelector(".status.failed", { timeout: 15000 });
     const msg = await tp.locator(".status").innerText();
@@ -264,7 +283,7 @@ try {
   // U. parts file missing -> still loads, names parsed from the glTF node names
   {
     const up = await (await browser.newContext({ viewport: { width: 390, height: 844 }, locale: "zh-CN" })).newPage();
-    await up.route("**/placeholder.parts.json", (r) => r.fulfill({ status: 404, body: "" }));
+    await up.route("**/model/*.parts.json", (r) => r.fulfill({ status: 404, body: "" }));
     await up.goto(base + "?e2e=1");
     await up.waitForFunction(() => document.documentElement.dataset.ready === "1", null, { timeout: 30000 });
     ok("U missing parts.json -> loads, version unknown", (await up.evaluate(() => window.__bodymap.modelVersion())) === "unknown");

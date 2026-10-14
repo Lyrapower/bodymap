@@ -17,7 +17,7 @@ const PRESETS: Record<ViewPreset, { cy: number; h: number; w: number }> = {
   lower: { cy: 0.47, h: 1.0, w: 0.46 },
 };
 const LAYER_ORDER: Depth[] = ["skin", "muscle", "bone", "deep"];
-const TAP_SLOP_PX = 8, TAP_MAX_MS = 550, UNDERLYING_MAX_M = 0.06;
+const TAP_SLOP_PX = 8, TAP_MAX_MS = 550, UNDERLYING_MAX_M = 0.06, ENVELOPE_SKIP_M = 0.02;
 
 function skinMaterial() {
   return new THREE.ShaderMaterial({
@@ -199,7 +199,7 @@ export class Viewer {
     const hit = this.raycaster.intersectObjects(targets, false)[0];
     if (!hit || !hit.face) return null;
     const surfacePart = this.model.partOfMesh.get(hit.object as THREE.Mesh)!;
-    const part = surfacePart.info.generic ? this.underlying(hit) : surfacePart;
+    const part = surfacePart.info.generic ? this.underlying(hit) : surfacePart.info.envelope ? this.behindEnvelope(hit, surfacePart) : surfacePart;
     const normal = hit.face.normal.clone().transformDirection(hit.object.matrixWorld);
     if (normal.dot(this.raycaster.ray.direction) > 0) normal.negate();
     const local = toLocal(part.node.worldToLocal(hit.point.clone()), part.box);
@@ -213,18 +213,36 @@ export class Viewer {
   // A tap on a whole-body surface (skin) is named by the anatomical part underneath it.
   private underlying(surfaceHit: THREE.Intersection): Part {
     const m = this.model!;
-    const inner: THREE.Object3D[] = [];
-    for (const p of m.parts) if (!p.info.generic) inner.push(...p.meshes);
-    const behind = this.raycaster.intersectObjects(inner, false)
-      .find((h) => h.distance >= surfaceHit.distance - 0.002 && h.distance - surfaceHit.distance <= UNDERLYING_MAX_M);
-    if (behind) return m.partOfMesh.get(behind.object as THREE.Mesh)!;
+    const hits = this.innerHits().filter((h) => h.distance >= surfaceHit.distance - 0.002 && h.distance - surfaceHit.distance <= UNDERLYING_MAX_M);
+    if (hits.length) return this.skipEnvelope(hits);
     let best: Part | null = null, bestD = Infinity;
     for (const p of m.parts) {
-      if (p.info.generic) continue;
+      if (p.info.generic || p.info.envelope) continue;
       const d = this.worldBoxes.get(p)!.distanceToPoint(surfaceHit.point);
       if (d < bestD) { bestD = d; best = p; }
     }
     return best ?? m.partOfMesh.get(surfaceHit.object as THREE.Mesh)!;
+  }
+
+  // A tap that lands on a fascia / bursa / sheath is named by the muscle or bone right behind it, if any.
+  private behindEnvelope(hit: THREE.Intersection, envelope: Part): Part {
+    const hits = this.innerHits().filter((h) => h.distance >= hit.distance - 0.002 && h.distance - hit.distance <= ENVELOPE_SKIP_M);
+    return hits.length ? this.skipEnvelope(hits) : envelope;
+  }
+
+  private innerHits(): THREE.Intersection[] {
+    const inner: THREE.Object3D[] = [];
+    for (const p of this.model!.parts) if (!p.info.generic) inner.push(...p.meshes);
+    return this.raycaster.intersectObjects(inner, false);
+  }
+
+  // First part along the ray, stepping past wrappings that have a real part within ENVELOPE_SKIP_M behind them.
+  private skipEnvelope(hits: THREE.Intersection[]): Part {
+    const m = this.model!;
+    const first = m.partOfMesh.get(hits[0].object as THREE.Mesh)!;
+    if (!first.info.envelope) return first;
+    const solid = hits.find((h) => !m.partOfMesh.get(h.object as THREE.Mesh)!.info.envelope && h.distance - hits[0].distance <= ENVELOPE_SKIP_M);
+    return solid ? m.partOfMesh.get(solid.object as THREE.Mesh)! : first;
   }
 
   // Body coordinate -> point on the surface of its depth layer. Used to redraw saved marks.

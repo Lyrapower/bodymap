@@ -3,10 +3,10 @@
 
 export type Side = "left" | "right" | "midline";
 export type Depth = "skin" | "muscle" | "bone" | "deep";
-export interface PartInfo { part_id: string; side: Side; layer: Depth | null; generic: boolean }
+export interface PartInfo { part_id: string; side: Side; layer: Depth | null; generic: boolean; envelope: boolean }
 export interface PartsFile {
   model_version: string;
-  nodes: Record<string, { part_id: string; side: Side; layer?: Depth; generic?: boolean }>;
+  nodes: Record<string, { part_id: string; side: Side; layer?: Depth; generic?: boolean; envelope?: boolean }>;
   labels: Record<string, { zh: string; en: string }>;
 }
 
@@ -17,6 +17,9 @@ const LAYER_ALIASES: Record<string, Depth> = {
   deep: "deep", organs: "deep", viscera: "deep", visceral_system: "deep",
 };
 // Parts that cover the whole body. A tap on them is resolved to the anatomical part underneath.
+// Thin wrappings (fascia, bursae, tendon sheaths, retinacula). A tap that lands on one is named by the muscle or
+// bone right behind it when there is one; otherwise by the wrapping itself.
+export const ENVELOPE_RE = /(^|_)(fascia|bursa|bursae|sheath|sheaths|retinaculum|retinacula)(_|$)/;
 export const GENERIC_PARTS = new Set(["skin", "body", "integument", "body_surface"]);
 
 export function snake(s: string): string {
@@ -52,8 +55,8 @@ export function parseNodeName(raw: string): { part_id: string; side: Side } {
 export function resolvePartInfo(nodeName: string, layerHint: Depth | null, parts?: PartsFile | null): PartInfo {
   const entry = parts?.nodes?.[nodeName];
   if (entry) {
-    return { part_id: entry.part_id, side: entry.side, layer: entry.layer ?? layerHint, generic: !!entry.generic || GENERIC_PARTS.has(entry.part_id) };
+    return { part_id: entry.part_id, side: entry.side, layer: entry.layer ?? layerHint, generic: !!entry.generic || GENERIC_PARTS.has(entry.part_id), envelope: entry.envelope ?? ENVELOPE_RE.test(entry.part_id) };
   }
   const p = parseNodeName(nodeName);
-  return { ...p, layer: layerHint, generic: GENERIC_PARTS.has(p.part_id) };
+  return { ...p, layer: layerHint, generic: GENERIC_PARTS.has(p.part_id), envelope: ENVELOPE_RE.test(p.part_id) };
 }

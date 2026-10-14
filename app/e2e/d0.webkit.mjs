@@ -20,7 +20,7 @@ const MODE = process.env.MODE || "full";
 let fails = 0; const results = [];
 const ok = (name, cond, extra = "") => { results.push({ name, pass: !!cond }); console.log(`${cond ? "ok  " : "FAIL"} ${name}${extra ? "  " + extra : ""}`); if (!cond) fails++; };
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
-setTimeout(() => { console.log("FAIL watchdog: did not finish in 240 s"); process.exit(2); }, 240000).unref();
+setTimeout(() => { console.log("FAIL watchdog: did not finish in 420 s"); process.exit(2); }, 420000).unref(); // real model in software GL
 
 // ---- minimal W3C WebDriver client ----
 const driver = spawn("WebKitWebDriver", [`--port=${PORT}`], { stdio: "ignore" });
@@ -60,7 +60,18 @@ async function pointer(s, steps) {
   await wd("DELETE", s.S("/actions"));
 }
 const tap = async (s, x, y) => { await pointer(s, [{ type: "pointerMove", x: Math.round(x), y: Math.round(y), duration: 0 }, { type: "pointerDown", button: 0 }, { type: "pause", duration: 60 }, { type: "pointerUp", button: 0 }]); await sleep(150); };
-const tapWorld = async (s, x, y, z) => { const p = await s.exec((x, y, z) => window.__bodymap.screenOf(x, y, z), x, y, z); await tap(s, p.x, p.y); return p; };
+// wait for the re-framing tween to finish (slow frames in software GL with the real model)
+const idle = async (s) => { for (let i = 0; i < 200; i++) { if (await s.exec(() => !window.__bodymap.viewer.tween)) return; await sleep(100); } };
+let refitUndidTurn = 0;
+const face = async (s, r) => {
+  for (let i = 0; i < 4; i++) {
+    await idle(s); await s.exec((r) => window.__bodymap.faceAzimuth(r), r); await sleep(400); await idle(s);
+    const az = await s.exec(() => { const v = window.__bodymap.viewer; const d = v.camera.position.clone().sub(v.controls.target); return Math.atan2(d.x, d.z); });
+    if (Math.abs(Math.atan2(Math.sin(az - r), Math.cos(az - r))) < 0.05) return;
+    refitUndidTurn++;
+  }
+};
+const tapWorld = async (s, x, y, z) => { await idle(s); const p = await s.exec((x, y, z) => window.__bodymap.screenOf(x, y, z), x, y, z); await tap(s, p.x, p.y); await sleep(120); await idle(s); return p; };
 const picks = (s) => s.exec(() => window.__bodymap.picks());
 async function expectPick(s, name, want) {
   const p = (await picks(s)).at(-1); const l = p?.location ?? {};
@@ -140,21 +151,22 @@ try {
     ok("G drag adds no mark", (await picks(s)).length === n);
 
     await click(s, '[data-layer="skin"]');
-    await s.exec(() => window.__bodymap.faceAzimuth(Math.PI)); await sleep(300);
+    await face(s, Math.PI); await sleep(300);
     await tapWorld(s, 0.085, 0.915, -0.07);
     await expectPick(s, "H buttock L from behind", { part_id: "gluteus_maximus", side: "left", view: "posterior" });
     await shot(s, "04_back_skin_bone.png");
-    await s.exec(() => window.__bodymap.faceAzimuth(Math.PI / 2)); await sleep(300);
-    await tapWorld(s, 0.21, 1.40, 0.0);
+    await face(s, Math.PI / 2); await sleep(300);
+    await tapWorld(s, 0.159, 1.337, -0.041); // deltoid L centre in the Z-Anatomy export (placeholder: 0.21, 1.40, 0.0)
     await expectPick(s, "I shoulder L from the left", { part_id: "deltoid", side: "left", view: "lateral_left" });
-    await s.exec(() => window.__bodymap.faceAzimuth(0)); await sleep(300);
+    await face(s, 0); await sleep(300);
 
+    console.log(`· re-frame tween undid a camera turn ${refitUndidTurn} time(s) in this run`);
     const all = await picks(s);
     ok("K local in 0..1", all.every((p) => p.location.local.length === 3 && p.location.local.every((v) => v >= 0 && v <= 1)));
     ok("J round trip < 3 mm", all.every((p) => p.roundTripMm < 3), all.map((p) => `${p.location.part_id}:${p.roundTripMm.toFixed(1)}`).join(" "));
 
     const fBreath = await fps(s, 2000);
-    const b1 = await s.exec(() => window.__bodymap.breath()); await sleep(700); const b2 = await s.exec(() => window.__bodymap.breath());
+    const b1 = await s.exec(() => window.__bodymap.breath()); await sleep(2000); const b2 = await s.exec(() => window.__bodymap.breath());
     ok("L marks breathe", b1.some((v, i) => Math.abs(v - b2[i]) > 0.01));
     await click(s, ".switch");
     await s.execAsync(() => new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(r))));
@@ -163,7 +175,8 @@ try {
     await click(s, ".switch");
 
     for (const [v, y] of [["upper", 1.37], ["lower", 0.47], ["full", 0.93]]) {
-      await click(s, `[data-view="${v}"]`); await sleep(900);
+      await click(s, `[data-view="${v}"]`); await sleep(700);
+      await idle(s);
       const ty = (await s.exec(() => window.__bodymap.cameraTarget()))[1];
       ok(`P view ${v}`, Math.abs(ty - y) < 0.01, `y=${ty.toFixed(3)}`);
     }

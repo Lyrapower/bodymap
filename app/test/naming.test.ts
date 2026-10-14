@@ -25,9 +25,9 @@ describe("parseNodeName", () => {
 
 describe("resolvePartInfo", () => {
   const parts = { model_version: "t", labels: {}, nodes: { "Skin": { part_id: "skin", side: "midline" as const, layer: "skin" as const, generic: true }, "Odd name 7": { part_id: "deltoid", side: "left" as const } } };
-  it("parts.json wins over the name", () => expect(resolvePartInfo("Odd name 7", "muscle", parts)).toEqual({ part_id: "deltoid", side: "left", layer: "muscle", generic: false }));
+  it("parts.json wins over the name", () => expect(resolvePartInfo("Odd name 7", "muscle", parts)).toEqual({ part_id: "deltoid", side: "left", layer: "muscle", generic: false, envelope: false }));
   it("generic skin", () => expect(resolvePartInfo("Skin", null, parts).generic).toBe(true));
-  it("falls back to parsing", () => expect(resolvePartInfo("Tibia.r", "bone", parts)).toEqual({ part_id: "tibia", side: "right", layer: "bone", generic: false }));
+  it("falls back to parsing", () => expect(resolvePartInfo("Tibia.r", "bone", parts)).toEqual({ part_id: "tibia", side: "right", layer: "bone", generic: false, envelope: false }));
   it("unnamed skin mesh is still generic", () => expect(resolvePartInfo("skin", "skin", null).generic).toBe(true));
 });
 
@@ -39,4 +39,11 @@ describe("layers", () => {
     expect(layerFromName("Femur.l")).toBe(null);
   });
   it("snake", () => expect(snake("Músculo  Bíceps--Brachii")).toBe("musculo_biceps_brachii"));
+});
+
+describe("envelope parts (fascia, bursae, sheaths, retinacula)", () => {
+  it.each([["Deltoid fascia.l", true], ["Fascia lata.r", true], ["Subdeltoid bursa.l", true], ["Tendon sheath of extensor pollicis longus.r", true],
+    ["Superior extensor retinaculum.l", true], ["Plantar aponeurosis.l", false], ["Iliotibial tract.r", false], ["Deltoid.l", false], ["Fascial nothing", false]])
+    ("%s -> %s", (n, env) => expect(resolvePartInfo(n, "muscle", null).envelope).toBe(env));
+  it("parts.json flag wins", () => expect(resolvePartInfo("X", "muscle", { model_version: "t", labels: {}, nodes: { X: { part_id: "x", side: "left", envelope: true } } }).envelope).toBe(true));
 });
