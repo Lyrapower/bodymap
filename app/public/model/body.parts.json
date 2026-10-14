@@ -1,0 +1,6136 @@
+{
+ "model_version": "z-anatomy-2024-v1",
+ "nodes": {
+  "Lateral rectus muscle.l": {
+   "part_id": "lateral_rectus",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Lateral rectus muscle.r": {
+   "part_id": "lateral_rectus",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Superior oblique muscle.l": {
+   "part_id": "superior_oblique",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Superior oblique muscle.r": {
+   "part_id": "superior_oblique",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Common tendinous ring.r": {
+   "part_id": "common_tendinous_ring",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Inferior oblique muscle.r": {
+   "part_id": "inferior_oblique",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Inferior rectus muscle.r": {
+   "part_id": "inferior_rectus",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Inferior tarsus.r": {
+   "part_id": "inferior_tarsus",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Levator palpebrae superioris.r": {
+   "part_id": "levator_palpebrae_superioris",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Medial rectus muscle.r": {
+   "part_id": "medial_rectus",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Superior rectus muscle.r": {
+   "part_id": "superior_rectus",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Superior tarsus.r": {
+   "part_id": "superior_tarsus",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Trochlea of superior oblique muscle.r": {
+   "part_id": "trochlea_of_superior_oblique",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Common tendinous ring.l": {
+   "part_id": "common_tendinous_ring",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Inferior oblique muscle.l": {
+   "part_id": "inferior_oblique",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Inferior rectus muscle.l": {
+   "part_id": "inferior_rectus",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Inferior tarsus.l": {
+   "part_id": "inferior_tarsus",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Levator palpebrae superioris.l": {
+   "part_id": "levator_palpebrae_superioris",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Medial rectus muscle.l": {
+   "part_id": "medial_rectus",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Superior rectus muscle.l": {
+   "part_id": "superior_rectus",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Superior tarsus.l": {
+   "part_id": "superior_tarsus",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Trochlea of superior oblique muscle.l": {
+   "part_id": "trochlea_of_superior_oblique",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Frontalis muscle.r": {
+   "part_id": "frontalis",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Occipitalis muscle.r": {
+   "part_id": "occipitalis",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Epicranial aponeurosis.r": {
+   "part_id": "epicranial_aponeurosis",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Frontalis muscle.l": {
+   "part_id": "frontalis",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Occipitalis muscle.l": {
+   "part_id": "occipitalis",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Epicranial aponeurosis.l": {
+   "part_id": "epicranial_aponeurosis",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Temporoparietalis muscle.r": {
+   "part_id": "temporoparietalis",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Temporoparietalis muscle.l": {
+   "part_id": "temporoparietalis",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Nasalis muscle.r": {
+   "part_id": "nasalis",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Nasalis muscle.l": {
+   "part_id": "nasalis",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Orbicularis oculi.r": {
+   "part_id": "orbicularis_oculi",
+   "side": "right",
+   "layer": "muscle",
+   "from": [
+    "Orbital part of orbicularis oculi.r",
+    "Palpebral part of orbicularis oculi.r"
+   ]
+  },
+  "Orbicularis oculi.l": {
+   "part_id": "orbicularis_oculi",
+   "side": "left",
+   "layer": "muscle",
+   "from": [
+    "Orbital part of orbicularis oculi.l",
+    "Palpebral part of orbicularis oculi.l"
+   ]
+  },
+  "Orbicularis oris muscle.r": {
+   "part_id": "orbicularis_oris",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Orbicularis oris muscle.l": {
+   "part_id": "orbicularis_oris",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Zygomaticus major muscle.r": {
+   "part_id": "zygomaticus_major",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Corrugator supercilii.r": {
+   "part_id": "corrugator_supercilii",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Depressor anguli oris.r": {
+   "part_id": "depressor_anguli_oris",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Depressor labii inferioris.r": {
+   "part_id": "depressor_labii_inferioris",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Levator anguli oris.r": {
+   "part_id": "levator_anguli_oris",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Procerus muscle.r": {
+   "part_id": "procerus",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Risorius muscle.r": {
+   "part_id": "risorius",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Zygomaticus minor muscle.r": {
+   "part_id": "zygomaticus_minor",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Levator labii superioris.r": {
+   "part_id": "levator_labii_superioris",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Depressor septi nasi.r": {
+   "part_id": "depressor_septi_nasi",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Mentalis muscle.r": {
+   "part_id": "mentalis",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Levator nasolabialis.r": {
+   "part_id": "levator_nasolabialis",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Bucinator.r": {
+   "part_id": "bucinator",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Zygomaticus major muscle.l": {
+   "part_id": "zygomaticus_major",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Corrugator supercilii.l": {
+   "part_id": "corrugator_supercilii",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Depressor anguli oris.l": {
+   "part_id": "depressor_anguli_oris",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Depressor labii inferioris.l": {
+   "part_id": "depressor_labii_inferioris",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Levator anguli oris.l": {
+   "part_id": "levator_anguli_oris",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Procerus muscle.l": {
+   "part_id": "procerus",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Risorius muscle.l": {
+   "part_id": "risorius",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Zygomaticus minor muscle.l": {
+   "part_id": "zygomaticus_minor",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Levator labii superioris.l": {
+   "part_id": "levator_labii_superioris",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Depressor septi nasi.l": {
+   "part_id": "depressor_septi_nasi",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Mentalis muscle.l": {
+   "part_id": "mentalis",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Levator nasolabialis.l": {
+   "part_id": "levator_nasolabialis",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Bucinator.l": {
+   "part_id": "bucinator",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Masseter.r": {
+   "part_id": "masseter",
+   "side": "right",
+   "layer": "muscle",
+   "from": [
+    "Superficial part of masseter.r",
+    "Deep part of masseter.r"
+   ]
+  },
+  "Masseter.l": {
+   "part_id": "masseter",
+   "side": "left",
+   "layer": "muscle",
+   "from": [
+    "Superficial part of masseter.l",
+    "Deep part of masseter.l"
+   ]
+  },
+  "Medial pterygoid muscle.r": {
+   "part_id": "medial_pterygoid",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Medial pterygoid muscle.l": {
+   "part_id": "medial_pterygoid",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Inferior head of lateral pterygoid muscle.r": {
+   "part_id": "inferior_head_of_lateral_pterygoid",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Superior head of lateral pterygoid muscle.r": {
+   "part_id": "superior_head_of_lateral_pterygoid",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Inferior head of lateral pterygoid muscle.l": {
+   "part_id": "inferior_head_of_lateral_pterygoid",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Superior head of lateral pterygoid muscle.l": {
+   "part_id": "superior_head_of_lateral_pterygoid",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Temporalis muscle.r": {
+   "part_id": "temporalis",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Temporalis muscle.l": {
+   "part_id": "temporalis",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Hyoglossus muscle.r": {
+   "part_id": "hyoglossus",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Hyoglossus muscle.l": {
+   "part_id": "hyoglossus",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Genioglossus muscle.r": {
+   "part_id": "genioglossus",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Genioglossus muscle.l": {
+   "part_id": "genioglossus",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Palatopharyngeus muscle.r": {
+   "part_id": "palatopharyngeus",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Palatopharyngeus muscle.l": {
+   "part_id": "palatopharyngeus",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Superficial layer of temporal fascia.r": {
+   "part_id": "superficial_layer_of_temporal_fascia",
+   "side": "right",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Masseteric fascia.r": {
+   "part_id": "masseteric_fascia",
+   "side": "right",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Superficial layer of temporal fascia.l": {
+   "part_id": "superficial_layer_of_temporal_fascia",
+   "side": "left",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Masseteric fascia.l": {
+   "part_id": "masseteric_fascia",
+   "side": "left",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Sternocleidomastoid muscle.r": {
+   "part_id": "sternocleidomastoid",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Sternocleidomastoid muscle.l": {
+   "part_id": "sternocleidomastoid",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Intermediate tendon of digastric muscle.r": {
+   "part_id": "intermediate_tendon_of_digastric",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Anterior belly of digastric muscle.r": {
+   "part_id": "anterior_belly_of_digastric",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Posterior belly of digastric muscle.r": {
+   "part_id": "posterior_belly_of_digastric",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Intermediate tendon of digastric muscle.l": {
+   "part_id": "intermediate_tendon_of_digastric",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Anterior belly of digastric muscle.l": {
+   "part_id": "anterior_belly_of_digastric",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Posterior belly of digastric muscle.l": {
+   "part_id": "posterior_belly_of_digastric",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Mylohyoid muscle.r": {
+   "part_id": "mylohyoid",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Stylohyoid muscle.r": {
+   "part_id": "stylohyoid",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Geniohyoid muscle.r": {
+   "part_id": "geniohyoid",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Mylohyoid muscle.l": {
+   "part_id": "mylohyoid",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Stylohyoid muscle.l": {
+   "part_id": "stylohyoid",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Geniohyoid muscle.l": {
+   "part_id": "geniohyoid",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Omohyoid muscle.r": {
+   "part_id": "omohyoid",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Omohyoid muscle.l": {
+   "part_id": "omohyoid",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Sternohyoid muscle.r": {
+   "part_id": "sternohyoid",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Sternothyroid muscle.r": {
+   "part_id": "sternothyroid",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Thyrohyoid muscle.r": {
+   "part_id": "thyrohyoid",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Sternohyoid muscle.l": {
+   "part_id": "sternohyoid",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Sternothyroid muscle.l": {
+   "part_id": "sternothyroid",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Thyrohyoid muscle.l": {
+   "part_id": "thyrohyoid",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Superior pharyngeal constrictor.r": {
+   "part_id": "superior_pharyngeal_constrictor",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Superior pharyngeal constrictor.l": {
+   "part_id": "superior_pharyngeal_constrictor",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Middle pharyngeal constrictor.r": {
+   "part_id": "middle_pharyngeal_constrictor",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Middle pharyngeal constrictor.l": {
+   "part_id": "middle_pharyngeal_constrictor",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Inferior pharyngeal constrictor.r": {
+   "part_id": "inferior_pharyngeal_constrictor",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Inferior pharyngeal constrictor.l": {
+   "part_id": "inferior_pharyngeal_constrictor",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Stylopharyngeus muscle.r": {
+   "part_id": "stylopharyngeus",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Stylopharyngeus muscle.l": {
+   "part_id": "stylopharyngeus",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Oblique part of cricothyroid muscle.r": {
+   "part_id": "oblique_part_of_cricothyroid",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Straight part of cricothyroid muscle.r": {
+   "part_id": "straight_part_of_cricothyroid",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Oblique part of cricothyroid muscle.l": {
+   "part_id": "oblique_part_of_cricothyroid",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Straight part of cricothyroid muscle.l": {
+   "part_id": "straight_part_of_cricothyroid",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "External part of thyro-arytenoid muscle.r": {
+   "part_id": "external_part_of_thyro_arytenoid",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "External part of thyro-arytenoid muscle.l": {
+   "part_id": "external_part_of_thyro_arytenoid",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Ary-epiglottic part of oblique arytenoid muscle.r": {
+   "part_id": "ary_epiglottic_part_of_oblique_arytenoid",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Thyro-epiglottic part of thyro-arytenoid muscle.r": {
+   "part_id": "thyro_epiglottic_part_of_thyro_arytenoid",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Ary-epiglottic part of oblique arytenoid muscle.l": {
+   "part_id": "ary_epiglottic_part_of_oblique_arytenoid",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Thyro-epiglottic part of thyro-arytenoid muscle.l": {
+   "part_id": "thyro_epiglottic_part_of_thyro_arytenoid",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Transverse arytenoid muscle": {
+   "part_id": "transverse_arytenoid",
+   "side": "midline",
+   "layer": "muscle"
+  },
+  "Lateral crico-arytenoid muscle.r": {
+   "part_id": "lateral_crico_arytenoid",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Lateral crico-arytenoid muscle.l": {
+   "part_id": "lateral_crico_arytenoid",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Posterior crico-arytenoid muscle.r": {
+   "part_id": "posterior_crico_arytenoid",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Posterior crico-arytenoid muscle.l": {
+   "part_id": "posterior_crico_arytenoid",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Platysma.r": {
+   "part_id": "platysma",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Scalenus medius muscle.r": {
+   "part_id": "scalenus_medius",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Scalenus posterior muscle.r": {
+   "part_id": "scalenus_posterior",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Scalenus anterior muscle.r": {
+   "part_id": "scalenus_anterior",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Longus capitis muscle.r": {
+   "part_id": "longus_capitis",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Longus colli muscle.r": {
+   "part_id": "longus_colli",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Rectus anterior capitis muscle.r": {
+   "part_id": "rectus_anterior_capitis",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Rectus lateralis capitis muscle.r": {
+   "part_id": "rectus_lateralis_capitis",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Platysma.l": {
+   "part_id": "platysma",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Scalenus medius muscle.l": {
+   "part_id": "scalenus_medius",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Scalenus posterior muscle.l": {
+   "part_id": "scalenus_posterior",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Scalenus anterior muscle.l": {
+   "part_id": "scalenus_anterior",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Longus capitis muscle.l": {
+   "part_id": "longus_capitis",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Longus colli muscle.l": {
+   "part_id": "longus_colli",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Rectus anterior capitis muscle.l": {
+   "part_id": "rectus_anterior_capitis",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Rectus lateralis capitis muscle.l": {
+   "part_id": "rectus_lateralis_capitis",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Superficial investing cervical fascia.r": {
+   "part_id": "superficial_investing_cervical_fascia",
+   "side": "right",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Superficial investing cervical fascia.l": {
+   "part_id": "superficial_investing_cervical_fascia",
+   "side": "left",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Posterior layer of thoracolumbar fascia.r": {
+   "part_id": "posterior_layer_of_thoracolumbar_fascia",
+   "side": "right",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Middle layer of thoracolumbar fascia.r": {
+   "part_id": "middle_layer_of_thoracolumbar_fascia",
+   "side": "right",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Anterior layer of thoracolumbar fascia.r": {
+   "part_id": "anterior_layer_of_thoracolumbar_fascia",
+   "side": "right",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Posterior layer of thoracolumbar fascia.l": {
+   "part_id": "posterior_layer_of_thoracolumbar_fascia",
+   "side": "left",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Middle layer of thoracolumbar fascia.l": {
+   "part_id": "middle_layer_of_thoracolumbar_fascia",
+   "side": "left",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Anterior layer of thoracolumbar fascia.l": {
+   "part_id": "anterior_layer_of_thoracolumbar_fascia",
+   "side": "left",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Obliquus inferior capitis muscle.r": {
+   "part_id": "obliquus_inferior_capitis",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Obliquus superior capitis muscle.r": {
+   "part_id": "obliquus_superior_capitis",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Rectus posterior major capitis muscle.r": {
+   "part_id": "rectus_posterior_major_capitis",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Rectus posterior minor capitis muscle.r": {
+   "part_id": "rectus_posterior_minor_capitis",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Obliquus inferior capitis muscle.l": {
+   "part_id": "obliquus_inferior_capitis",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Obliquus superior capitis muscle.l": {
+   "part_id": "obliquus_superior_capitis",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Rectus posterior major capitis muscle.l": {
+   "part_id": "rectus_posterior_major_capitis",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Rectus posterior minor capitis muscle.l": {
+   "part_id": "rectus_posterior_minor_capitis",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Iliocostalis lumborum muscle.r": {
+   "part_id": "iliocostalis_lumborum",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Iliocostalis thoracis muscle.r": {
+   "part_id": "iliocostalis_thoracis",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Iliocostalis colli muscle.r": {
+   "part_id": "iliocostalis_colli",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Iliocostalis lumborum muscle.l": {
+   "part_id": "iliocostalis_lumborum",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Iliocostalis thoracis muscle.l": {
+   "part_id": "iliocostalis_thoracis",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Iliocostalis colli muscle": {
+   "part_id": "iliocostalis_colli",
+   "side": "midline",
+   "layer": "muscle"
+  },
+  "Longissimus thoracis muscle.r": {
+   "part_id": "longissimus_thoracis",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Longissimus thoracis muscle.l": {
+   "part_id": "longissimus_thoracis",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Longissimus capitis muscle.r": {
+   "part_id": "longissimus_capitis",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Longissimus colli muscle.r": {
+   "part_id": "longissimus_colli",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Longissimus capitis muscle.l": {
+   "part_id": "longissimus_capitis",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Longissimus colli muscle.l": {
+   "part_id": "longissimus_colli",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Spinalis capitis muscle.r": {
+   "part_id": "spinalis_capitis",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Spinalis colli muscle.r": {
+   "part_id": "spinalis_colli",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Spinalis thoracis muscle.r": {
+   "part_id": "spinalis_thoracis",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Spinalis capitis muscle.l": {
+   "part_id": "spinalis_capitis",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Spinalis colli muscle.l": {
+   "part_id": "spinalis_colli",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Spinalis thoracis muscle.l": {
+   "part_id": "spinalis_thoracis",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Splenius capitis muscle.r": {
+   "part_id": "splenius_capitis",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Splenius colli muscle.r": {
+   "part_id": "splenius_colli",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Splenius capitis muscle.l": {
+   "part_id": "splenius_capitis",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Splenius colli muscle.l": {
+   "part_id": "splenius_colli",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Multifidus colli muscle.r": {
+   "part_id": "multifidus_colli",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Multifidus thoracis muscle.r": {
+   "part_id": "multifidus_thoracis",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Multifidus lumborum muscle.r": {
+   "part_id": "multifidus_lumborum",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Multifidus colli muscle.l": {
+   "part_id": "multifidus_colli",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Multifidus thoracis muscle.l": {
+   "part_id": "multifidus_thoracis",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Multifidus lumborum muscle.l": {
+   "part_id": "multifidus_lumborum",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Semispinalis thoracis muscle.r": {
+   "part_id": "semispinalis_thoracis",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Semispinalis colli muscle.r": {
+   "part_id": "semispinalis_colli",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Semispinalis thoracis muscle.l": {
+   "part_id": "semispinalis_thoracis",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Semispinalis colli muscle.l": {
+   "part_id": "semispinalis_colli",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Rotatores.l": {
+   "part_id": "rotatores",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Rotatores.r": {
+   "part_id": "rotatores",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Interspinales colli muscles.r": {
+   "part_id": "interspinales_colli",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Interspinales thoracis muscles.r": {
+   "part_id": "interspinales_thoracis",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Interspinales lumborum muscles.r": {
+   "part_id": "interspinales_lumborum",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Interspinales colli muscles.l": {
+   "part_id": "interspinales_colli",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Interspinales thoracis muscles.l": {
+   "part_id": "interspinales_thoracis",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Interspinales lumborum muscles.l": {
+   "part_id": "interspinales_lumborum",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Trapezius.r": {
+   "part_id": "trapezius",
+   "side": "right",
+   "layer": "muscle",
+   "from": [
+    "Ascending part of trapezius muscle.r",
+    "Descending part of trapezius muscle.r",
+    "Transverse part of trapezius muscle.r",
+    "Subtendinous bursa of trapezius muscle.r"
+   ]
+  },
+  "Trapezius.l": {
+   "part_id": "trapezius",
+   "side": "left",
+   "layer": "muscle",
+   "from": [
+    "Ascending part of trapezius muscle.l",
+    "Descending part of trapezius muscle.l",
+    "Transverse part of trapezius muscle.l",
+    "Subtendinous bursa of trapezius muscle.l"
+   ]
+  },
+  "Dorsal parts of lateral intertransversarii lumborum muscles.r": {
+   "part_id": "dorsal_parts_of_lateral_intertransversarii_lumborum",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Ventral parts of lateral intertransversarii lumborum muscles.r": {
+   "part_id": "ventral_parts_of_lateral_intertransversarii_lumborum",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Dorsal parts of lateral intertransversarii lumborum muscles.l": {
+   "part_id": "dorsal_parts_of_lateral_intertransversarii_lumborum",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Ventral parts of lateral intertransversarii lumborum muscles.l": {
+   "part_id": "ventral_parts_of_lateral_intertransversarii_lumborum",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Levator scapulae.r": {
+   "part_id": "levator_scapulae",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Rhomboid major muscle.r": {
+   "part_id": "rhomboid_major",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Rhomboid minor muscle.r": {
+   "part_id": "rhomboid_minor",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Latissimus dorsi muscle.r": {
+   "part_id": "latissimus_dorsi",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Serratus posterior inferior muscle.r": {
+   "part_id": "serratus_posterior_inferior",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Serratus posterior superior muscle.r": {
+   "part_id": "serratus_posterior_superior",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Levator scapulae.l": {
+   "part_id": "levator_scapulae",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Rhomboid major muscle.l": {
+   "part_id": "rhomboid_major",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Rhomboid minor muscle.l": {
+   "part_id": "rhomboid_minor",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Latissimus dorsi muscle.l": {
+   "part_id": "latissimus_dorsi",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Serratus posterior inferior muscle.l": {
+   "part_id": "serratus_posterior_inferior",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Serratus posterior superior muscle.l": {
+   "part_id": "serratus_posterior_superior",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Pectoralis major.r": {
+   "part_id": "pectoralis_major",
+   "side": "right",
+   "layer": "muscle",
+   "from": [
+    "Clavicular head of pectoralis major muscle.r",
+    "Sternocostal head of pectoralis major muscle.r",
+    "(Abdominal part of pectoralis major muscle).r"
+   ]
+  },
+  "Pectoralis major.l": {
+   "part_id": "pectoralis_major",
+   "side": "left",
+   "layer": "muscle",
+   "from": [
+    "Clavicular head of pectoralis major muscle.l",
+    "Sternocostal head of pectoralis major muscle.l",
+    "(Abdominal part of pectoralis major muscle).l"
+   ]
+  },
+  "Levatores longi costarum.r": {
+   "part_id": "levatores_longi_costarum",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Levatores breves costarum.r": {
+   "part_id": "levatores_breves_costarum",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Levatores longi costarum.l": {
+   "part_id": "levatores_longi_costarum",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Levatores breves costarum.l": {
+   "part_id": "levatores_breves_costarum",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Pectoralis minor muscle.r": {
+   "part_id": "pectoralis_minor",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "External intercostal muscles.r": {
+   "part_id": "external_intercostal",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Internal intercostal muscles.r": {
+   "part_id": "internal_intercostal",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Serratus anterior muscle.r": {
+   "part_id": "serratus_anterior",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Innermost intercostal muscles.r": {
+   "part_id": "innermost_intercostal",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Subclavius muscle.r": {
+   "part_id": "subclavius",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Transversus thoracis muscle.r": {
+   "part_id": "transversus_thoracis",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Pectoralis minor muscle.l": {
+   "part_id": "pectoralis_minor",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "External intercostal muscles.l": {
+   "part_id": "external_intercostal",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Internal intercostal muscles.l": {
+   "part_id": "internal_intercostal",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Serratus anterior muscle.l": {
+   "part_id": "serratus_anterior",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Innermost intercostal muscles.l": {
+   "part_id": "innermost_intercostal",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Subclavius muscle.l": {
+   "part_id": "subclavius",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Transversus thoracis muscle.l": {
+   "part_id": "transversus_thoracis",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Pectoral fascia.r": {
+   "part_id": "pectoral_fascia",
+   "side": "right",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Pectoral fascia.l": {
+   "part_id": "pectoral_fascia",
+   "side": "left",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Diaphragm": {
+   "part_id": "diaphragm",
+   "side": "midline",
+   "layer": "muscle"
+  },
+  "Rectus abdominis muscle.r": {
+   "part_id": "rectus_abdominis",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Rectus abdominis muscle.l": {
+   "part_id": "rectus_abdominis",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Inguinal ligament.l": {
+   "part_id": "inguinal_ligament",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Inguinal ligament.r": {
+   "part_id": "inguinal_ligament",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "External abdominal oblique muscle.r": {
+   "part_id": "external_abdominal_oblique",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "External abdominal oblique muscle.l": {
+   "part_id": "external_abdominal_oblique",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Internal abdominal oblique muscle.r": {
+   "part_id": "internal_abdominal_oblique",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Internal abdominal oblique muscle.l": {
+   "part_id": "internal_abdominal_oblique",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Transversus abdominis muscle.r": {
+   "part_id": "transversus_abdominis",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Transversus abdominis muscle.l": {
+   "part_id": "transversus_abdominis",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Linea alba": {
+   "part_id": "linea_alba",
+   "side": "midline",
+   "layer": "muscle"
+  },
+  "Pyramidalis muscle.r": {
+   "part_id": "pyramidalis",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Quadratus lumborum muscle.r": {
+   "part_id": "quadratus_lumborum",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Pyramidalis muscle.l": {
+   "part_id": "pyramidalis",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Quadratus lumborum muscle.l": {
+   "part_id": "quadratus_lumborum",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Investing abdominal fascia.r": {
+   "part_id": "investing_abdominal_fascia",
+   "side": "right",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Investing abdominal fascia.l": {
+   "part_id": "investing_abdominal_fascia",
+   "side": "left",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Coccygeus muscle.r": {
+   "part_id": "coccygeus",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Iliococcygeus muscle.r": {
+   "part_id": "iliococcygeus",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Pubo-analis muscle.r": {
+   "part_id": "pubo_analis",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Pubococcygeus muscle.r": {
+   "part_id": "pubococcygeus",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Coccygeus muscle.l": {
+   "part_id": "coccygeus",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Iliococcygeus muscle.l": {
+   "part_id": "iliococcygeus",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Pubo-analis muscle.l": {
+   "part_id": "pubo_analis",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Pubococcygeus muscle.l": {
+   "part_id": "pubococcygeus",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Piriformis fascia.r": {
+   "part_id": "piriformis_fascia",
+   "side": "right",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Piriformis fascia.l": {
+   "part_id": "piriformis_fascia",
+   "side": "left",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Deltoid.r": {
+   "part_id": "deltoid",
+   "side": "right",
+   "layer": "muscle",
+   "from": [
+    "Acromial part of deltoid muscle.r",
+    "Clavicular part of deltoid muscle.r",
+    "Scapular spinal part of deltoid muscle.r"
+   ]
+  },
+  "Deltoid.l": {
+   "part_id": "deltoid",
+   "side": "left",
+   "layer": "muscle",
+   "from": [
+    "Acromial part of deltoid muscle.l",
+    "Clavicular part of deltoid muscle.l",
+    "Scapular spinal part of deltoid muscle.l"
+   ]
+  },
+  "Subscapularis muscle.r": {
+   "part_id": "subscapularis",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Supraspinatus muscle.r": {
+   "part_id": "supraspinatus",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Teres minor muscle.r": {
+   "part_id": "teres_minor",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Infraspinatus.r": {
+   "part_id": "infraspinatus",
+   "side": "right",
+   "layer": "muscle",
+   "from": [
+    "Infraspinatus muscle.r",
+    "Subtendinous bursa of infraspinatus muscle.r"
+   ]
+  },
+  "Subscapularis muscle.l": {
+   "part_id": "subscapularis",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Supraspinatus muscle.l": {
+   "part_id": "supraspinatus",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Teres minor muscle.l": {
+   "part_id": "teres_minor",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Infraspinatus.l": {
+   "part_id": "infraspinatus",
+   "side": "left",
+   "layer": "muscle",
+   "from": [
+    "Infraspinatus muscle.l",
+    "Subtendinous bursa of infraspinatus muscle.l"
+   ]
+  },
+  "Teres major.r": {
+   "part_id": "teres_major",
+   "side": "right",
+   "layer": "muscle",
+   "from": [
+    "Teres major muscle.r",
+    "Subtendinous bursa of teres major muscle.r"
+   ]
+  },
+  "Teres major.l": {
+   "part_id": "teres_major",
+   "side": "left",
+   "layer": "muscle",
+   "from": [
+    "Teres major muscle.l",
+    "Subtendinous bursa of teres major muscle.l"
+   ]
+  },
+  "Biceps brachii.r": {
+   "part_id": "biceps_brachii",
+   "side": "right",
+   "layer": "muscle",
+   "from": [
+    "Long head of biceps brachii.r",
+    "Short head of biceps brachii.r"
+   ]
+  },
+  "Biceps brachii.l": {
+   "part_id": "biceps_brachii",
+   "side": "left",
+   "layer": "muscle",
+   "from": [
+    "Long head of biceps brachii.l",
+    "Short head of biceps brachii.l"
+   ]
+  },
+  "Brachialis muscle.r": {
+   "part_id": "brachialis",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Coracobrachialis muscle.r": {
+   "part_id": "coracobrachialis",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Brachialis muscle.l": {
+   "part_id": "brachialis",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Coracobrachialis muscle.l": {
+   "part_id": "coracobrachialis",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Triceps brachii.r": {
+   "part_id": "triceps_brachii",
+   "side": "right",
+   "layer": "muscle",
+   "from": [
+    "Medial head of triceps brachii.r",
+    "Lateral head of triceps brachii.r",
+    "Long head of triceps brachii.r",
+    "Subtendinous bursa of triceps brachii muscle.r"
+   ]
+  },
+  "Triceps brachii.l": {
+   "part_id": "triceps_brachii",
+   "side": "left",
+   "layer": "muscle",
+   "from": [
+    "Medial head of triceps brachii.l",
+    "Lateral head of triceps brachii.l",
+    "Long head of triceps brachii.l",
+    "Subtendinous bursa of triceps brachii muscle.l"
+   ]
+  },
+  "Pronator teres.r": {
+   "part_id": "pronator_teres",
+   "side": "right",
+   "layer": "muscle",
+   "from": [
+    "Superficial head of pronator teres.r",
+    "Deep head of pronator teres.r"
+   ]
+  },
+  "Pronator teres.l": {
+   "part_id": "pronator_teres",
+   "side": "left",
+   "layer": "muscle",
+   "from": [
+    "Superficial head of pronator teres.l",
+    "Deep head of pronator teres.l"
+   ]
+  },
+  "Flexor carpi ulnaris.r": {
+   "part_id": "flexor_carpi_ulnaris",
+   "side": "right",
+   "layer": "muscle",
+   "from": [
+    "Humeral head of flexor carpi ulnaris.r",
+    "Ulnar head of flexor carpi ulnaris.r"
+   ]
+  },
+  "Flexor carpi ulnaris.l": {
+   "part_id": "flexor_carpi_ulnaris",
+   "side": "left",
+   "layer": "muscle",
+   "from": [
+    "Humeral head of flexor carpi ulnaris.l",
+    "Ulnar head of flexor carpi ulnaris.l"
+   ]
+  },
+  "Flexor digitorum superficialis.r": {
+   "part_id": "flexor_digitorum_superficialis",
+   "side": "right",
+   "layer": "muscle",
+   "from": [
+    "Humero-ulnar head of flexor digitorum superficialis.r",
+    "Radial head of flexor digitorum superficialis.r"
+   ]
+  },
+  "Flexor digitorum superficialis.l": {
+   "part_id": "flexor_digitorum_superficialis",
+   "side": "left",
+   "layer": "muscle",
+   "from": [
+    "Humero-ulnar head of flexor digitorum superficialis.l",
+    "Radial head of flexor digitorum superficialis.l"
+   ]
+  },
+  "Flexor carpi radialis.r": {
+   "part_id": "flexor_carpi_radialis",
+   "side": "right",
+   "layer": "muscle",
+   "from": [
+    "Flexor carpi radialis.r",
+    "Tendon sheath of flexor carpi radialis.r"
+   ]
+  },
+  "Palmaris longus muscle.r": {
+   "part_id": "palmaris_longus",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Flexor carpi radialis.l": {
+   "part_id": "flexor_carpi_radialis",
+   "side": "left",
+   "layer": "muscle",
+   "from": [
+    "Flexor carpi radialis.l",
+    "Tendon sheath of flexor carpi radialis.l"
+   ]
+  },
+  "Palmaris longus muscle.l": {
+   "part_id": "palmaris_longus",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Flexor digitorum profundus.r": {
+   "part_id": "flexor_digitorum_profundus",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Flexor pollicis longus.r": {
+   "part_id": "flexor_pollicis_longus",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Pronator quadratus.r": {
+   "part_id": "pronator_quadratus",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Flexor digitorum profundus.l": {
+   "part_id": "flexor_digitorum_profundus",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Flexor pollicis longus.l": {
+   "part_id": "flexor_pollicis_longus",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Pronator quadratus.l": {
+   "part_id": "pronator_quadratus",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Extensor digitorum.r": {
+   "part_id": "extensor_digitorum",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Extensor digitorum.l": {
+   "part_id": "extensor_digitorum",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Extensor carpi ulnaris.r": {
+   "part_id": "extensor_carpi_ulnaris",
+   "side": "right",
+   "layer": "muscle",
+   "from": [
+    "Ulnar head of extensor carpi ulnaris.r",
+    "Humeral head of extensor carpi ulnaris.r",
+    "Tendon sheath of extensor carpi ulnaris.r"
+   ]
+  },
+  "Extensor carpi ulnaris.l": {
+   "part_id": "extensor_carpi_ulnaris",
+   "side": "left",
+   "layer": "muscle",
+   "from": [
+    "Ulnar head of extensor carpi ulnaris.l",
+    "Humeral head of extensor carpi ulnaris.l",
+    "Tendon sheath of extensor carpi ulnaris.l"
+   ]
+  },
+  "Brachioradialis muscle.r": {
+   "part_id": "brachioradialis",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Extensor carpi radialis longus.r": {
+   "part_id": "extensor_carpi_radialis_longus",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Extensor carpi radialis brevis.r": {
+   "part_id": "extensor_carpi_radialis_brevis",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Anconeus muscle.r": {
+   "part_id": "anconeus",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Extensor digiti minimi.r": {
+   "part_id": "extensor_digiti_minimi",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Brachioradialis muscle.l": {
+   "part_id": "brachioradialis",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Extensor carpi radialis longus.l": {
+   "part_id": "extensor_carpi_radialis_longus",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Extensor carpi radialis brevis.l": {
+   "part_id": "extensor_carpi_radialis_brevis",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Anconeus muscle.l": {
+   "part_id": "anconeus",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Extensor digiti minimi.l": {
+   "part_id": "extensor_digiti_minimi",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Supinator.r": {
+   "part_id": "supinator",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Supinator.l": {
+   "part_id": "supinator",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Abductor pollicis longus.r": {
+   "part_id": "abductor_pollicis_longus",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Extensor indicis.r": {
+   "part_id": "extensor_indicis",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Extensor pollicis brevis.r": {
+   "part_id": "extensor_pollicis_brevis",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Extensor pollicis longus.r": {
+   "part_id": "extensor_pollicis_longus",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Abductor pollicis longus.l": {
+   "part_id": "abductor_pollicis_longus",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Extensor indicis.l": {
+   "part_id": "extensor_indicis",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Extensor pollicis brevis.l": {
+   "part_id": "extensor_pollicis_brevis",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Extensor pollicis longus.l": {
+   "part_id": "extensor_pollicis_longus",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Superficial head of flexor pollicis brevis.r": {
+   "part_id": "superficial_head_of_flexor_pollicis_brevis",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Deep head of flexor pollicis brevis.r": {
+   "part_id": "deep_head_of_flexor_pollicis_brevis",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Superficial head of flexor pollicis brevis.l": {
+   "part_id": "superficial_head_of_flexor_pollicis_brevis",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Deep head of flexor pollicis brevis.l": {
+   "part_id": "deep_head_of_flexor_pollicis_brevis",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Oblique head of adductor pollicis.r": {
+   "part_id": "oblique_head_of_adductor_pollicis",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Transverse head of adductor pollicis.r": {
+   "part_id": "transverse_head_of_adductor_pollicis",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Oblique head of adductor pollicis.l": {
+   "part_id": "oblique_head_of_adductor_pollicis",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Transverse head of adductor pollicis.l": {
+   "part_id": "transverse_head_of_adductor_pollicis",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Abductor pollicis brevis.r": {
+   "part_id": "abductor_pollicis_brevis",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Opponens pollicis muscle.r": {
+   "part_id": "opponens_pollicis",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Hand.r": {
+   "part_id": "hand",
+   "side": "right",
+   "layer": "muscle",
+   "from": [
+    "Abductor digiti minimi of hand.r",
+    "Flexor digiti minimi of hand.r",
+    "Opponens digiti minimi muscle of hand.r",
+    "Lumbrical muscles of hand.r",
+    "Dorsal interossei muscles of hand.r",
+    "Dorsal fascia of hand.r",
+    "Synovial sheaths of digits of hand.r",
+    "Cruciform part of fibrous sheath of digit of hand.r"
+   ]
+  },
+  "Palmar interossei muscles.r": {
+   "part_id": "palmar_interossei",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Abductor pollicis brevis.l": {
+   "part_id": "abductor_pollicis_brevis",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Opponens pollicis muscle.l": {
+   "part_id": "opponens_pollicis",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Hand.l": {
+   "part_id": "hand",
+   "side": "left",
+   "layer": "muscle",
+   "from": [
+    "Abductor digiti minimi of hand.l",
+    "Flexor digiti minimi of hand.l",
+    "Opponens digiti minimi muscle of hand.l",
+    "Lumbrical muscles of hand.l",
+    "Dorsal interossei muscles of hand.l",
+    "Dorsal fascia of hand.l",
+    "Synovial sheaths of digits of hand.l",
+    "Cruciform part of fibrous sheath of digit of hand.l"
+   ]
+  },
+  "Palmar interossei muscles.l": {
+   "part_id": "palmar_interossei",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Medial intermuscular septum of arm.r": {
+   "part_id": "medial_intermuscular_septum_of_arm",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Lateral intermuscular septum of arm.r": {
+   "part_id": "lateral_intermuscular_septum_of_arm",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Deltoid fascia.r": {
+   "part_id": "deltoid_fascia",
+   "side": "right",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Brachial fascia.r": {
+   "part_id": "brachial_fascia",
+   "side": "right",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Antebrachial fascia.r": {
+   "part_id": "antebrachial_fascia",
+   "side": "right",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Wrist.r": {
+   "part_id": "wrist",
+   "side": "right",
+   "layer": "muscle",
+   "from": [
+    "Extensor retinaculum of wrist.r",
+    "Flexor retinaculum of wrist.r"
+   ]
+  },
+  "Superficial transverse metacarpal ligament.r": {
+   "part_id": "superficial_transverse_metacarpal_ligament",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Palmar aponeurosis.r": {
+   "part_id": "palmar_aponeurosis",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Medial intermuscular septum of arm.l": {
+   "part_id": "medial_intermuscular_septum_of_arm",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Lateral intermuscular septum of arm.l": {
+   "part_id": "lateral_intermuscular_septum_of_arm",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Deltoid fascia.l": {
+   "part_id": "deltoid_fascia",
+   "side": "left",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Brachial fascia.l": {
+   "part_id": "brachial_fascia",
+   "side": "left",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Antebrachial fascia.l": {
+   "part_id": "antebrachial_fascia",
+   "side": "left",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Wrist.l": {
+   "part_id": "wrist",
+   "side": "left",
+   "layer": "muscle",
+   "from": [
+    "Extensor retinaculum of wrist.l",
+    "Flexor retinaculum of wrist.l"
+   ]
+  },
+  "Superficial transverse metacarpal ligament.l": {
+   "part_id": "superficial_transverse_metacarpal_ligament",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Palmar aponeurosis.l": {
+   "part_id": "palmar_aponeurosis",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Iliacus.r": {
+   "part_id": "iliacus",
+   "side": "right",
+   "layer": "muscle",
+   "from": [
+    "Iliacus muscle.r",
+    "Subtendinous bursa of iliacus muscle.r"
+   ]
+  },
+  "Psoas major.r": {
+   "part_id": "psoas_major",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Iliacus.l": {
+   "part_id": "iliacus",
+   "side": "left",
+   "layer": "muscle",
+   "from": [
+    "Iliacus muscle.l",
+    "Subtendinous bursa of iliacus muscle.l"
+   ]
+  },
+  "Psoas major.l": {
+   "part_id": "psoas_major",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Gluteus medius.r": {
+   "part_id": "gluteus_medius",
+   "side": "right",
+   "layer": "muscle",
+   "from": [
+    "Gluteus medius muscle.r",
+    "Trochanteric bursa of gluteus medius muscle.r"
+   ]
+  },
+  "Gluteus maximus.r": {
+   "part_id": "gluteus_maximus",
+   "side": "right",
+   "layer": "muscle",
+   "from": [
+    "Gluteus maximus muscle.r",
+    "Trochanteric bursa of gluteus maximus muscle.r",
+    "Sciatic bursa of gluteus maximus muscle.r"
+   ]
+  },
+  "Gluteus minimus.r": {
+   "part_id": "gluteus_minimus",
+   "side": "right",
+   "layer": "muscle",
+   "from": [
+    "Gluteus minimus muscle.r",
+    "Trochanteric bursa of gluteus minimus muscle.r"
+   ]
+  },
+  "Tensor fasciae latae.r": {
+   "part_id": "tensor_fasciae_latae",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Gluteus medius.l": {
+   "part_id": "gluteus_medius",
+   "side": "left",
+   "layer": "muscle",
+   "from": [
+    "Gluteus medius muscle.l",
+    "Trochanteric bursa of gluteus medius muscle.l"
+   ]
+  },
+  "Gluteus maximus.l": {
+   "part_id": "gluteus_maximus",
+   "side": "left",
+   "layer": "muscle",
+   "from": [
+    "Gluteus maximus muscle.l",
+    "Trochanteric bursa of gluteus maximus muscle.l",
+    "Sciatic bursa of gluteus maximus muscle.l"
+   ]
+  },
+  "Gluteus minimus.l": {
+   "part_id": "gluteus_minimus",
+   "side": "left",
+   "layer": "muscle",
+   "from": [
+    "Gluteus minimus muscle.l",
+    "Trochanteric bursa of gluteus minimus muscle.l"
+   ]
+  },
+  "Tensor fasciae latae.l": {
+   "part_id": "tensor_fasciae_latae",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Piriformis.r": {
+   "part_id": "piriformis",
+   "side": "right",
+   "layer": "muscle",
+   "from": [
+    "Piriformis muscle.r",
+    "Bursa of piriformis muscle.r"
+   ]
+  },
+  "Quadratus femoris muscle.r": {
+   "part_id": "quadratus_femoris",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Inferior gemellus muscle.r": {
+   "part_id": "inferior_gemellus",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Obturator internus.r": {
+   "part_id": "obturator_internus",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Superior gemellus muscle.r": {
+   "part_id": "superior_gemellus",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Piriformis.l": {
+   "part_id": "piriformis",
+   "side": "left",
+   "layer": "muscle",
+   "from": [
+    "Piriformis muscle.l",
+    "Bursa of piriformis muscle.l"
+   ]
+  },
+  "Quadratus femoris muscle.l": {
+   "part_id": "quadratus_femoris",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Inferior gemellus muscle.l": {
+   "part_id": "inferior_gemellus",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Obturator internus.l": {
+   "part_id": "obturator_internus",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Superior gemellus muscle.l": {
+   "part_id": "superior_gemellus",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Lateral patellar retinaculum.r": {
+   "part_id": "lateral_patellar_retinaculum",
+   "side": "right",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Medial patellar retinaculum.r": {
+   "part_id": "medial_patellar_retinaculum",
+   "side": "right",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Lateral patellar retinaculum.l": {
+   "part_id": "lateral_patellar_retinaculum",
+   "side": "left",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Rectus femoris muscle.r": {
+   "part_id": "rectus_femoris",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Vastus lateralis muscle.r": {
+   "part_id": "vastus_lateralis",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Vastus medialis muscle.r": {
+   "part_id": "vastus_medialis",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Vastus intermedius muscle.r": {
+   "part_id": "vastus_intermedius",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Rectus femoris muscle.l": {
+   "part_id": "rectus_femoris",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Vastus lateralis muscle.l": {
+   "part_id": "vastus_lateralis",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Vastus medialis muscle.l": {
+   "part_id": "vastus_medialis",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Vastus intermedius muscle.l": {
+   "part_id": "vastus_intermedius",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Sartorius.r": {
+   "part_id": "sartorius",
+   "side": "right",
+   "layer": "muscle",
+   "from": [
+    "Sartorius muscle.r",
+    "Subtendinous bursa of sartorius muscle.r"
+   ]
+  },
+  "Sartorius.l": {
+   "part_id": "sartorius",
+   "side": "left",
+   "layer": "muscle",
+   "from": [
+    "Sartorius muscle.l",
+    "Subtendinous bursa of sartorius muscle.l"
+   ]
+  },
+  "Adductor magnus.r": {
+   "part_id": "adductor_magnus",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Adductor longus.r": {
+   "part_id": "adductor_longus",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Pectineus muscle.r": {
+   "part_id": "pectineus",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Adductor brevis.r": {
+   "part_id": "adductor_brevis",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "(Adductor minimus).r": {
+   "part_id": "adductor_minimus",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Gracilis muscle.r": {
+   "part_id": "gracilis",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Obturator externus.r": {
+   "part_id": "obturator_externus",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Adductor magnus.l": {
+   "part_id": "adductor_magnus",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Adductor longus.l": {
+   "part_id": "adductor_longus",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Pectineus muscle.l": {
+   "part_id": "pectineus",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Adductor brevis.l": {
+   "part_id": "adductor_brevis",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "(Adductor minimus).l": {
+   "part_id": "adductor_minimus",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Gracilis muscle.l": {
+   "part_id": "gracilis",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Obturator externus.l": {
+   "part_id": "obturator_externus",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Biceps femoris.r": {
+   "part_id": "biceps_femoris",
+   "side": "right",
+   "layer": "muscle",
+   "from": [
+    "Long head of biceps femoris.r",
+    "Short head of biceps femoris.r",
+    "Superior bursa of biceps femoris muscle.r",
+    "Inferior subtendinous bursa of biceps femoris muscle.r"
+   ]
+  },
+  "Biceps femoris.l": {
+   "part_id": "biceps_femoris",
+   "side": "left",
+   "layer": "muscle",
+   "from": [
+    "Long head of biceps femoris.l",
+    "Short head of biceps femoris.l",
+    "Superior bursa of biceps femoris muscle.l",
+    "Inferior subtendinous bursa of biceps femoris muscle.l"
+   ]
+  },
+  "Semimembranosus muscle.r": {
+   "part_id": "semimembranosus",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Semitendinosus muscle.r": {
+   "part_id": "semitendinosus",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Semimembranosus muscle.l": {
+   "part_id": "semimembranosus",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Semitendinosus muscle.l": {
+   "part_id": "semitendinosus",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Extensor digitorum longus.r": {
+   "part_id": "extensor_digitorum_longus",
+   "side": "right",
+   "layer": "muscle",
+   "from": [
+    "Extensor digitorum longus.r",
+    "Tendon of extensor digitorum longus.r",
+    "Tendon sheath of extensor digitorum longus.r"
+   ]
+  },
+  "Extensor digitorum longus.l": {
+   "part_id": "extensor_digitorum_longus",
+   "side": "left",
+   "layer": "muscle",
+   "from": [
+    "Extensor digitorum longus.l",
+    "Tendon of extensor digitorum longus.l",
+    "Tendon sheath of extensor digitorum longus.l"
+   ]
+  },
+  "Tibialis anterior.r": {
+   "part_id": "tibialis_anterior",
+   "side": "right",
+   "layer": "muscle",
+   "from": [
+    "Tibialis anterior muscle.r",
+    "Subtendinous bursa of tibialis anterior.r",
+    "Tendon sheath of tibialis anterior.r"
+   ]
+  },
+  "Fibularis tertius muscle.r": {
+   "part_id": "fibularis_tertius",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Extensor hallucis longus.r": {
+   "part_id": "extensor_hallucis_longus",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Tibialis anterior.l": {
+   "part_id": "tibialis_anterior",
+   "side": "left",
+   "layer": "muscle",
+   "from": [
+    "Tibialis anterior muscle.l",
+    "Subtendinous bursa of tibialis anterior.l",
+    "Tendon sheath of tibialis anterior.l"
+   ]
+  },
+  "Fibularis tertius muscle.l": {
+   "part_id": "fibularis_tertius",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Extensor hallucis longus.l": {
+   "part_id": "extensor_hallucis_longus",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Fibularis longus.r": {
+   "part_id": "fibularis_longus",
+   "side": "right",
+   "layer": "muscle",
+   "from": [
+    "Fibularis longus muscle.r",
+    "Plantar tendon sheath of fibularis longus muscle.r"
+   ]
+  },
+  "Fibularis brevis muscle.r": {
+   "part_id": "fibularis_brevis",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Fibularis longus.l": {
+   "part_id": "fibularis_longus",
+   "side": "left",
+   "layer": "muscle",
+   "from": [
+    "Fibularis longus muscle.l",
+    "Plantar tendon sheath of fibularis longus muscle.l"
+   ]
+  },
+  "Fibularis brevis muscle.l": {
+   "part_id": "fibularis_brevis",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Gastrocnemius.r": {
+   "part_id": "gastrocnemius",
+   "side": "right",
+   "layer": "muscle",
+   "from": [
+    "Lateral head of gastrocnemius.r",
+    "Medial head of gastrocnemius.r",
+    "Medial subtendinous bursa of gastrocnemius muscle.r",
+    "Lateral subtendinous bursa of gastrocnemius muscle.r"
+   ]
+  },
+  "Calcaneal tendon.r": {
+   "part_id": "calcaneal_tendon",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Gastrocnemius.l": {
+   "part_id": "gastrocnemius",
+   "side": "left",
+   "layer": "muscle",
+   "from": [
+    "Lateral head of gastrocnemius.l",
+    "Medial head of gastrocnemius.l",
+    "Medial subtendinous bursa of gastrocnemius muscle.l",
+    "Lateral subtendinous bursa of gastrocnemius muscle.l"
+   ]
+  },
+  "Calcaneal tendon.l": {
+   "part_id": "calcaneal_tendon",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Soleus muscle.r": {
+   "part_id": "soleus",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Soleus muscle.l": {
+   "part_id": "soleus",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Plantaris muscle.r": {
+   "part_id": "plantaris",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Plantaris muscle.l": {
+   "part_id": "plantaris",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Flexor digitorum longus.r": {
+   "part_id": "flexor_digitorum_longus",
+   "side": "right",
+   "layer": "muscle",
+   "from": [
+    "Flexor digitorum longus.r",
+    "Tendon sheath of flexor digitorum longus.r"
+   ]
+  },
+  "Popliteus muscle.r": {
+   "part_id": "popliteus",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Tibialis posterior.r": {
+   "part_id": "tibialis_posterior",
+   "side": "right",
+   "layer": "muscle",
+   "from": [
+    "Tibialis posterior muscle.r",
+    "Tendon sheath of tibialis posterior muscle.r"
+   ]
+  },
+  "Flexor hallucis longus.r": {
+   "part_id": "flexor_hallucis_longus",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Flexor digitorum longus.l": {
+   "part_id": "flexor_digitorum_longus",
+   "side": "left",
+   "layer": "muscle",
+   "from": [
+    "Flexor digitorum longus.l",
+    "Tendon sheath of flexor digitorum longus.l"
+   ]
+  },
+  "Popliteus muscle.l": {
+   "part_id": "popliteus",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Tibialis posterior.l": {
+   "part_id": "tibialis_posterior",
+   "side": "left",
+   "layer": "muscle",
+   "from": [
+    "Tibialis posterior muscle.l",
+    "Tendon sheath of tibialis posterior muscle.l"
+   ]
+  },
+  "Flexor hallucis longus.l": {
+   "part_id": "flexor_hallucis_longus",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Medial head of flexor hallucis brevis.r": {
+   "part_id": "medial_head_of_flexor_hallucis_brevis",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Lateral head of flexor hallucis brevis.r": {
+   "part_id": "lateral_head_of_flexor_hallucis_brevis",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Medial head of flexor hallucis brevis.l": {
+   "part_id": "medial_head_of_flexor_hallucis_brevis",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Lateral head of flexor hallucis brevis.l": {
+   "part_id": "lateral_head_of_flexor_hallucis_brevis",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Oblique head of adductor hallucis.r": {
+   "part_id": "oblique_head_of_adductor_hallucis",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Transverse head of adductor hallucis.r": {
+   "part_id": "transverse_head_of_adductor_hallucis",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Oblique head of adductor hallucis.l": {
+   "part_id": "oblique_head_of_adductor_hallucis",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Transverse head of adductor hallucis.l": {
+   "part_id": "transverse_head_of_adductor_hallucis",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Foot.r": {
+   "part_id": "foot",
+   "side": "right",
+   "layer": "muscle",
+   "from": [
+    "Abductor digiti minimi of foot.r",
+    "Dorsal interossei muscles of foot.r",
+    "Flexor digiti minimi of foot.r",
+    "Lumbrical muscles of foot.r",
+    "(Opponens digiti minimi muscle of foot).r"
+   ]
+  },
+  "Foot.l": {
+   "part_id": "foot",
+   "side": "left",
+   "layer": "muscle",
+   "from": [
+    "Abductor digiti minimi of foot.l",
+    "Dorsal interossei muscles of foot.l",
+    "Flexor digiti minimi of foot.l",
+    "Lumbrical muscles of foot.l",
+    "(Opponens digiti minimi muscle of foot).l"
+   ]
+  },
+  "Abductor hallucis.r": {
+   "part_id": "abductor_hallucis",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Extensor digitorum brevis.r": {
+   "part_id": "extensor_digitorum_brevis",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Extensor hallucis brevis.r": {
+   "part_id": "extensor_hallucis_brevis",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Flexor digitorum brevis.r": {
+   "part_id": "flexor_digitorum_brevis",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Plantar interossei muscles.r": {
+   "part_id": "plantar_interossei",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Quadratus plantae muscle.r": {
+   "part_id": "quadratus_plantae",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Abductor hallucis.l": {
+   "part_id": "abductor_hallucis",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Extensor digitorum brevis.l": {
+   "part_id": "extensor_digitorum_brevis",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Extensor hallucis brevis.l": {
+   "part_id": "extensor_hallucis_brevis",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Flexor digitorum brevis.l": {
+   "part_id": "flexor_digitorum_brevis",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Plantar interossei muscles.l": {
+   "part_id": "plantar_interossei",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Quadratus plantae muscle.l": {
+   "part_id": "quadratus_plantae",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Iliotibial tract.r": {
+   "part_id": "iliotibial_tract",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Fascia lata.r": {
+   "part_id": "fascia_lata",
+   "side": "right",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Iliotibial tract.l": {
+   "part_id": "iliotibial_tract",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Fascia lata.l": {
+   "part_id": "fascia_lata",
+   "side": "left",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Medial femoral intermuscular septum.r": {
+   "part_id": "medial_femoral_intermuscular_septum",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Lateral femoral intermuscular septum.r": {
+   "part_id": "lateral_femoral_intermuscular_septum",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Popliteal fascia.r": {
+   "part_id": "popliteal_fascia",
+   "side": "right",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Crural fascia.r": {
+   "part_id": "crural_fascia",
+   "side": "right",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Anterior intermuscular septum of leg.r": {
+   "part_id": "anterior_intermuscular_septum_of_leg",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Posterior intermuscular septum of leg.r": {
+   "part_id": "posterior_intermuscular_septum_of_leg",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Transverse intermuscular septum of leg.r": {
+   "part_id": "transverse_intermuscular_septum_of_leg",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Ankle.r": {
+   "part_id": "ankle",
+   "side": "right",
+   "layer": "muscle",
+   "from": [
+    "Superior extensor retinaculum of ankle.r",
+    "Inferior extensor retinaculum of ankle.r",
+    "Flexor retinaculum of ankle.r"
+   ]
+  },
+  "Superior fibular retinaculum.r": {
+   "part_id": "superior_fibular_retinaculum",
+   "side": "right",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Inferior fibular retinaculum.r": {
+   "part_id": "inferior_fibular_retinaculum",
+   "side": "right",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Superficial transverse metatarsal ligament.r": {
+   "part_id": "superficial_transverse_metatarsal_ligament",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Plantar aponeurosis.r": {
+   "part_id": "plantar_aponeurosis",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Iliopectineal arch.r": {
+   "part_id": "iliopectineal_arch",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Medial femoral intermuscular septum.l": {
+   "part_id": "medial_femoral_intermuscular_septum",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Lateral femoral intermuscular septum.l": {
+   "part_id": "lateral_femoral_intermuscular_septum",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Popliteal fascia.l": {
+   "part_id": "popliteal_fascia",
+   "side": "left",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Crural fascia.l": {
+   "part_id": "crural_fascia",
+   "side": "left",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Anterior intermuscular septum of leg.l": {
+   "part_id": "anterior_intermuscular_septum_of_leg",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Posterior intermuscular septum of leg.l": {
+   "part_id": "posterior_intermuscular_septum_of_leg",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Transverse intermuscular septum of leg.l": {
+   "part_id": "transverse_intermuscular_septum_of_leg",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Ankle.l": {
+   "part_id": "ankle",
+   "side": "left",
+   "layer": "muscle",
+   "from": [
+    "Superior extensor retinaculum of ankle.l",
+    "Inferior extensor retinaculum of ankle.l",
+    "Flexor retinaculum of ankle.l"
+   ]
+  },
+  "Superior fibular retinaculum.l": {
+   "part_id": "superior_fibular_retinaculum",
+   "side": "left",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Inferior fibular retinaculum.l": {
+   "part_id": "inferior_fibular_retinaculum",
+   "side": "left",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Superficial transverse metatarsal ligament.l": {
+   "part_id": "superficial_transverse_metatarsal_ligament",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Plantar aponeurosis.l": {
+   "part_id": "plantar_aponeurosis",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Iliopectineal arch.l": {
+   "part_id": "iliopectineal_arch",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "External anal sphincter.r": {
+   "part_id": "external_anal_sphincter",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "External anal sphincter.l": {
+   "part_id": "external_anal_sphincter",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Clavipectoral fascia.r": {
+   "part_id": "clavipectoral_fascia",
+   "side": "right",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Clavipectoral fascia.l": {
+   "part_id": "clavipectoral_fascia",
+   "side": "left",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Iliopsoas fascia.r": {
+   "part_id": "iliopsoas_fascia",
+   "side": "right",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Iliopsoas fascia.l": {
+   "part_id": "iliopsoas_fascia",
+   "side": "left",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Transversalis fascia": {
+   "part_id": "transversalis_fascia",
+   "side": "midline",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Diaphragmatic fascia": {
+   "part_id": "diaphragmatic_fascia",
+   "side": "midline",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Tendinous arch of levator ani.r": {
+   "part_id": "tendinous_arch_of_levator_ani",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Tendinous arch of levator ani.l": {
+   "part_id": "tendinous_arch_of_levator_ani",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Subcutaneous acromial bursa.r": {
+   "part_id": "subcutaneous_acromial_bursa",
+   "side": "right",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Subcutaneous acromial bursa.l": {
+   "part_id": "subcutaneous_acromial_bursa",
+   "side": "left",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Subacromial bursa.r": {
+   "part_id": "subacromial_bursa",
+   "side": "right",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Subacromial bursa.l": {
+   "part_id": "subacromial_bursa",
+   "side": "left",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Subdeltoid bursa.r": {
+   "part_id": "subdeltoid_bursa",
+   "side": "right",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Subdeltoid bursa.l": {
+   "part_id": "subdeltoid_bursa",
+   "side": "left",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Coracobrachial bursa.r": {
+   "part_id": "coracobrachial_bursa",
+   "side": "right",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Coracobrachial bursa.l": {
+   "part_id": "coracobrachial_bursa",
+   "side": "left",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Bicipitoradial bursa.r": {
+   "part_id": "bicipitoradial_bursa",
+   "side": "right",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Bicipitoradial bursa.l": {
+   "part_id": "bicipitoradial_bursa",
+   "side": "left",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Subcutaneous trochanteric bursa.r": {
+   "part_id": "subcutaneous_trochanteric_bursa",
+   "side": "right",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Subcutaneous trochanteric bursa.l": {
+   "part_id": "subcutaneous_trochanteric_bursa",
+   "side": "left",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Sciatic bursa of obturator internus.r": {
+   "part_id": "sciatic_bursa_of_obturator_internus",
+   "side": "right",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Sciatic bursa of obturator internus.l": {
+   "part_id": "sciatic_bursa_of_obturator_internus",
+   "side": "left",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Subtendinous bursa of obturator internus.r": {
+   "part_id": "subtendinous_bursa_of_obturator_internus",
+   "side": "right",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Subtendinous bursa of obturator internus.l": {
+   "part_id": "subtendinous_bursa_of_obturator_internus",
+   "side": "left",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Intermuscular gluteal bursae.r": {
+   "part_id": "intermuscular_gluteal_bursae",
+   "side": "right",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Intermuscular gluteal bursae.l": {
+   "part_id": "intermuscular_gluteal_bursae",
+   "side": "left",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "(Iliopectineal bursa).r": {
+   "part_id": "iliopectineal_bursa",
+   "side": "right",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "(Iliopectineal bursa).l": {
+   "part_id": "iliopectineal_bursa",
+   "side": "left",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Subtendinous prepatellar bursa.r": {
+   "part_id": "subtendinous_prepatellar_bursa",
+   "side": "right",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Subtendinous prepatellar bursa.l": {
+   "part_id": "subtendinous_prepatellar_bursa",
+   "side": "left",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Subcutaneous prepatellar bursa.r": {
+   "part_id": "subcutaneous_prepatellar_bursa",
+   "side": "right",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Subcutaneous prepatellar bursa.l": {
+   "part_id": "subcutaneous_prepatellar_bursa",
+   "side": "left",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Deep infrapatellar bursa.r": {
+   "part_id": "deep_infrapatellar_bursa",
+   "side": "right",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Deep infrapatellar bursa.l": {
+   "part_id": "deep_infrapatellar_bursa",
+   "side": "left",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Medial patellar retinaculum.l": {
+   "part_id": "medial_patellar_retinaculum",
+   "side": "left",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Subfacial prepatellar bursa.r": {
+   "part_id": "subfacial_prepatellar_bursa",
+   "side": "right",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Subfacial prepatellar bursa.l": {
+   "part_id": "subfacial_prepatellar_bursa",
+   "side": "left",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Subcutaneous infrapatellar bursa.r": {
+   "part_id": "subcutaneous_infrapatellar_bursa",
+   "side": "right",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Subcutaneous infrapatellar bursa.l": {
+   "part_id": "subcutaneous_infrapatellar_bursa",
+   "side": "left",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Suprapatellar bursa.r": {
+   "part_id": "suprapatellar_bursa",
+   "side": "right",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Suprapatellar bursa.l": {
+   "part_id": "suprapatellar_bursa",
+   "side": "left",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Subcutaneous bursa of tuberosity of tibia.r": {
+   "part_id": "tibia",
+   "side": "right",
+   "layer": "muscle"
+  },
+  "Subcutaneous bursa of tuberosity of tibia.l": {
+   "part_id": "tibia",
+   "side": "left",
+   "layer": "muscle"
+  },
+  "Anserine bursa.r": {
+   "part_id": "anserine_bursa",
+   "side": "right",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Anserine bursa.l": {
+   "part_id": "anserine_bursa",
+   "side": "left",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Semimembranosus bursa.r": {
+   "part_id": "semimembranosus_bursa",
+   "side": "right",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Semimembranosus bursa.l": {
+   "part_id": "semimembranosus_bursa",
+   "side": "left",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Subcutaneous bursa of lateral malleolus.r": {
+   "part_id": "subcutaneous_bursa_of_lateral_malleolus",
+   "side": "right",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Subcutaneous bursa of medial malleolus.r": {
+   "part_id": "subcutaneous_bursa_of_medial_malleolus",
+   "side": "right",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Subcutaneous bursa of lateral malleolus.l": {
+   "part_id": "subcutaneous_bursa_of_lateral_malleolus",
+   "side": "left",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Subcutaneous bursa of medial malleolus.l": {
+   "part_id": "subcutaneous_bursa_of_medial_malleolus",
+   "side": "left",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Subcutaneous calcaneal bursa.r": {
+   "part_id": "subcutaneous_calcaneal_bursa",
+   "side": "right",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Subtendinous calcaneal bursa.r": {
+   "part_id": "subtendinous_calcaneal_bursa",
+   "side": "right",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Subcutaneous calcaneal bursa.l": {
+   "part_id": "subcutaneous_calcaneal_bursa",
+   "side": "left",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Subtendinous calcaneal bursa.l": {
+   "part_id": "subtendinous_calcaneal_bursa",
+   "side": "left",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Intertubercular tendon sheath.r": {
+   "part_id": "intertubercular_tendon_sheath",
+   "side": "right",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Intertubercular tendon sheath.l": {
+   "part_id": "intertubercular_tendon_sheath",
+   "side": "left",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Tendon sheath of flexor pollicis longus.r": {
+   "part_id": "tendon_sheath_of_flexor_pollicis_longus",
+   "side": "right",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Tendon sheath of flexor pollicis longus.l": {
+   "part_id": "tendon_sheath_of_flexor_pollicis_longus",
+   "side": "left",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Common flexor tendon sheath.r": {
+   "part_id": "common_flexor_tendon_sheath",
+   "side": "right",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Common flexor tendon sheath.l": {
+   "part_id": "common_flexor_tendon_sheath",
+   "side": "left",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Tendon sheath of extensor digiti minimi manus.r": {
+   "part_id": "tendon_sheath_of_extensor_digiti_minimi_manus",
+   "side": "right",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Tendon sheath of extensor digiti minimi manus.l": {
+   "part_id": "tendon_sheath_of_extensor_digiti_minimi_manus",
+   "side": "left",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Tendon sheath of extensor pollicis longus.r": {
+   "part_id": "tendon_sheath_of_extensor_pollicis_longus",
+   "side": "right",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Tendon sheath of extensor pollicis longus.l": {
+   "part_id": "tendon_sheath_of_extensor_pollicis_longus",
+   "side": "left",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Tendon sheath - abd. pollicis longus - ext. pollicis brevis.r": {
+   "part_id": "tendon_sheath_abd_pollicis_longus_ext_pollicis_brevis",
+   "side": "right",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Tendon sheath of extensors carpi radialis.r": {
+   "part_id": "tendon_sheath_of_extensors_carpi_radialis",
+   "side": "right",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Tendon sheath - abd. pollicis longus - ext. pollicis brevis.l": {
+   "part_id": "tendon_sheath_abd_pollicis_longus_ext_pollicis_brevis",
+   "side": "left",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Tendon sheath of extensors carpi radialis.l": {
+   "part_id": "tendon_sheath_of_extensors_carpi_radialis",
+   "side": "left",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Tendon sheath of extensor digitorum and extensor indicis.r": {
+   "part_id": "tendon_sheath_of_extensor_digitorum_and_extensor_indicis",
+   "side": "right",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Tendon sheath of extensor digitorum and extensor indicis.l": {
+   "part_id": "tendon_sheath_of_extensor_digitorum_and_extensor_indicis",
+   "side": "left",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Tendon sheath of extensor hallucis longus.r": {
+   "part_id": "tendon_sheath_of_extensor_hallucis_longus",
+   "side": "right",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Tendon sheath of extensor hallucis longus.l": {
+   "part_id": "tendon_sheath_of_extensor_hallucis_longus",
+   "side": "left",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Tendon sheath of flexor hallucis longus.r": {
+   "part_id": "tendon_sheath_of_flexor_hallucis_longus",
+   "side": "right",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Tendon sheath of flexor hallucis longus.l": {
+   "part_id": "tendon_sheath_of_flexor_hallucis_longus",
+   "side": "left",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Common tendon sheath of fibularis muscles.r": {
+   "part_id": "common_tendon_sheath_of_fibularis",
+   "side": "right",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Common tendon sheath of fibularis muscles.l": {
+   "part_id": "common_tendon_sheath_of_fibularis",
+   "side": "left",
+   "layer": "muscle",
+   "envelope": true
+  },
+  "Parietal bone.r": {
+   "part_id": "parietal",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Parietal bone.l": {
+   "part_id": "parietal",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Sinus of frontal bone": {
+   "part_id": "sinus_of_frontal",
+   "side": "midline",
+   "layer": "bone"
+  },
+  "Frontal bone": {
+   "part_id": "frontal",
+   "side": "midline",
+   "layer": "bone"
+  },
+  "Occipital bone": {
+   "part_id": "occipital",
+   "side": "midline",
+   "layer": "bone"
+  },
+  "Sinus of sphenoid bone": {
+   "part_id": "sinus_of_sphenoid",
+   "side": "midline",
+   "layer": "bone"
+  },
+  "Sphenoid bone": {
+   "part_id": "sphenoid",
+   "side": "midline",
+   "layer": "bone"
+  },
+  "Temporal bone.r": {
+   "part_id": "temporal",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Ethmoid bone": {
+   "part_id": "ethmoid",
+   "side": "midline",
+   "layer": "bone"
+  },
+  "Inferior nasal concha bone.r": {
+   "part_id": "inferior_nasal_concha",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Lacrimal bone.r": {
+   "part_id": "lacrimal",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Nasal bone.r": {
+   "part_id": "nasal",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Maxilla.r": {
+   "part_id": "maxilla",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Palatine bone.r": {
+   "part_id": "palatine",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Zygomatic bone.r": {
+   "part_id": "zygomatic",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Mandible": {
+   "part_id": "mandible",
+   "side": "midline",
+   "layer": "bone"
+  },
+  "Hyoid bone": {
+   "part_id": "hyoid",
+   "side": "midline",
+   "layer": "bone"
+  },
+  "Malleus.r": {
+   "part_id": "malleus",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Incus.r": {
+   "part_id": "incus",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Stapes.r": {
+   "part_id": "stapes",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Upper medial incisor.r": {
+   "part_id": "upper_medial_incisor",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Upper lateral incisor.r": {
+   "part_id": "upper_lateral_incisor",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Upper canine.r": {
+   "part_id": "upper_canine",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Lower medial incisor.r": {
+   "part_id": "lower_medial_incisor",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Lower lateral incisor.r": {
+   "part_id": "lower_lateral_incisor",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Lower canine.r": {
+   "part_id": "lower_canine",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Upper first premolar.r": {
+   "part_id": "upper_first_premolar",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Upper second premolar.r": {
+   "part_id": "upper_second_premolar",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Upper first molar tooth.r": {
+   "part_id": "upper_first_molar_tooth",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Upper second molar tooth.r": {
+   "part_id": "upper_second_molar_tooth",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Lower first premolar.r": {
+   "part_id": "lower_first_premolar",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Lower second premolar.r": {
+   "part_id": "lower_second_premolar",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Lower first molar tooth.r": {
+   "part_id": "lower_first_molar_tooth",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Lower second molar tooth.r": {
+   "part_id": "lower_second_molar_tooth",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Major alar cartilage.r": {
+   "part_id": "major_alar_cartilage",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Lateral process of nasal septal cartilage.r": {
+   "part_id": "lateral_process_of_nasal_septal_cartilage",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Nasal septal cartilage": {
+   "part_id": "nasal_septal_cartilage",
+   "side": "midline",
+   "layer": "bone"
+  },
+  "Thyroid cartilage": {
+   "part_id": "thyroid_cartilage",
+   "side": "midline",
+   "layer": "bone"
+  },
+  "Cricoid cartilage": {
+   "part_id": "cricoid_cartilage",
+   "side": "midline",
+   "layer": "bone"
+  },
+  "Arytenoid cartilage.r": {
+   "part_id": "arytenoid_cartilage",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Corniculate cartilage.r": {
+   "part_id": "corniculate_cartilage",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Atlas (C1)": {
+   "part_id": "atlas_c1",
+   "side": "midline",
+   "layer": "bone"
+  },
+  "Vertebra C6": {
+   "part_id": "vertebra_c6",
+   "side": "midline",
+   "layer": "bone"
+  },
+  "Vertebra C3": {
+   "part_id": "vertebra_c3",
+   "side": "midline",
+   "layer": "bone"
+  },
+  "Vertebra C5": {
+   "part_id": "vertebra_c5",
+   "side": "midline",
+   "layer": "bone"
+  },
+  "Vertebra C7": {
+   "part_id": "vertebra_c7",
+   "side": "midline",
+   "layer": "bone"
+  },
+  "Vertebra C4": {
+   "part_id": "vertebra_c4",
+   "side": "midline",
+   "layer": "bone"
+  },
+  "Vertebra T2": {
+   "part_id": "vertebra_t2",
+   "side": "midline",
+   "layer": "bone"
+  },
+  "Vertebra T3": {
+   "part_id": "vertebra_t3",
+   "side": "midline",
+   "layer": "bone"
+  },
+  "Vertebra T4": {
+   "part_id": "vertebra_t4",
+   "side": "midline",
+   "layer": "bone"
+  },
+  "Vertebra T5": {
+   "part_id": "vertebra_t5",
+   "side": "midline",
+   "layer": "bone"
+  },
+  "Vertebra T6": {
+   "part_id": "vertebra_t6",
+   "side": "midline",
+   "layer": "bone"
+  },
+  "Vertebra T7": {
+   "part_id": "vertebra_t7",
+   "side": "midline",
+   "layer": "bone"
+  },
+  "Vertebra T9": {
+   "part_id": "vertebra_t9",
+   "side": "midline",
+   "layer": "bone"
+  },
+  "Vertebra T10": {
+   "part_id": "vertebra_t10",
+   "side": "midline",
+   "layer": "bone"
+  },
+  "Vertebra T11": {
+   "part_id": "vertebra_t11",
+   "side": "midline",
+   "layer": "bone"
+  },
+  "Vertebra T12": {
+   "part_id": "vertebra_t12",
+   "side": "midline",
+   "layer": "bone"
+  },
+  "Vertebra T8": {
+   "part_id": "vertebra_t8",
+   "side": "midline",
+   "layer": "bone"
+  },
+  "Vertebra T1": {
+   "part_id": "vertebra_t1",
+   "side": "midline",
+   "layer": "bone"
+  },
+  "Vertebra L1": {
+   "part_id": "vertebra_l1",
+   "side": "midline",
+   "layer": "bone"
+  },
+  "Vertebra L2": {
+   "part_id": "vertebra_l2",
+   "side": "midline",
+   "layer": "bone"
+  },
+  "Vertebra L4": {
+   "part_id": "vertebra_l4",
+   "side": "midline",
+   "layer": "bone"
+  },
+  "Vertebra L5": {
+   "part_id": "vertebra_l5",
+   "side": "midline",
+   "layer": "bone"
+  },
+  "Vertebra L3": {
+   "part_id": "vertebra_l3",
+   "side": "midline",
+   "layer": "bone"
+  },
+  "Coccyx": {
+   "part_id": "coccyx",
+   "side": "midline",
+   "layer": "bone"
+  },
+  "Fifth rib.r": {
+   "part_id": "fifth_rib",
+   "side": "right",
+   "layer": "bone"
+  },
+  "First rib.r": {
+   "part_id": "first_rib",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Fourth rib.r": {
+   "part_id": "fourth_rib",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Second rib.r": {
+   "part_id": "second_rib",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Seventh rib.r": {
+   "part_id": "seventh_rib",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Sixth rib.r": {
+   "part_id": "sixth_rib",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Third rib.r": {
+   "part_id": "third_rib",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Eleventh rib.r": {
+   "part_id": "eleventh_rib",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Twelfth rib.r": {
+   "part_id": "twelfth_rib",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Eighth rib.r": {
+   "part_id": "eighth_rib",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Ninth rib.r": {
+   "part_id": "ninth_rib",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Tenth rib.r": {
+   "part_id": "tenth_rib",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Sternum": {
+   "part_id": "sternum",
+   "side": "midline",
+   "layer": "bone",
+   "from": [
+    "Manubrium of sternum",
+    "Body of sternum"
+   ]
+  },
+  "Xiphoid process": {
+   "part_id": "xiphoid_process",
+   "side": "midline",
+   "layer": "bone"
+  },
+  "Costal cartilage of first rib.r": {
+   "part_id": "costal_cartilage_of_first_rib",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Costal cartilage of second rib.r": {
+   "part_id": "costal_cartilage_of_second_rib",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Costal cartilage of third rib.r": {
+   "part_id": "costal_cartilage_of_third_rib",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Costal cartilage of fourth rib.r": {
+   "part_id": "costal_cartilage_of_fourth_rib",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Costal cartilage of fifth rib.r": {
+   "part_id": "costal_cartilage_of_fifth_rib",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Costal cartilage of sixth rib.r": {
+   "part_id": "costal_cartilage_of_sixth_rib",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Costal cartilage of seventh rib.r": {
+   "part_id": "costal_cartilage_of_seventh_rib",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Costal cartilage of eighth rib.r": {
+   "part_id": "costal_cartilage_of_eighth_rib",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Costal cartilage of tenth rib.r": {
+   "part_id": "costal_cartilage_of_tenth_rib",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Costal cartilage of ninth rib.r": {
+   "part_id": "costal_cartilage_of_ninth_rib",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Clavicle.r": {
+   "part_id": "clavicle",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Humerus.r": {
+   "part_id": "humerus",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Patella.r": {
+   "part_id": "patella",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Talus.r": {
+   "part_id": "talus",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Calcaneus.r": {
+   "part_id": "calcaneus",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Navicular bone.r": {
+   "part_id": "navicular",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Cuboid bone.r": {
+   "part_id": "cuboid",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Intermediate cuneiform bone.r": {
+   "part_id": "intermediate_cuneiform",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Lateral cuneiform bone.r": {
+   "part_id": "lateral_cuneiform",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Medial cuneiform bone.r": {
+   "part_id": "medial_cuneiform",
+   "side": "right",
+   "layer": "bone"
+  },
+  "First metatarsal bone.r": {
+   "part_id": "first_metatarsal",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Fifth metatarsal bone.r": {
+   "part_id": "fifth_metatarsal",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Second metatarsal bone.r": {
+   "part_id": "second_metatarsal",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Third metatarsal bone.r": {
+   "part_id": "third_metatarsal",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Fourth metatarsal bone.r": {
+   "part_id": "fourth_metatarsal",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Foot.r.001": {
+   "part_id": "foot",
+   "side": "right",
+   "layer": "bone",
+   "from": [
+    "Distal phalanx of fifth finger of foot.r",
+    "Distal phalanx of first finger of foot.r",
+    "Distal phalanx of fourth finger of foot.r",
+    "Distal phalanx of second finger of foot.r",
+    "Distal phalanx of third finger of foot.r",
+    "Middle phalanx of second finger of foot.r",
+    "Middle phalanx of third finger of foot.r",
+    "Middle phalanx of fourth finger of foot.r",
+    "Middle phalanx of fifth finger of foot.r",
+    "Proximal phalanx of first finger of foot.r",
+    "Proximal phalanx of second finger of foot.r",
+    "Proximal phalanx of third finger of foot.r",
+    "Proximal phalanx of fourth finger of foot.r",
+    "Proximal phalanx of fifth finger of foot.r",
+    "Sesamoid bones of foot.r"
+   ]
+  },
+  "Hand.r.001": {
+   "part_id": "hand",
+   "side": "right",
+   "layer": "bone",
+   "from": [
+    "Distal phalanx of first finger of hand.r",
+    "Distal phalanx of second finger of hand.r",
+    "Distal phalanx of third finger of hand.r",
+    "Distal phalanx of fourth finger of hand.r",
+    "Distal phalanx of fifth finger of hand.r",
+    "Middle phalanx of second finger of hand.r",
+    "Middle phalanx of third finger of hand.r",
+    "Middle phalanx of fourth finger of hand.r",
+    "Middle phalanx of fifth finger of hand.r",
+    "Proximal phalanx of first finger of hand.r",
+    "Proximal phalanx of second finger of hand.r",
+    "Proximal phalanx of third finger of hand.r",
+    "Proximal phalanx of fourth finger of hand.r",
+    "Proximal phalanx of fifth finger of hand.r"
+   ]
+  },
+  "First metacarpal bone.r": {
+   "part_id": "first_metacarpal",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Second metacarpal bone.r": {
+   "part_id": "second_metacarpal",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Third metacarpal bone.r": {
+   "part_id": "third_metacarpal",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Fourth metacarpal bone.r": {
+   "part_id": "fourth_metacarpal",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Fifth metacarpal bone.r": {
+   "part_id": "fifth_metacarpal",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Capitate bone.r": {
+   "part_id": "capitate",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Hamate bone.r": {
+   "part_id": "hamate",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Lunate bone.r": {
+   "part_id": "lunate",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Pisiform bone.r": {
+   "part_id": "pisiform",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Scaphoid bone.r": {
+   "part_id": "scaphoid",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Trapezium bone.r": {
+   "part_id": "trapezium",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Trapezoid bone.r": {
+   "part_id": "trapezoid",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Triquetrum bone.r": {
+   "part_id": "triquetrum",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Axis (C2)": {
+   "part_id": "axis_c2",
+   "side": "midline",
+   "layer": "bone"
+  },
+  "Scapula.r": {
+   "part_id": "scapula",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Radius.r": {
+   "part_id": "radius",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Ulna.r": {
+   "part_id": "ulna",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Femur.r": {
+   "part_id": "femur",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Hip bone.r": {
+   "part_id": "hip",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Tibia.r": {
+   "part_id": "tibia",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Fibula.r": {
+   "part_id": "fibula",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Sacrum": {
+   "part_id": "sacrum",
+   "side": "midline",
+   "layer": "bone"
+  },
+  "Temporal bone.l": {
+   "part_id": "temporal",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Inferior nasal concha bone.l": {
+   "part_id": "inferior_nasal_concha",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Lacrimal bone.l": {
+   "part_id": "lacrimal",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Nasal bone.l": {
+   "part_id": "nasal",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Vomer": {
+   "part_id": "vomer",
+   "side": "midline",
+   "layer": "bone"
+  },
+  "Maxilla.l": {
+   "part_id": "maxilla",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Palatine bone.l": {
+   "part_id": "palatine",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Zygomatic bone.l": {
+   "part_id": "zygomatic",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Malleus.l": {
+   "part_id": "malleus",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Incus.l": {
+   "part_id": "incus",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Stapes.l": {
+   "part_id": "stapes",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Upper medial incisor.l": {
+   "part_id": "upper_medial_incisor",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Upper lateral incisor.l": {
+   "part_id": "upper_lateral_incisor",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Upper canine.l": {
+   "part_id": "upper_canine",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Lower medial incisor.l": {
+   "part_id": "lower_medial_incisor",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Lower lateral incisor.l": {
+   "part_id": "lower_lateral_incisor",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Lower canine.l": {
+   "part_id": "lower_canine",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Upper first premolar.l": {
+   "part_id": "upper_first_premolar",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Upper second premolar.l": {
+   "part_id": "upper_second_premolar",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Upper first molar tooth.l": {
+   "part_id": "upper_first_molar_tooth",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Upper second molar tooth.l": {
+   "part_id": "upper_second_molar_tooth",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Lower first premolar.l": {
+   "part_id": "lower_first_premolar",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Lower second premolar.l": {
+   "part_id": "lower_second_premolar",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Lower first molar tooth.l": {
+   "part_id": "lower_first_molar_tooth",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Lower second molar tooth.l": {
+   "part_id": "lower_second_molar_tooth",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Major alar cartilage.l": {
+   "part_id": "major_alar_cartilage",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Lateral process of nasal septal cartilage.l": {
+   "part_id": "lateral_process_of_nasal_septal_cartilage",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Arytenoid cartilage.l": {
+   "part_id": "arytenoid_cartilage",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Corniculate cartilage.l": {
+   "part_id": "corniculate_cartilage",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Fifth rib.l": {
+   "part_id": "fifth_rib",
+   "side": "left",
+   "layer": "bone"
+  },
+  "First rib.l": {
+   "part_id": "first_rib",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Fourth rib.l": {
+   "part_id": "fourth_rib",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Second rib.l": {
+   "part_id": "second_rib",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Seventh rib.l": {
+   "part_id": "seventh_rib",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Sixth rib.l": {
+   "part_id": "sixth_rib",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Third rib.l": {
+   "part_id": "third_rib",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Eleventh rib.l": {
+   "part_id": "eleventh_rib",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Twelfth rib.l": {
+   "part_id": "twelfth_rib",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Ninth rib.l": {
+   "part_id": "ninth_rib",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Tenth rib.l": {
+   "part_id": "tenth_rib",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Costal cartilage of first rib.l": {
+   "part_id": "costal_cartilage_of_first_rib",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Costal cartilage of second rib.l": {
+   "part_id": "costal_cartilage_of_second_rib",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Costal cartilage of third rib.l": {
+   "part_id": "costal_cartilage_of_third_rib",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Costal cartilage of fourth rib.l": {
+   "part_id": "costal_cartilage_of_fourth_rib",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Costal cartilage of fifth rib.l": {
+   "part_id": "costal_cartilage_of_fifth_rib",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Costal cartilage of sixth rib.l": {
+   "part_id": "costal_cartilage_of_sixth_rib",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Costal cartilage of seventh rib.l": {
+   "part_id": "costal_cartilage_of_seventh_rib",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Costal cartilage of eighth rib.l": {
+   "part_id": "costal_cartilage_of_eighth_rib",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Costal cartilage of tenth rib.l": {
+   "part_id": "costal_cartilage_of_tenth_rib",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Costal cartilage of ninth rib.l": {
+   "part_id": "costal_cartilage_of_ninth_rib",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Clavicle.l": {
+   "part_id": "clavicle",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Humerus.l": {
+   "part_id": "humerus",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Patella.l": {
+   "part_id": "patella",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Talus.l": {
+   "part_id": "talus",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Calcaneus.l": {
+   "part_id": "calcaneus",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Navicular bone.l": {
+   "part_id": "navicular",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Cuboid bone.l": {
+   "part_id": "cuboid",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Intermediate cuneiform bone.l": {
+   "part_id": "intermediate_cuneiform",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Lateral cuneiform bone.l": {
+   "part_id": "lateral_cuneiform",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Medial cuneiform bone.l": {
+   "part_id": "medial_cuneiform",
+   "side": "left",
+   "layer": "bone"
+  },
+  "First metatarsal bone.l": {
+   "part_id": "first_metatarsal",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Fifth metatarsal bone.l": {
+   "part_id": "fifth_metatarsal",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Second metatarsal bone.l": {
+   "part_id": "second_metatarsal",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Third metatarsal bone.l": {
+   "part_id": "third_metatarsal",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Fourth metatarsal bone.l": {
+   "part_id": "fourth_metatarsal",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Foot.l.001": {
+   "part_id": "foot",
+   "side": "left",
+   "layer": "bone",
+   "from": [
+    "Distal phalanx of fifth finger of foot.l",
+    "Distal phalanx of first finger of foot.l",
+    "Distal phalanx of fourth finger of foot.l",
+    "Distal phalanx of second finger of foot.l",
+    "Distal phalanx of third finger of foot.l",
+    "Middle phalanx of second finger of foot.l",
+    "Middle phalanx of third finger of foot.l",
+    "Middle phalanx of fourth finger of foot.l",
+    "Middle phalanx of fifth finger of foot.l",
+    "Proximal phalanx of first finger of foot.l",
+    "Proximal phalanx of second finger of foot.l",
+    "Proximal phalanx of third finger of foot.l",
+    "Proximal phalanx of fourth finger of foot.l",
+    "Proximal phalanx of fifth finger of foot.l",
+    "Sesamoid bones of foot.l"
+   ]
+  },
+  "Hand.l.001": {
+   "part_id": "hand",
+   "side": "left",
+   "layer": "bone",
+   "from": [
+    "Distal phalanx of first finger of hand.l",
+    "Distal phalanx of second finger of hand.l",
+    "Distal phalanx of third finger of hand.l",
+    "Distal phalanx of fourth finger of hand.l",
+    "Distal phalanx of fifth finger of hand.l",
+    "Middle phalanx of second finger of hand.l",
+    "Middle phalanx of third finger of hand.l",
+    "Middle phalanx of fourth finger of hand.l",
+    "Middle phalanx of fifth finger of hand.l",
+    "Proximal phalanx of first finger of hand.l",
+    "Proximal phalanx of second finger of hand.l",
+    "Proximal phalanx of third finger of hand.l",
+    "Proximal phalanx of fourth finger of hand.l",
+    "Proximal phalanx of fifth finger of hand.l"
+   ]
+  },
+  "First metacarpal bone.l": {
+   "part_id": "first_metacarpal",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Second metacarpal bone.l": {
+   "part_id": "second_metacarpal",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Third metacarpal bone.l": {
+   "part_id": "third_metacarpal",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Fourth metacarpal bone.l": {
+   "part_id": "fourth_metacarpal",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Fifth metacarpal bone.l": {
+   "part_id": "fifth_metacarpal",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Capitate bone.l": {
+   "part_id": "capitate",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Hamate bone.l": {
+   "part_id": "hamate",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Lunate bone.l": {
+   "part_id": "lunate",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Pisiform bone.l": {
+   "part_id": "pisiform",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Scaphoid bone.l": {
+   "part_id": "scaphoid",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Trapezium bone.l": {
+   "part_id": "trapezium",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Trapezoid bone.l": {
+   "part_id": "trapezoid",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Triquetrum bone.l": {
+   "part_id": "triquetrum",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Scapula.l": {
+   "part_id": "scapula",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Radius.l": {
+   "part_id": "radius",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Ulna.l": {
+   "part_id": "ulna",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Femur.l": {
+   "part_id": "femur",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Hip bone.l": {
+   "part_id": "hip",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Tibia.l": {
+   "part_id": "tibia",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Fibula.l": {
+   "part_id": "fibula",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Posterior cells of ethmoid bone.l": {
+   "part_id": "posterior_cells_of_ethmoid",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Middle cells of ethmoid bone.l": {
+   "part_id": "middle_cells_of_ethmoid",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Anterior cells of ethmoid bone.l": {
+   "part_id": "anterior_cells_of_ethmoid",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Posterior cells of ethmoid bone.r": {
+   "part_id": "posterior_cells_of_ethmoid",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Middle cells of ethmoid bone.r": {
+   "part_id": "middle_cells_of_ethmoid",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Anterior cells of ethmoid bone.r": {
+   "part_id": "anterior_cells_of_ethmoid",
+   "side": "right",
+   "layer": "bone"
+  },
+  "Eighth rib.l": {
+   "part_id": "eighth_rib",
+   "side": "left",
+   "layer": "bone"
+  },
+  "Skin": {
+   "part_id": "skin",
+   "side": "midline",
+   "layer": "skin",
+   "generic": true
+  }
+ },
+ "labels": {
+  "lateral_rectus": {
+   "zh": "Lateral rectus muscle",
+   "en": "Lateral rectus muscle"
+  },
+  "superior_oblique": {
+   "zh": "Superior oblique muscle",
+   "en": "Superior oblique muscle"
+  },
+  "common_tendinous_ring": {
+   "zh": "Common tendinous ring",
+   "en": "Common tendinous ring"
+  },
+  "inferior_oblique": {
+   "zh": "Inferior oblique muscle",
+   "en": "Inferior oblique muscle"
+  },
+  "inferior_rectus": {
+   "zh": "Inferior rectus muscle",
+   "en": "Inferior rectus muscle"
+  },
+  "inferior_tarsus": {
+   "zh": "Inferior tarsus",
+   "en": "Inferior tarsus"
+  },
+  "levator_palpebrae_superioris": {
+   "zh": "Levator palpebrae superioris",
+   "en": "Levator palpebrae superioris"
+  },
+  "medial_rectus": {
+   "zh": "Medial rectus muscle",
+   "en": "Medial rectus muscle"
+  },
+  "superior_rectus": {
+   "zh": "Superior rectus muscle",
+   "en": "Superior rectus muscle"
+  },
+  "superior_tarsus": {
+   "zh": "Superior tarsus",
+   "en": "Superior tarsus"
+  },
+  "trochlea_of_superior_oblique": {
+   "zh": "Trochlea of superior oblique muscle",
+   "en": "Trochlea of superior oblique muscle"
+  },
+  "frontalis": {
+   "zh": "额肌",
+   "en": "Frontalis"
+  },
+  "occipitalis": {
+   "zh": "Occipitalis muscle",
+   "en": "Occipitalis muscle"
+  },
+  "epicranial_aponeurosis": {
+   "zh": "Epicranial aponeurosis",
+   "en": "Epicranial aponeurosis"
+  },
+  "temporoparietalis": {
+   "zh": "Temporoparietalis muscle",
+   "en": "Temporoparietalis muscle"
+  },
+  "nasalis": {
+   "zh": "Nasalis muscle",
+   "en": "Nasalis muscle"
+  },
+  "orbicularis_oculi": {
+   "zh": "眼轮匝肌",
+   "en": "Orbicularis oculi"
+  },
+  "orbicularis_oris": {
+   "zh": "口轮匝肌",
+   "en": "Orbicularis oris"
+  },
+  "zygomaticus_major": {
+   "zh": "Zygomaticus major muscle",
+   "en": "Zygomaticus major muscle"
+  },
+  "corrugator_supercilii": {
+   "zh": "Corrugator supercilii",
+   "en": "Corrugator supercilii"
+  },
+  "depressor_anguli_oris": {
+   "zh": "Depressor anguli oris",
+   "en": "Depressor anguli oris"
+  },
+  "depressor_labii_inferioris": {
+   "zh": "Depressor labii inferioris",
+   "en": "Depressor labii inferioris"
+  },
+  "levator_anguli_oris": {
+   "zh": "Levator anguli oris",
+   "en": "Levator anguli oris"
+  },
+  "procerus": {
+   "zh": "Procerus muscle",
+   "en": "Procerus muscle"
+  },
+  "risorius": {
+   "zh": "Risorius muscle",
+   "en": "Risorius muscle"
+  },
+  "zygomaticus_minor": {
+   "zh": "Zygomaticus minor muscle",
+   "en": "Zygomaticus minor muscle"
+  },
+  "levator_labii_superioris": {
+   "zh": "Levator labii superioris",
+   "en": "Levator labii superioris"
+  },
+  "depressor_septi_nasi": {
+   "zh": "Depressor septi nasi",
+   "en": "Depressor septi nasi"
+  },
+  "mentalis": {
+   "zh": "Mentalis muscle",
+   "en": "Mentalis muscle"
+  },
+  "levator_nasolabialis": {
+   "zh": "Levator nasolabialis",
+   "en": "Levator nasolabialis"
+  },
+  "bucinator": {
+   "zh": "Bucinator",
+   "en": "Bucinator"
+  },
+  "masseter": {
+   "zh": "咬肌",
+   "en": "Masseter"
+  },
+  "medial_pterygoid": {
+   "zh": "Medial pterygoid muscle",
+   "en": "Medial pterygoid muscle"
+  },
+  "inferior_head_of_lateral_pterygoid": {
+   "zh": "头",
+   "en": "Inferior head of lateral pterygoid muscle"
+  },
+  "superior_head_of_lateral_pterygoid": {
+   "zh": "头",
+   "en": "Superior head of lateral pterygoid muscle"
+  },
+  "temporalis": {
+   "zh": "颞肌",
+   "en": "Temporalis"
+  },
+  "hyoglossus": {
+   "zh": "Hyoglossus muscle",
+   "en": "Hyoglossus muscle"
+  },
+  "genioglossus": {
+   "zh": "Genioglossus muscle",
+   "en": "Genioglossus muscle"
+  },
+  "palatopharyngeus": {
+   "zh": "Palatopharyngeus muscle",
+   "en": "Palatopharyngeus muscle"
+  },
+  "superficial_layer_of_temporal_fascia": {
+   "zh": "Superficial layer of temporal fascia",
+   "en": "Superficial layer of temporal fascia"
+  },
+  "masseteric_fascia": {
+   "zh": "咬肌",
+   "en": "Masseteric fascia"
+  },
+  "sternocleidomastoid": {
+   "zh": "胸锁乳突肌",
+   "en": "Sternocleidomastoid"
+  },
+  "intermediate_tendon_of_digastric": {
+   "zh": "Intermediate tendon of digastric muscle",
+   "en": "Intermediate tendon of digastric muscle"
+  },
+  "anterior_belly_of_digastric": {
+   "zh": "Anterior belly of digastric muscle",
+   "en": "Anterior belly of digastric muscle"
+  },
+  "posterior_belly_of_digastric": {
+   "zh": "Posterior belly of digastric muscle",
+   "en": "Posterior belly of digastric muscle"
+  },
+  "mylohyoid": {
+   "zh": "Mylohyoid muscle",
+   "en": "Mylohyoid muscle"
+  },
+  "stylohyoid": {
+   "zh": "Stylohyoid muscle",
+   "en": "Stylohyoid muscle"
+  },
+  "geniohyoid": {
+   "zh": "Geniohyoid muscle",
+   "en": "Geniohyoid muscle"
+  },
+  "omohyoid": {
+   "zh": "Omohyoid muscle",
+   "en": "Omohyoid muscle"
+  },
+  "sternohyoid": {
+   "zh": "Sternohyoid muscle",
+   "en": "Sternohyoid muscle"
+  },
+  "sternothyroid": {
+   "zh": "Sternothyroid muscle",
+   "en": "Sternothyroid muscle"
+  },
+  "thyrohyoid": {
+   "zh": "Thyrohyoid muscle",
+   "en": "Thyrohyoid muscle"
+  },
+  "superior_pharyngeal_constrictor": {
+   "zh": "Superior pharyngeal constrictor",
+   "en": "Superior pharyngeal constrictor"
+  },
+  "middle_pharyngeal_constrictor": {
+   "zh": "Middle pharyngeal constrictor",
+   "en": "Middle pharyngeal constrictor"
+  },
+  "inferior_pharyngeal_constrictor": {
+   "zh": "Inferior pharyngeal constrictor",
+   "en": "Inferior pharyngeal constrictor"
+  },
+  "stylopharyngeus": {
+   "zh": "Stylopharyngeus muscle",
+   "en": "Stylopharyngeus muscle"
+  },
+  "oblique_part_of_cricothyroid": {
+   "zh": "Oblique part of cricothyroid muscle",
+   "en": "Oblique part of cricothyroid muscle"
+  },
+  "straight_part_of_cricothyroid": {
+   "zh": "Straight part of cricothyroid muscle",
+   "en": "Straight part of cricothyroid muscle"
+  },
+  "external_part_of_thyro_arytenoid": {
+   "zh": "External part of thyro-arytenoid muscle",
+   "en": "External part of thyro-arytenoid muscle"
+  },
+  "ary_epiglottic_part_of_oblique_arytenoid": {
+   "zh": "Ary-epiglottic part of oblique arytenoid muscle",
+   "en": "Ary-epiglottic part of oblique arytenoid muscle"
+  },
+  "thyro_epiglottic_part_of_thyro_arytenoid": {
+   "zh": "Thyro-epiglottic part of thyro-arytenoid muscle",
+   "en": "Thyro-epiglottic part of thyro-arytenoid muscle"
+  },
+  "transverse_arytenoid": {
+   "zh": "Transverse arytenoid muscle",
+   "en": "Transverse arytenoid muscle"
+  },
+  "lateral_crico_arytenoid": {
+   "zh": "Lateral crico-arytenoid muscle",
+   "en": "Lateral crico-arytenoid muscle"
+  },
+  "posterior_crico_arytenoid": {
+   "zh": "Posterior crico-arytenoid muscle",
+   "en": "Posterior crico-arytenoid muscle"
+  },
+  "platysma": {
+   "zh": "Platysma",
+   "en": "Platysma"
+  },
+  "scalenus_medius": {
+   "zh": "Scalenus medius muscle",
+   "en": "Scalenus medius muscle"
+  },
+  "scalenus_posterior": {
+   "zh": "Scalenus posterior muscle",
+   "en": "Scalenus posterior muscle"
+  },
+  "scalenus_anterior": {
+   "zh": "Scalenus anterior muscle",
+   "en": "Scalenus anterior muscle"
+  },
+  "longus_capitis": {
+   "zh": "Longus capitis muscle",
+   "en": "Longus capitis muscle"
+  },
+  "longus_colli": {
+   "zh": "Longus colli muscle",
+   "en": "Longus colli muscle"
+  },
+  "rectus_anterior_capitis": {
+   "zh": "Rectus anterior capitis muscle",
+   "en": "Rectus anterior capitis muscle"
+  },
+  "rectus_lateralis_capitis": {
+   "zh": "Rectus lateralis capitis muscle",
+   "en": "Rectus lateralis capitis muscle"
+  },
+  "superficial_investing_cervical_fascia": {
+   "zh": "Superficial investing cervical fascia",
+   "en": "Superficial investing cervical fascia"
+  },
+  "posterior_layer_of_thoracolumbar_fascia": {
+   "zh": "Posterior layer of thoracolumbar fascia",
+   "en": "Posterior layer of thoracolumbar fascia"
+  },
+  "middle_layer_of_thoracolumbar_fascia": {
+   "zh": "Middle layer of thoracolumbar fascia",
+   "en": "Middle layer of thoracolumbar fascia"
+  },
+  "anterior_layer_of_thoracolumbar_fascia": {
+   "zh": "Anterior layer of thoracolumbar fascia",
+   "en": "Anterior layer of thoracolumbar fascia"
+  },
+  "obliquus_inferior_capitis": {
+   "zh": "Obliquus inferior capitis muscle",
+   "en": "Obliquus inferior capitis muscle"
+  },
+  "obliquus_superior_capitis": {
+   "zh": "Obliquus superior capitis muscle",
+   "en": "Obliquus superior capitis muscle"
+  },
+  "rectus_posterior_major_capitis": {
+   "zh": "Rectus posterior major capitis muscle",
+   "en": "Rectus posterior major capitis muscle"
+  },
+  "rectus_posterior_minor_capitis": {
+   "zh": "Rectus posterior minor capitis muscle",
+   "en": "Rectus posterior minor capitis muscle"
+  },
+  "iliocostalis_lumborum": {
+   "zh": "Iliocostalis lumborum muscle",
+   "en": "Iliocostalis lumborum muscle"
+  },
+  "iliocostalis_thoracis": {
+   "zh": "Iliocostalis thoracis muscle",
+   "en": "Iliocostalis thoracis muscle"
+  },
+  "iliocostalis_colli": {
+   "zh": "Iliocostalis colli muscle",
+   "en": "Iliocostalis colli muscle"
+  },
+  "longissimus_thoracis": {
+   "zh": "Longissimus thoracis muscle",
+   "en": "Longissimus thoracis muscle"
+  },
+  "longissimus_capitis": {
+   "zh": "Longissimus capitis muscle",
+   "en": "Longissimus capitis muscle"
+  },
+  "longissimus_colli": {
+   "zh": "Longissimus colli muscle",
+   "en": "Longissimus colli muscle"
+  },
+  "spinalis_capitis": {
+   "zh": "Spinalis capitis muscle",
+   "en": "Spinalis capitis muscle"
+  },
+  "spinalis_colli": {
+   "zh": "Spinalis colli muscle",
+   "en": "Spinalis colli muscle"
+  },
+  "spinalis_thoracis": {
+   "zh": "Spinalis thoracis muscle",
+   "en": "Spinalis thoracis muscle"
+  },
+  "splenius_capitis": {
+   "zh": "头夹肌",
+   "en": "Splenius capitis"
+  },
+  "splenius_colli": {
+   "zh": "Splenius colli muscle",
+   "en": "Splenius colli muscle"
+  },
+  "multifidus_colli": {
+   "zh": "多裂肌",
+   "en": "Multifidus colli muscle"
+  },
+  "multifidus_thoracis": {
+   "zh": "多裂肌",
+   "en": "Multifidus thoracis muscle"
+  },
+  "multifidus_lumborum": {
+   "zh": "多裂肌",
+   "en": "Multifidus lumborum muscle"
+  },
+  "semispinalis_thoracis": {
+   "zh": "Semispinalis thoracis muscle",
+   "en": "Semispinalis thoracis muscle"
+  },
+  "semispinalis_colli": {
+   "zh": "Semispinalis colli muscle",
+   "en": "Semispinalis colli muscle"
+  },
+  "rotatores": {
+   "zh": "Rotatores",
+   "en": "Rotatores"
+  },
+  "interspinales_colli": {
+   "zh": "Interspinales colli muscles",
+   "en": "Interspinales colli muscles"
+  },
+  "interspinales_thoracis": {
+   "zh": "Interspinales thoracis muscles",
+   "en": "Interspinales thoracis muscles"
+  },
+  "interspinales_lumborum": {
+   "zh": "Interspinales lumborum muscles",
+   "en": "Interspinales lumborum muscles"
+  },
+  "trapezius": {
+   "zh": "斜方肌",
+   "en": "Trapezius"
+  },
+  "dorsal_parts_of_lateral_intertransversarii_lumborum": {
+   "zh": "Dorsal parts of lateral intertransversarii lumborum muscles",
+   "en": "Dorsal parts of lateral intertransversarii lumborum muscles"
+  },
+  "ventral_parts_of_lateral_intertransversarii_lumborum": {
+   "zh": "Ventral parts of lateral intertransversarii lumborum muscles",
+   "en": "Ventral parts of lateral intertransversarii lumborum muscles"
+  },
+  "levator_scapulae": {
+   "zh": "肩胛提肌",
+   "en": "Levator scapulae"
+  },
+  "rhomboid_major": {
+   "zh": "大菱形肌",
+   "en": "Rhomboid major"
+  },
+  "rhomboid_minor": {
+   "zh": "小菱形肌",
+   "en": "Rhomboid minor"
+  },
+  "latissimus_dorsi": {
+   "zh": "背阔肌",
+   "en": "Latissimus dorsi"
+  },
+  "serratus_posterior_inferior": {
+   "zh": "Serratus posterior inferior muscle",
+   "en": "Serratus posterior inferior muscle"
+  },
+  "serratus_posterior_superior": {
+   "zh": "Serratus posterior superior muscle",
+   "en": "Serratus posterior superior muscle"
+  },
+  "pectoralis_major": {
+   "zh": "胸大肌",
+   "en": "Pectoralis major"
+  },
+  "levatores_longi_costarum": {
+   "zh": "Levatores longi costarum",
+   "en": "Levatores longi costarum"
+  },
+  "levatores_breves_costarum": {
+   "zh": "Levatores breves costarum",
+   "en": "Levatores breves costarum"
+  },
+  "pectoralis_minor": {
+   "zh": "胸小肌",
+   "en": "Pectoralis minor"
+  },
+  "external_intercostal": {
+   "zh": "肋间肌",
+   "en": "External intercostal muscles"
+  },
+  "internal_intercostal": {
+   "zh": "肋间肌",
+   "en": "Internal intercostal muscles"
+  },
+  "serratus_anterior": {
+   "zh": "前锯肌",
+   "en": "Serratus anterior"
+  },
+  "innermost_intercostal": {
+   "zh": "肋间肌",
+   "en": "Innermost intercostal muscles"
+  },
+  "subclavius": {
+   "zh": "Subclavius muscle",
+   "en": "Subclavius muscle"
+  },
+  "transversus_thoracis": {
+   "zh": "Transversus thoracis muscle",
+   "en": "Transversus thoracis muscle"
+  },
+  "pectoral_fascia": {
+   "zh": "Pectoral fascia",
+   "en": "Pectoral fascia"
+  },
+  "diaphragm": {
+   "zh": "膈肌",
+   "en": "Diaphragm"
+  },
+  "rectus_abdominis": {
+   "zh": "腹直肌",
+   "en": "Rectus abdominis"
+  },
+  "inguinal_ligament": {
+   "zh": "Inguinal ligament",
+   "en": "Inguinal ligament"
+  },
+  "external_abdominal_oblique": {
+   "zh": "External abdominal oblique muscle",
+   "en": "External abdominal oblique muscle"
+  },
+  "internal_abdominal_oblique": {
+   "zh": "Internal abdominal oblique muscle",
+   "en": "Internal abdominal oblique muscle"
+  },
+  "transversus_abdominis": {
+   "zh": "腹横肌",
+   "en": "Transversus abdominis"
+  },
+  "linea_alba": {
+   "zh": "Linea alba",
+   "en": "Linea alba"
+  },
+  "pyramidalis": {
+   "zh": "Pyramidalis muscle",
+   "en": "Pyramidalis muscle"
+  },
+  "quadratus_lumborum": {
+   "zh": "腰方肌",
+   "en": "Quadratus lumborum"
+  },
+  "investing_abdominal_fascia": {
+   "zh": "Investing abdominal fascia",
+   "en": "Investing abdominal fascia"
+  },
+  "coccygeus": {
+   "zh": "Coccygeus muscle",
+   "en": "Coccygeus muscle"
+  },
+  "iliococcygeus": {
+   "zh": "Iliococcygeus muscle",
+   "en": "Iliococcygeus muscle"
+  },
+  "pubo_analis": {
+   "zh": "Pubo-analis muscle",
+   "en": "Pubo-analis muscle"
+  },
+  "pubococcygeus": {
+   "zh": "Pubococcygeus muscle",
+   "en": "Pubococcygeus muscle"
+  },
+  "piriformis_fascia": {
+   "zh": "梨状肌",
+   "en": "Piriformis fascia"
+  },
+  "deltoid": {
+   "zh": "三角肌",
+   "en": "Deltoid"
+  },
+  "subscapularis": {
+   "zh": "肩胛下肌",
+   "en": "Subscapularis"
+  },
+  "supraspinatus": {
+   "zh": "冈上肌",
+   "en": "Supraspinatus"
+  },
+  "teres_minor": {
+   "zh": "小圆肌",
+   "en": "Teres minor"
+  },
+  "infraspinatus": {
+   "zh": "冈下肌",
+   "en": "Infraspinatus"
+  },
+  "teres_major": {
+   "zh": "大圆肌",
+   "en": "Teres major"
+  },
+  "biceps_brachii": {
+   "zh": "肱二头肌",
+   "en": "Biceps brachii"
+  },
+  "brachialis": {
+   "zh": "肱肌",
+   "en": "Brachialis"
+  },
+  "coracobrachialis": {
+   "zh": "喙肱肌",
+   "en": "Coracobrachialis"
+  },
+  "triceps_brachii": {
+   "zh": "肱三头肌",
+   "en": "Triceps brachii"
+  },
+  "pronator_teres": {
+   "zh": "旋前圆肌",
+   "en": "Pronator teres"
+  },
+  "flexor_carpi_ulnaris": {
+   "zh": "尺侧腕屈肌",
+   "en": "Flexor carpi ulnaris"
+  },
+  "flexor_digitorum_superficialis": {
+   "zh": "指浅屈肌",
+   "en": "Flexor digitorum superficialis"
+  },
+  "flexor_carpi_radialis": {
+   "zh": "桡侧腕屈肌",
+   "en": "Flexor carpi radialis"
+  },
+  "palmaris_longus": {
+   "zh": "Palmaris longus muscle",
+   "en": "Palmaris longus muscle"
+  },
+  "flexor_digitorum_profundus": {
+   "zh": "Flexor digitorum profundus",
+   "en": "Flexor digitorum profundus"
+  },
+  "flexor_pollicis_longus": {
+   "zh": "Flexor pollicis longus",
+   "en": "Flexor pollicis longus"
+  },
+  "pronator_quadratus": {
+   "zh": "Pronator quadratus",
+   "en": "Pronator quadratus"
+  },
+  "extensor_digitorum": {
+   "zh": "指伸肌",
+   "en": "Extensor digitorum"
+  },
+  "extensor_carpi_ulnaris": {
+   "zh": "尺侧腕伸肌",
+   "en": "Extensor carpi ulnaris"
+  },
+  "brachioradialis": {
+   "zh": "肱桡肌",
+   "en": "Brachioradialis"
+  },
+  "extensor_carpi_radialis_longus": {
+   "zh": "桡侧腕长伸肌",
+   "en": "Extensor carpi radialis longus"
+  },
+  "extensor_carpi_radialis_brevis": {
+   "zh": "腕伸肌",
+   "en": "Extensor carpi radialis brevis"
+  },
+  "anconeus": {
+   "zh": "Anconeus muscle",
+   "en": "Anconeus muscle"
+  },
+  "extensor_digiti_minimi": {
+   "zh": "Extensor digiti minimi",
+   "en": "Extensor digiti minimi"
+  },
+  "supinator": {
+   "zh": "Supinator",
+   "en": "Supinator"
+  },
+  "abductor_pollicis_longus": {
+   "zh": "Abductor pollicis longus",
+   "en": "Abductor pollicis longus"
+  },
+  "extensor_indicis": {
+   "zh": "Extensor indicis",
+   "en": "Extensor indicis"
+  },
+  "extensor_pollicis_brevis": {
+   "zh": "Extensor pollicis brevis",
+   "en": "Extensor pollicis brevis"
+  },
+  "extensor_pollicis_longus": {
+   "zh": "Extensor pollicis longus",
+   "en": "Extensor pollicis longus"
+  },
+  "superficial_head_of_flexor_pollicis_brevis": {
+   "zh": "头",
+   "en": "Superficial head of flexor pollicis brevis"
+  },
+  "deep_head_of_flexor_pollicis_brevis": {
+   "zh": "头",
+   "en": "Deep head of flexor pollicis brevis"
+  },
+  "oblique_head_of_adductor_pollicis": {
+   "zh": "头",
+   "en": "Oblique head of adductor pollicis"
+  },
+  "transverse_head_of_adductor_pollicis": {
+   "zh": "头",
+   "en": "Transverse head of adductor pollicis"
+  },
+  "abductor_pollicis_brevis": {
+   "zh": "Abductor pollicis brevis",
+   "en": "Abductor pollicis brevis"
+  },
+  "opponens_pollicis": {
+   "zh": "Opponens pollicis muscle",
+   "en": "Opponens pollicis muscle"
+  },
+  "hand": {
+   "zh": "手",
+   "en": "Hand"
+  },
+  "palmar_interossei": {
+   "zh": "Palmar interossei muscles",
+   "en": "Palmar interossei muscles"
+  },
+  "medial_intermuscular_septum_of_arm": {
+   "zh": "Medial intermuscular septum of arm",
+   "en": "Medial intermuscular septum of arm"
+  },
+  "lateral_intermuscular_septum_of_arm": {
+   "zh": "Lateral intermuscular septum of arm",
+   "en": "Lateral intermuscular septum of arm"
+  },
+  "deltoid_fascia": {
+   "zh": "三角肌",
+   "en": "Deltoid fascia"
+  },
+  "brachial_fascia": {
+   "zh": "Brachial fascia",
+   "en": "Brachial fascia"
+  },
+  "antebrachial_fascia": {
+   "zh": "Antebrachial fascia",
+   "en": "Antebrachial fascia"
+  },
+  "wrist": {
+   "zh": "腕",
+   "en": "Wrist"
+  },
+  "superficial_transverse_metacarpal_ligament": {
+   "zh": "掌骨",
+   "en": "Superficial transverse metacarpal ligament"
+  },
+  "palmar_aponeurosis": {
+   "zh": "Palmar aponeurosis",
+   "en": "Palmar aponeurosis"
+  },
+  "iliacus": {
+   "zh": "髂肌",
+   "en": "Iliacus"
+  },
+  "psoas_major": {
+   "zh": "腰大肌",
+   "en": "Psoas major"
+  },
+  "gluteus_medius": {
+   "zh": "臀中肌",
+   "en": "Gluteus medius"
+  },
+  "gluteus_maximus": {
+   "zh": "臀大肌",
+   "en": "Gluteus maximus"
+  },
+  "gluteus_minimus": {
+   "zh": "臀小肌",
+   "en": "Gluteus minimus"
+  },
+  "tensor_fasciae_latae": {
+   "zh": "阔筋膜张肌",
+   "en": "Tensor fasciae latae"
+  },
+  "piriformis": {
+   "zh": "梨状肌",
+   "en": "Piriformis"
+  },
+  "quadratus_femoris": {
+   "zh": "Quadratus femoris muscle",
+   "en": "Quadratus femoris muscle"
+  },
+  "inferior_gemellus": {
+   "zh": "Inferior gemellus muscle",
+   "en": "Inferior gemellus muscle"
+  },
+  "obturator_internus": {
+   "zh": "Obturator internus",
+   "en": "Obturator internus"
+  },
+  "superior_gemellus": {
+   "zh": "Superior gemellus muscle",
+   "en": "Superior gemellus muscle"
+  },
+  "lateral_patellar_retinaculum": {
+   "zh": "髌骨",
+   "en": "Lateral patellar retinaculum"
+  },
+  "medial_patellar_retinaculum": {
+   "zh": "髌骨",
+   "en": "Medial patellar retinaculum"
+  },
+  "rectus_femoris": {
+   "zh": "股直肌",
+   "en": "Rectus femoris"
+  },
+  "vastus_lateralis": {
+   "zh": "股外侧肌",
+   "en": "Vastus lateralis"
+  },
+  "vastus_medialis": {
+   "zh": "股内侧肌",
+   "en": "Vastus medialis"
+  },
+  "vastus_intermedius": {
+   "zh": "股中间肌",
+   "en": "Vastus intermedius"
+  },
+  "sartorius": {
+   "zh": "缝匠肌",
+   "en": "Sartorius"
+  },
+  "adductor_magnus": {
+   "zh": "大收肌",
+   "en": "Adductor magnus"
+  },
+  "adductor_longus": {
+   "zh": "长收肌",
+   "en": "Adductor longus"
+  },
+  "pectineus": {
+   "zh": "耻骨肌",
+   "en": "Pectineus"
+  },
+  "adductor_brevis": {
+   "zh": "Adductor brevis",
+   "en": "Adductor brevis"
+  },
+  "adductor_minimus": {
+   "zh": "(Adductor minimus)",
+   "en": "(Adductor minimus)"
+  },
+  "gracilis": {
+   "zh": "股薄肌",
+   "en": "Gracilis"
+  },
+  "obturator_externus": {
+   "zh": "Obturator externus",
+   "en": "Obturator externus"
+  },
+  "biceps_femoris": {
+   "zh": "股二头肌",
+   "en": "Biceps femoris"
+  },
+  "semimembranosus": {
+   "zh": "半膜肌",
+   "en": "Semimembranosus"
+  },
+  "semitendinosus": {
+   "zh": "半腱肌",
+   "en": "Semitendinosus"
+  },
+  "extensor_digitorum_longus": {
+   "zh": "趾长伸肌",
+   "en": "Extensor digitorum longus"
+  },
+  "tibialis_anterior": {
+   "zh": "胫骨前肌",
+   "en": "Tibialis anterior"
+  },
+  "fibularis_tertius": {
+   "zh": "腓骨",
+   "en": "Fibularis tertius muscle"
+  },
+  "extensor_hallucis_longus": {
+   "zh": "Extensor hallucis longus",
+   "en": "Extensor hallucis longus"
+  },
+  "fibularis_longus": {
+   "zh": "腓骨长肌",
+   "en": "Fibularis longus"
+  },
+  "fibularis_brevis": {
+   "zh": "腓骨",
+   "en": "Fibularis brevis muscle"
+  },
+  "gastrocnemius": {
+   "zh": "腓肠肌",
+   "en": "Gastrocnemius"
+  },
+  "calcaneal_tendon": {
+   "zh": "Calcaneal tendon",
+   "en": "Calcaneal tendon"
+  },
+  "soleus": {
+   "zh": "比目鱼肌",
+   "en": "Soleus"
+  },
+  "plantaris": {
+   "zh": "Plantaris muscle",
+   "en": "Plantaris muscle"
+  },
+  "flexor_digitorum_longus": {
+   "zh": "趾长屈肌",
+   "en": "Flexor digitorum longus"
+  },
+  "popliteus": {
+   "zh": "Popliteus muscle",
+   "en": "Popliteus muscle"
+  },
+  "tibialis_posterior": {
+   "zh": "胫骨后肌",
+   "en": "Tibialis posterior"
+  },
+  "flexor_hallucis_longus": {
+   "zh": "Flexor hallucis longus",
+   "en": "Flexor hallucis longus"
+  },
+  "medial_head_of_flexor_hallucis_brevis": {
+   "zh": "头",
+   "en": "Medial head of flexor hallucis brevis"
+  },
+  "lateral_head_of_flexor_hallucis_brevis": {
+   "zh": "头",
+   "en": "Lateral head of flexor hallucis brevis"
+  },
+  "oblique_head_of_adductor_hallucis": {
+   "zh": "头",
+   "en": "Oblique head of adductor hallucis"
+  },
+  "transverse_head_of_adductor_hallucis": {
+   "zh": "头",
+   "en": "Transverse head of adductor hallucis"
+  },
+  "foot": {
+   "zh": "脚",
+   "en": "Foot"
+  },
+  "abductor_hallucis": {
+   "zh": "Abductor hallucis",
+   "en": "Abductor hallucis"
+  },
+  "extensor_digitorum_brevis": {
+   "zh": "指伸肌",
+   "en": "Extensor digitorum brevis"
+  },
+  "extensor_hallucis_brevis": {
+   "zh": "Extensor hallucis brevis",
+   "en": "Extensor hallucis brevis"
+  },
+  "flexor_digitorum_brevis": {
+   "zh": "Flexor digitorum brevis",
+   "en": "Flexor digitorum brevis"
+  },
+  "plantar_interossei": {
+   "zh": "Plantar interossei muscles",
+   "en": "Plantar interossei muscles"
+  },
+  "quadratus_plantae": {
+   "zh": "Quadratus plantae muscle",
+   "en": "Quadratus plantae muscle"
+  },
+  "iliotibial_tract": {
+   "zh": "胫骨",
+   "en": "Iliotibial tract"
+  },
+  "fascia_lata": {
+   "zh": "Fascia lata",
+   "en": "Fascia lata"
+  },
+  "medial_femoral_intermuscular_septum": {
+   "zh": "Medial femoral intermuscular septum",
+   "en": "Medial femoral intermuscular septum"
+  },
+  "lateral_femoral_intermuscular_septum": {
+   "zh": "Lateral femoral intermuscular septum",
+   "en": "Lateral femoral intermuscular septum"
+  },
+  "popliteal_fascia": {
+   "zh": "Popliteal fascia",
+   "en": "Popliteal fascia"
+  },
+  "crural_fascia": {
+   "zh": "Crural fascia",
+   "en": "Crural fascia"
+  },
+  "anterior_intermuscular_septum_of_leg": {
+   "zh": "Anterior intermuscular septum of leg",
+   "en": "Anterior intermuscular septum of leg"
+  },
+  "posterior_intermuscular_septum_of_leg": {
+   "zh": "Posterior intermuscular septum of leg",
+   "en": "Posterior intermuscular septum of leg"
+  },
+  "transverse_intermuscular_septum_of_leg": {
+   "zh": "Transverse intermuscular septum of leg",
+   "en": "Transverse intermuscular septum of leg"
+  },
+  "ankle": {
+   "zh": "踝",
+   "en": "Ankle"
+  },
+  "superior_fibular_retinaculum": {
+   "zh": "腓骨",
+   "en": "Superior fibular retinaculum"
+  },
+  "inferior_fibular_retinaculum": {
+   "zh": "腓骨",
+   "en": "Inferior fibular retinaculum"
+  },
+  "superficial_transverse_metatarsal_ligament": {
+   "zh": "跖骨",
+   "en": "Superficial transverse metatarsal ligament"
+  },
+  "plantar_aponeurosis": {
+   "zh": "Plantar aponeurosis",
+   "en": "Plantar aponeurosis"
+  },
+  "iliopectineal_arch": {
+   "zh": "Iliopectineal arch",
+   "en": "Iliopectineal arch"
+  },
+  "external_anal_sphincter": {
+   "zh": "External anal sphincter",
+   "en": "External anal sphincter"
+  },
+  "clavipectoral_fascia": {
+   "zh": "Clavipectoral fascia",
+   "en": "Clavipectoral fascia"
+  },
+  "iliopsoas_fascia": {
+   "zh": "髂腰肌",
+   "en": "Iliopsoas fascia"
+  },
+  "transversalis_fascia": {
+   "zh": "Transversalis fascia",
+   "en": "Transversalis fascia"
+  },
+  "diaphragmatic_fascia": {
+   "zh": "膈肌",
+   "en": "Diaphragmatic fascia"
+  },
+  "tendinous_arch_of_levator_ani": {
+   "zh": "Tendinous arch of levator ani",
+   "en": "Tendinous arch of levator ani"
+  },
+  "subcutaneous_acromial_bursa": {
+   "zh": "Subcutaneous acromial bursa",
+   "en": "Subcutaneous acromial bursa"
+  },
+  "subacromial_bursa": {
+   "zh": "Subacromial bursa",
+   "en": "Subacromial bursa"
+  },
+  "subdeltoid_bursa": {
+   "zh": "三角肌",
+   "en": "Subdeltoid bursa"
+  },
+  "coracobrachial_bursa": {
+   "zh": "Coracobrachial bursa",
+   "en": "Coracobrachial bursa"
+  },
+  "bicipitoradial_bursa": {
+   "zh": "Bicipitoradial bursa",
+   "en": "Bicipitoradial bursa"
+  },
+  "subcutaneous_trochanteric_bursa": {
+   "zh": "Subcutaneous trochanteric bursa",
+   "en": "Subcutaneous trochanteric bursa"
+  },
+  "sciatic_bursa_of_obturator_internus": {
+   "zh": "Sciatic bursa of obturator internus",
+   "en": "Sciatic bursa of obturator internus"
+  },
+  "subtendinous_bursa_of_obturator_internus": {
+   "zh": "Subtendinous bursa of obturator internus",
+   "en": "Subtendinous bursa of obturator internus"
+  },
+  "intermuscular_gluteal_bursae": {
+   "zh": "Intermuscular gluteal bursae",
+   "en": "Intermuscular gluteal bursae"
+  },
+  "iliopectineal_bursa": {
+   "zh": "(Iliopectineal bursa)",
+   "en": "(Iliopectineal bursa)"
+  },
+  "subtendinous_prepatellar_bursa": {
+   "zh": "髌骨",
+   "en": "Subtendinous prepatellar bursa"
+  },
+  "subcutaneous_prepatellar_bursa": {
+   "zh": "髌骨",
+   "en": "Subcutaneous prepatellar bursa"
+  },
+  "deep_infrapatellar_bursa": {
+   "zh": "髌骨",
+   "en": "Deep infrapatellar bursa"
+  },
+  "subfacial_prepatellar_bursa": {
+   "zh": "髌骨",
+   "en": "Subfacial prepatellar bursa"
+  },
+  "subcutaneous_infrapatellar_bursa": {
+   "zh": "髌骨",
+   "en": "Subcutaneous infrapatellar bursa"
+  },
+  "suprapatellar_bursa": {
+   "zh": "髌骨",
+   "en": "Suprapatellar bursa"
+  },
+  "tibia": {
+   "zh": "胫骨",
+   "en": "Tibia"
+  },
+  "anserine_bursa": {
+   "zh": "Anserine bursa",
+   "en": "Anserine bursa"
+  },
+  "semimembranosus_bursa": {
+   "zh": "半膜肌",
+   "en": "Semimembranosus bursa"
+  },
+  "subcutaneous_bursa_of_lateral_malleolus": {
+   "zh": "Subcutaneous bursa of lateral malleolus",
+   "en": "Subcutaneous bursa of lateral malleolus"
+  },
+  "subcutaneous_bursa_of_medial_malleolus": {
+   "zh": "Subcutaneous bursa of medial malleolus",
+   "en": "Subcutaneous bursa of medial malleolus"
+  },
+  "subcutaneous_calcaneal_bursa": {
+   "zh": "Subcutaneous calcaneal bursa",
+   "en": "Subcutaneous calcaneal bursa"
+  },
+  "subtendinous_calcaneal_bursa": {
+   "zh": "Subtendinous calcaneal bursa",
+   "en": "Subtendinous calcaneal bursa"
+  },
+  "intertubercular_tendon_sheath": {
+   "zh": "Intertubercular tendon sheath",
+   "en": "Intertubercular tendon sheath"
+  },
+  "tendon_sheath_of_flexor_pollicis_longus": {
+   "zh": "Tendon sheath of flexor pollicis longus",
+   "en": "Tendon sheath of flexor pollicis longus"
+  },
+  "common_flexor_tendon_sheath": {
+   "zh": "Common flexor tendon sheath",
+   "en": "Common flexor tendon sheath"
+  },
+  "tendon_sheath_of_extensor_digiti_minimi_manus": {
+   "zh": "Tendon sheath of extensor digiti minimi manus",
+   "en": "Tendon sheath of extensor digiti minimi manus"
+  },
+  "tendon_sheath_of_extensor_pollicis_longus": {
+   "zh": "Tendon sheath of extensor pollicis longus",
+   "en": "Tendon sheath of extensor pollicis longus"
+  },
+  "tendon_sheath_abd_pollicis_longus_ext_pollicis_brevis": {
+   "zh": "Tendon sheath - abd. pollicis longus - ext. pollicis brevis",
+   "en": "Tendon sheath - abd. pollicis longus - ext. pollicis brevis"
+  },
+  "tendon_sheath_of_extensors_carpi_radialis": {
+   "zh": "Tendon sheath of extensors carpi radialis",
+   "en": "Tendon sheath of extensors carpi radialis"
+  },
+  "tendon_sheath_of_extensor_digitorum_and_extensor_indicis": {
+   "zh": "指伸肌",
+   "en": "Tendon sheath of extensor digitorum and extensor indicis"
+  },
+  "tendon_sheath_of_extensor_hallucis_longus": {
+   "zh": "Tendon sheath of extensor hallucis longus",
+   "en": "Tendon sheath of extensor hallucis longus"
+  },
+  "tendon_sheath_of_flexor_hallucis_longus": {
+   "zh": "Tendon sheath of flexor hallucis longus",
+   "en": "Tendon sheath of flexor hallucis longus"
+  },
+  "common_tendon_sheath_of_fibularis": {
+   "zh": "腓骨",
+   "en": "Common tendon sheath of fibularis muscles"
+  },
+  "parietal": {
+   "zh": "Parietal bone",
+   "en": "Parietal bone"
+  },
+  "sinus_of_frontal": {
+   "zh": "Sinus of frontal bone",
+   "en": "Sinus of frontal bone"
+  },
+  "frontal": {
+   "zh": "Frontal bone",
+   "en": "Frontal bone"
+  },
+  "occipital": {
+   "zh": "Occipital bone",
+   "en": "Occipital bone"
+  },
+  "sinus_of_sphenoid": {
+   "zh": "Sinus of sphenoid bone",
+   "en": "Sinus of sphenoid bone"
+  },
+  "sphenoid": {
+   "zh": "Sphenoid bone",
+   "en": "Sphenoid bone"
+  },
+  "temporal": {
+   "zh": "Temporal bone",
+   "en": "Temporal bone"
+  },
+  "ethmoid": {
+   "zh": "Ethmoid bone",
+   "en": "Ethmoid bone"
+  },
+  "inferior_nasal_concha": {
+   "zh": "Inferior nasal concha bone",
+   "en": "Inferior nasal concha bone"
+  },
+  "lacrimal": {
+   "zh": "Lacrimal bone",
+   "en": "Lacrimal bone"
+  },
+  "nasal": {
+   "zh": "Nasal bone",
+   "en": "Nasal bone"
+  },
+  "maxilla": {
+   "zh": "上颌骨",
+   "en": "Maxilla"
+  },
+  "palatine": {
+   "zh": "Palatine bone",
+   "en": "Palatine bone"
+  },
+  "zygomatic": {
+   "zh": "Zygomatic bone",
+   "en": "Zygomatic bone"
+  },
+  "mandible": {
+   "zh": "下颌骨",
+   "en": "Mandible"
+  },
+  "hyoid": {
+   "zh": "Hyoid bone",
+   "en": "Hyoid bone"
+  },
+  "malleus": {
+   "zh": "Malleus",
+   "en": "Malleus"
+  },
+  "incus": {
+   "zh": "Incus",
+   "en": "Incus"
+  },
+  "stapes": {
+   "zh": "Stapes",
+   "en": "Stapes"
+  },
+  "upper_medial_incisor": {
+   "zh": "Upper medial incisor",
+   "en": "Upper medial incisor"
+  },
+  "upper_lateral_incisor": {
+   "zh": "Upper lateral incisor",
+   "en": "Upper lateral incisor"
+  },
+  "upper_canine": {
+   "zh": "Upper canine",
+   "en": "Upper canine"
+  },
+  "lower_medial_incisor": {
+   "zh": "Lower medial incisor",
+   "en": "Lower medial incisor"
+  },
+  "lower_lateral_incisor": {
+   "zh": "Lower lateral incisor",
+   "en": "Lower lateral incisor"
+  },
+  "lower_canine": {
+   "zh": "Lower canine",
+   "en": "Lower canine"
+  },
+  "upper_first_premolar": {
+   "zh": "Upper first premolar",
+   "en": "Upper first premolar"
+  },
+  "upper_second_premolar": {
+   "zh": "Upper second premolar",
+   "en": "Upper second premolar"
+  },
+  "upper_first_molar_tooth": {
+   "zh": "Upper first molar tooth",
+   "en": "Upper first molar tooth"
+  },
+  "upper_second_molar_tooth": {
+   "zh": "Upper second molar tooth",
+   "en": "Upper second molar tooth"
+  },
+  "lower_first_premolar": {
+   "zh": "Lower first premolar",
+   "en": "Lower first premolar"
+  },
+  "lower_second_premolar": {
+   "zh": "Lower second premolar",
+   "en": "Lower second premolar"
+  },
+  "lower_first_molar_tooth": {
+   "zh": "Lower first molar tooth",
+   "en": "Lower first molar tooth"
+  },
+  "lower_second_molar_tooth": {
+   "zh": "Lower second molar tooth",
+   "en": "Lower second molar tooth"
+  },
+  "major_alar_cartilage": {
+   "zh": "Major alar cartilage",
+   "en": "Major alar cartilage"
+  },
+  "lateral_process_of_nasal_septal_cartilage": {
+   "zh": "Lateral process of nasal septal cartilage",
+   "en": "Lateral process of nasal septal cartilage"
+  },
+  "nasal_septal_cartilage": {
+   "zh": "Nasal septal cartilage",
+   "en": "Nasal septal cartilage"
+  },
+  "thyroid_cartilage": {
+   "zh": "Thyroid cartilage",
+   "en": "Thyroid cartilage"
+  },
+  "cricoid_cartilage": {
+   "zh": "Cricoid cartilage",
+   "en": "Cricoid cartilage"
+  },
+  "arytenoid_cartilage": {
+   "zh": "Arytenoid cartilage",
+   "en": "Arytenoid cartilage"
+  },
+  "corniculate_cartilage": {
+   "zh": "Corniculate cartilage",
+   "en": "Corniculate cartilage"
+  },
+  "atlas_c1": {
+   "zh": "寰椎",
+   "en": "Atlas (C1)"
+  },
+  "vertebra_c6": {
+   "zh": "椎骨",
+   "en": "Vertebra C6"
+  },
+  "vertebra_c3": {
+   "zh": "椎骨",
+   "en": "Vertebra C3"
+  },
+  "vertebra_c5": {
+   "zh": "椎骨",
+   "en": "Vertebra C5"
+  },
+  "vertebra_c7": {
+   "zh": "椎骨",
+   "en": "Vertebra C7"
+  },
+  "vertebra_c4": {
+   "zh": "椎骨",
+   "en": "Vertebra C4"
+  },
+  "vertebra_t2": {
+   "zh": "椎骨",
+   "en": "Vertebra T2"
+  },
+  "vertebra_t3": {
+   "zh": "椎骨",
+   "en": "Vertebra T3"
+  },
+  "vertebra_t4": {
+   "zh": "椎骨",
+   "en": "Vertebra T4"
+  },
+  "vertebra_t5": {
+   "zh": "椎骨",
+   "en": "Vertebra T5"
+  },
+  "vertebra_t6": {
+   "zh": "椎骨",
+   "en": "Vertebra T6"
+  },
+  "vertebra_t7": {
+   "zh": "椎骨",
+   "en": "Vertebra T7"
+  },
+  "vertebra_t9": {
+   "zh": "椎骨",
+   "en": "Vertebra T9"
+  },
+  "vertebra_t10": {
+   "zh": "椎骨",
+   "en": "Vertebra T10"
+  },
+  "vertebra_t11": {
+   "zh": "椎骨",
+   "en": "Vertebra T11"
+  },
+  "vertebra_t12": {
+   "zh": "椎骨",
+   "en": "Vertebra T12"
+  },
+  "vertebra_t8": {
+   "zh": "椎骨",
+   "en": "Vertebra T8"
+  },
+  "vertebra_t1": {
+   "zh": "椎骨",
+   "en": "Vertebra T1"
+  },
+  "vertebra_l1": {
+   "zh": "椎骨",
+   "en": "Vertebra L1"
+  },
+  "vertebra_l2": {
+   "zh": "椎骨",
+   "en": "Vertebra L2"
+  },
+  "vertebra_l4": {
+   "zh": "椎骨",
+   "en": "Vertebra L4"
+  },
+  "vertebra_l5": {
+   "zh": "椎骨",
+   "en": "Vertebra L5"
+  },
+  "vertebra_l3": {
+   "zh": "椎骨",
+   "en": "Vertebra L3"
+  },
+  "coccyx": {
+   "zh": "尾骨",
+   "en": "Coccyx"
+  },
+  "fifth_rib": {
+   "zh": "肋骨",
+   "en": "Fifth rib"
+  },
+  "first_rib": {
+   "zh": "肋骨",
+   "en": "First rib"
+  },
+  "fourth_rib": {
+   "zh": "肋骨",
+   "en": "Fourth rib"
+  },
+  "second_rib": {
+   "zh": "肋骨",
+   "en": "Second rib"
+  },
+  "seventh_rib": {
+   "zh": "肋骨",
+   "en": "Seventh rib"
+  },
+  "sixth_rib": {
+   "zh": "肋骨",
+   "en": "Sixth rib"
+  },
+  "third_rib": {
+   "zh": "肋骨",
+   "en": "Third rib"
+  },
+  "eleventh_rib": {
+   "zh": "肋骨",
+   "en": "Eleventh rib"
+  },
+  "twelfth_rib": {
+   "zh": "肋骨",
+   "en": "Twelfth rib"
+  },
+  "eighth_rib": {
+   "zh": "肋骨",
+   "en": "Eighth rib"
+  },
+  "ninth_rib": {
+   "zh": "肋骨",
+   "en": "Ninth rib"
+  },
+  "tenth_rib": {
+   "zh": "肋骨",
+   "en": "Tenth rib"
+  },
+  "sternum": {
+   "zh": "胸骨",
+   "en": "Sternum"
+  },
+  "xiphoid_process": {
+   "zh": "Xiphoid process",
+   "en": "Xiphoid process"
+  },
+  "costal_cartilage_of_first_rib": {
+   "zh": "肋骨",
+   "en": "Costal cartilage of first rib"
+  },
+  "costal_cartilage_of_second_rib": {
+   "zh": "肋骨",
+   "en": "Costal cartilage of second rib"
+  },
+  "costal_cartilage_of_third_rib": {
+   "zh": "肋骨",
+   "en": "Costal cartilage of third rib"
+  },
+  "costal_cartilage_of_fourth_rib": {
+   "zh": "肋骨",
+   "en": "Costal cartilage of fourth rib"
+  },
+  "costal_cartilage_of_fifth_rib": {
+   "zh": "肋骨",
+   "en": "Costal cartilage of fifth rib"
+  },
+  "costal_cartilage_of_sixth_rib": {
+   "zh": "肋骨",
+   "en": "Costal cartilage of sixth rib"
+  },
+  "costal_cartilage_of_seventh_rib": {
+   "zh": "肋骨",
+   "en": "Costal cartilage of seventh rib"
+  },
+  "costal_cartilage_of_eighth_rib": {
+   "zh": "肋骨",
+   "en": "Costal cartilage of eighth rib"
+  },
+  "costal_cartilage_of_tenth_rib": {
+   "zh": "肋骨",
+   "en": "Costal cartilage of tenth rib"
+  },
+  "costal_cartilage_of_ninth_rib": {
+   "zh": "肋骨",
+   "en": "Costal cartilage of ninth rib"
+  },
+  "clavicle": {
+   "zh": "锁骨",
+   "en": "Clavicle"
+  },
+  "humerus": {
+   "zh": "肱骨",
+   "en": "Humerus"
+  },
+  "patella": {
+   "zh": "髌骨",
+   "en": "Patella"
+  },
+  "talus": {
+   "zh": "距骨",
+   "en": "Talus"
+  },
+  "calcaneus": {
+   "zh": "跟骨",
+   "en": "Calcaneus"
+  },
+  "navicular": {
+   "zh": "Navicular bone",
+   "en": "Navicular bone"
+  },
+  "cuboid": {
+   "zh": "Cuboid bone",
+   "en": "Cuboid bone"
+  },
+  "intermediate_cuneiform": {
+   "zh": "Intermediate cuneiform bone",
+   "en": "Intermediate cuneiform bone"
+  },
+  "lateral_cuneiform": {
+   "zh": "Lateral cuneiform bone",
+   "en": "Lateral cuneiform bone"
+  },
+  "medial_cuneiform": {
+   "zh": "Medial cuneiform bone",
+   "en": "Medial cuneiform bone"
+  },
+  "first_metatarsal": {
+   "zh": "跖骨",
+   "en": "First metatarsal bone"
+  },
+  "fifth_metatarsal": {
+   "zh": "跖骨",
+   "en": "Fifth metatarsal bone"
+  },
+  "second_metatarsal": {
+   "zh": "跖骨",
+   "en": "Second metatarsal bone"
+  },
+  "third_metatarsal": {
+   "zh": "跖骨",
+   "en": "Third metatarsal bone"
+  },
+  "fourth_metatarsal": {
+   "zh": "跖骨",
+   "en": "Fourth metatarsal bone"
+  },
+  "first_metacarpal": {
+   "zh": "掌骨",
+   "en": "First metacarpal bone"
+  },
+  "second_metacarpal": {
+   "zh": "掌骨",
+   "en": "Second metacarpal bone"
+  },
+  "third_metacarpal": {
+   "zh": "掌骨",
+   "en": "Third metacarpal bone"
+  },
+  "fourth_metacarpal": {
+   "zh": "掌骨",
+   "en": "Fourth metacarpal bone"
+  },
+  "fifth_metacarpal": {
+   "zh": "掌骨",
+   "en": "Fifth metacarpal bone"
+  },
+  "capitate": {
+   "zh": "Capitate bone",
+   "en": "Capitate bone"
+  },
+  "hamate": {
+   "zh": "Hamate bone",
+   "en": "Hamate bone"
+  },
+  "lunate": {
+   "zh": "Lunate bone",
+   "en": "Lunate bone"
+  },
+  "pisiform": {
+   "zh": "Pisiform bone",
+   "en": "Pisiform bone"
+  },
+  "scaphoid": {
+   "zh": "Scaphoid bone",
+   "en": "Scaphoid bone"
+  },
+  "trapezium": {
+   "zh": "Trapezium bone",
+   "en": "Trapezium bone"
+  },
+  "trapezoid": {
+   "zh": "Trapezoid bone",
+   "en": "Trapezoid bone"
+  },
+  "triquetrum": {
+   "zh": "Triquetrum bone",
+   "en": "Triquetrum bone"
+  },
+  "axis_c2": {
+   "zh": "枢椎",
+   "en": "Axis (C2)"
+  },
+  "scapula": {
+   "zh": "肩胛骨",
+   "en": "Scapula"
+  },
+  "radius": {
+   "zh": "桡骨",
+   "en": "Radius"
+  },
+  "ulna": {
+   "zh": "尺骨",
+   "en": "Ulna"
+  },
+  "femur": {
+   "zh": "股骨",
+   "en": "Femur"
+  },
+  "hip": {
+   "zh": "髋",
+   "en": "Hip"
+  },
+  "fibula": {
+   "zh": "腓骨",
+   "en": "Fibula"
+  },
+  "sacrum": {
+   "zh": "骶骨",
+   "en": "Sacrum"
+  },
+  "vomer": {
+   "zh": "Vomer",
+   "en": "Vomer"
+  },
+  "posterior_cells_of_ethmoid": {
+   "zh": "Posterior cells of ethmoid bone",
+   "en": "Posterior cells of ethmoid bone"
+  },
+  "middle_cells_of_ethmoid": {
+   "zh": "Middle cells of ethmoid bone",
+   "en": "Middle cells of ethmoid bone"
+  },
+  "anterior_cells_of_ethmoid": {
+   "zh": "Anterior cells of ethmoid bone",
+   "en": "Anterior cells of ethmoid bone"
+  },
+  "skin": {
+   "zh": "皮肤",
+   "en": "Skin"
+  }
+ }
+}
