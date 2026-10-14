@@ -4,7 +4,8 @@ import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 import type { BodyModel, Part } from "../body/model";
 import type { Depth, Side } from "../body/naming";
 import { fromLocal, toLocal, viewFromDirection, type View } from "../body/coords";
-import { Marker } from "./marker";
+import { Marker, MARK_COLOR } from "./marker";
+import type { Mark } from "../records";
 
 export interface Location { part_id: string; side: Side; local: [number, number, number]; depth: Depth; view: View }
 export interface Pick { location: Location; point: THREE.Vector3; normal: THREE.Vector3; part: Part; surfacePart: Part }
@@ -54,6 +55,7 @@ export class Viewer {
   readonly controls: OrbitControls;
   readonly markers: Marker[] = [];
   readonly picks: Pick[] = [];
+  private links: THREE.Line[] = [];
   model: BodyModel | null = null;
   reducedMotion = false;
   onPick: (p: Pick) => void = () => {};
@@ -63,7 +65,7 @@ export class Viewer {
   private dirty = true;
   private frameInsets = { top: 0, bottom: 0 };
   private preset: ViewPreset = "full";
-  private tween: { from: THREE.Vector3; to: THREE.Vector3; tFrom: THREE.Vector3; tTo: THREE.Vector3; t0: number; ms: number } | null = null;
+  tween: { from: THREE.Vector3; to: THREE.Vector3; tFrom: THREE.Vector3; tTo: THREE.Vector3; t0: number; ms: number } | null = null;
   private worldBoxes = new Map<Part, THREE.Box3>();
 
   constructor(private canvas: HTMLCanvasElement) {
@@ -116,7 +118,12 @@ export class Viewer {
     this.dirty = true;
   }
 
-  setInsets(top: number, bottom: number) { this.frameInsets = { top, bottom }; this.resize(); }
+  setInsets(top: number, bottom: number) {
+    const changed = Math.abs(top - this.frameInsets.top) > 2 || Math.abs(bottom - this.frameInsets.bottom) > 2;
+    this.frameInsets = { top, bottom }; this.resize();
+    // The panel grows when a record opens; keep the whole preset in the free area instead of letting the feet slide under it.
+    if (changed && this.model) this.frameView(this.preset, true);
+  }
 
   frameView(preset: ViewPreset, animate = true) {
     this.preset = preset;
@@ -241,13 +248,88 @@ export class Viewer {
     return { point: h.point.clone(), normal: n };
   }
 
-  addMark(pick: Pick, intensity = 5) {
+  addMark(pick: Pick, intensity = 5, notify = true) {
     const mk = new Marker(pick.point, pick.normal, intensity);
     this.markers.push(mk); this.picks.push(pick);
     this.scene.add(mk.mesh);
     this.dirty = true;
-    this.onPick(pick);
+    if (notify) this.onPick(pick);
+    return this.markers.length - 1;
   }
+  removeMark(i: number) {
+    const mk = this.markers[i]; if (!mk) return;
+    this.scene.remove(mk.mesh); mk.dispose();
+    this.markers.splice(i, 1); this.picks.splice(i, 1);
+    this.dirty = true;
+  }
+  clearMarks() {
+    while (this.markers.length) this.removeMark(this.markers.length - 1);
+    this.clearLinks();
+  }
+  styleMark(i: number, m: { intensity: number; shape: string; radius?: number }) {
+    const mk = this.markers[i]; if (!mk) return;
+    mk.setIntensity(m.intensity); mk.setShape(m.shape, m.radius ?? 0.3); this.dirty = true;
+  }
+  private clearLinks() { for (const l of this.links) { this.scene.remove(l); l.geometry.dispose(); (l.material as THREE.Material).dispose(); } this.links = []; this.dirty = true; }
+  /** A thin line from a mark to where it goes (line / radiating). */
+  private addLink(a: THREE.Vector3, b: THREE.Vector3, na: THREE.Vector3, nb: THREE.Vector3) {
+    const pts: THREE.Vector3[] = [];
+    for (let k = 0; k <= 12; k++) { const t = k / 12; pts.push(a.clone().lerp(b, t).addScaledVector(na.clone().lerp(nb, t), 0.012)); }
+    const line = new THREE.Line(new THREE.BufferGeometry().setFromPoints(pts), new THREE.LineBasicMaterial({ color: MARK_COLOR, transparent: true, opacity: 0.6, depthWrite: false }));
+    line.renderOrder = 9; this.scene.add(line); this.links.push(line); this.dirty = true;
+  }
+  /** Redraw a saved record's marks from body coordinates. Replaces what is on the body. */
+  showMarks(marks: Mark[]) {
+    this.clearMarks();
+    for (const m of marks) {
+      const w = this.locationToWorld(m.location); if (!w) continue;
+      const part = this.model!.parts.find((p) => p.info.part_id === m.location.part_id && p.info.side === m.location.side) ?? this.model!.parts[0];
+      const i = this.addMark({ location: { ...m.location, view: m.location.view ?? "anterior" }, point: w.point, normal: w.normal, part, surfacePart: part }, m.intensity, false);
+      this.styleMark(i, m);
+      if (m.to) { const t = this.locationToWorld(m.to); if (t) this.addLink(w.point, t.point, w.normal, t.normal); }
+    }
+    this.dirty = true;
+  }
+  /** Render the body with the given marks from an azimuth (0 = front, PI = back) to a PNG data URL. The on-screen state is restored after. */
+  snapshot(marks: Mark[], azimuth: number, w = 600, h = 900): string {
+    const keepPos = this.camera.position.clone(), keepTarget = this.controls.target.clone(), keepMarks = this.picks.map((p, i) => ({ ...p, _m: this.markers[i] }));
+    const keepVis = new Set(this.visible), keepSize = new THREE.Vector2(); this.renderer.getSize(keepSize);
+    const keepInsets = this.frameInsets, keepPr = this.renderer.getPixelRatio();
+    try {
+      for (const mk of this.markers) this.scene.remove(mk.mesh);
+      const savedMarkers = this.markers.splice(0), savedPicks = this.picks.splice(0), savedLinks = this.links; this.links = [];
+      for (const l of savedLinks) this.scene.remove(l);
+      this.visible = new Set<Depth>(["skin"]); this.applyLayersQuiet();
+      this.renderer.setPixelRatio(1); this.renderer.setSize(w, h, false);
+      this.camera.aspect = w / h; this.camera.setViewOffset(w, h, 0, 0, w, h); this.camera.updateProjectionMatrix();
+      this.frameInsets = { top: 0, bottom: 0 };
+      this.camera.position.set(0, 0.93, 5); this.controls.target.set(0, 0.93, 0);
+      this.frameView("full", false);
+      this.faceAzimuth(azimuth);
+      // marks for the snapshot: skin-depth drawing so they sit on the visible surface
+      for (const m of marks) {
+        const wld = this.locationToWorld({ ...m.location, depth: "skin" }); if (!wld) continue;
+        const mk = new Marker(wld.point, wld.normal, m.intensity); mk.setShape(m.shape, m.radius ?? 0.3);
+        mk.update(performance.now() + 5000, this.camera, h, true); this.scene.add(mk.mesh); this.markers.push(mk);
+        if (m.to) { const t = this.locationToWorld({ ...m.to, depth: "skin" }); if (t) this.addLink(wld.point, t.point, wld.normal, t.normal); }
+      }
+      this.renderer.render(this.scene, this.camera);
+      const url = this.renderer.domElement.toDataURL("image/png");
+      for (const mk of this.markers) { this.scene.remove(mk.mesh); mk.dispose(); }
+      this.markers.length = 0; this.clearLinks();
+      this.markers.push(...savedMarkers); this.picks.push(...savedPicks); this.links = savedLinks;
+      for (const mk of savedMarkers) this.scene.add(mk.mesh);
+      for (const l of savedLinks) this.scene.add(l);
+      return url;
+    } finally {
+      this.visible = keepVis; this.applyLayersQuiet();
+      this.renderer.setPixelRatio(keepPr); this.renderer.setSize(keepSize.x, keepSize.y, false);
+      this.frameInsets = keepInsets; this.resize();
+      this.camera.position.copy(keepPos); this.controls.target.copy(keepTarget); this.controls.update();
+      void keepMarks; this.dirty = true;
+    }
+  }
+  private applyLayersQuiet() { if (!this.model) return; for (const [layer, meshes] of this.model.layers) for (const m of meshes) m.visible = this.visible.has(layer); }
 
   setReducedMotion(on: boolean) { this.reducedMotion = on; if (on) this.tween = null; this.dirty = true; }
 

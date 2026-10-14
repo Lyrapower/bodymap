@@ -1,0 +1,25 @@
+// README screenshots from the built app with the core fixtures loaded. Run after `npm run build`: node e2e/shots.mjs
+import { preview } from "vite";
+import { chromium } from "playwright-core";
+import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
+const OUT = new URL("../../docs/", import.meta.url).pathname; mkdirSync(OUT, { recursive: true });
+const fixtures = JSON.parse(readFileSync(new URL("../../core/fixtures/sample_records.json", import.meta.url)));
+const server = await preview({ root: new URL("..", import.meta.url).pathname, preview: { port: 4175, host: "127.0.0.1" }, logLevel: "error" });
+const browser = await chromium.launch({ executablePath: process.env.CHROMIUM_PATH || "/opt/pw-browsers/chromium-1194/chrome-linux/chrome", args: ["--use-angle=swiftshader", "--enable-unsafe-swiftshader", "--ignore-gpu-blocklist"] });
+const page = await (await browser.newContext({ viewport: { width: 390, height: 844 }, deviceScaleFactor: 2, isMobile: true, hasTouch: true, locale: "zh-CN" })).newPage();
+await page.goto(server.resolvedUrls.local[0] + "?e2e"); await page.waitForSelector("html[data-ready='1']");
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+const tmp = new URL("./out/_shots.json", import.meta.url).pathname; writeFileSync(tmp, JSON.stringify({ format: "bodymap-backup", schema_version: "1.0", exported_at: "x", records: fixtures }));
+await page.locator('.tab[data-t="tab.more"]').click(); await sleep(300);
+await page.locator(".sheet.in .hidden-file").setInputFiles(tmp); await sleep(500);
+await page.locator('.tab[data-t="tab.history"]').click(); await sleep(400);
+await page.locator('.sheet.in .card[data-kind="episode"]').nth(1).click(); await sleep(400);
+await page.locator('.sheet.in [data-t="on_body"]').last().click(); await sleep(900);
+await page.screenshot({ path: OUT + "01_body.png" });
+await page.locator('.tab[data-t="tab.timeline"]').click(); await sleep(600);
+await page.screenshot({ path: OUT + "02_timeline.png" });
+await page.locator('.tab[data-t="tab.more"]').click(); await sleep(300);
+await page.locator('.sheet.in [data-t="export.doctor"]').click(); await sleep(1500);
+await page.screenshot({ path: OUT + "03_doctor_export.png" });
+await browser.close(); await new Promise((r) => server.httpServer.close(r));
+console.log("wrote docs/01_body.png 02_timeline.png 03_doctor_export.png");

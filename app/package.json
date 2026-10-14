@@ -1,7 +1,7 @@
 {
   "name": "bodymap-app",
   "private": true,
-  "version": "0.1.0",
+  "version": "0.2.0",
   "type": "module",
   "license": "AGPL-3.0-only",
   "scripts": {
@@ -11,7 +11,10 @@
     "test": "vitest run",
     "e2e": "node e2e/d0.e2e.mjs",
     "model:placeholder": "node scripts/make-placeholder.mjs",
-    "e2e:webkit": "e2e/run-webkit.sh 390x844 full && e2e/run-webkit.sh 375x667 layout"
+    "e2e:webkit": "e2e/run-webkit.sh 390x844 full && e2e/run-webkit.sh 375x667 layout",
+    "e2e:d1": "node e2e/d1.e2e.mjs",
+    "e2e:all": "npm run e2e && npm run e2e:d1",
+    "shots": "node e2e/shots.mjs"
   },
   "dependencies": {
     "three": "0.186.1"

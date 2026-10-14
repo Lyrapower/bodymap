@@ -85,6 +85,9 @@ try {
     const p = await page.evaluate(([x, y, z]) => window.__bodymap.screenOf(x, y, z), [x, y, z]);
     await page.touchscreen.tap(p.x, p.y);
     await sleep(120);
+    // D1: the panel grows when a record opens and the body re-frames (650 ms); wait for it so the next screenOf is current
+    await page.waitForFunction(() => !window.__bodymap.viewer.tween, null, { timeout: 3000 }).catch(() => {});
+    await sleep(80);
     return p;
   };
   const picks = () => page.evaluate(() => window.__bodymap.picks());
@@ -179,13 +182,14 @@ try {
   const b2 = await page.evaluate(() => window.__bodymap.breath());
   ok("L marks breathe (motion on)", b1.some((v, i) => Math.abs(v - b2[i]) > 0.01), `${b1[0].toFixed(3)}→${b2[0].toFixed(3)}`);
   ok("L marks do not breathe in lockstep", new Set(b2.map((v) => v.toFixed(3))).size > 1);
-  await page.locator(".switch").click();
+  const toggleMotion = async () => page.locator(".switch").click();
+  await toggleMotion();
   await page.evaluate(() => new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(r)))); // let a frame apply it
   const r1 = await page.evaluate(() => window.__bodymap.breath()); await sleep(700);
   const r2 = await page.evaluate(() => window.__bodymap.breath());
   ok("L reduced motion: marks still", r1.every((v, i) => v === 0.5 && r2[i] === 0.5), `checked=${await page.locator("#reduced").isChecked()} r1=${r1.map((v) => v.toFixed(2))} r2=${r2.map((v) => v.toFixed(2))}`);
   ok("L reduced motion persisted", (await page.evaluate(() => localStorage.getItem("bodymap.reducedMotion"))) === "1");
-  await page.locator(".switch").click();
+  await toggleMotion();
 
   // P. view presets
   for (const [v, y] of [["upper", 1.37], ["lower", 0.47], ["full", 0.93]]) {
@@ -255,7 +259,7 @@ try {
     await tp.goto(base);
     await tp.waitForSelector(".status.failed", { timeout: 15000 });
     const msg = await tp.locator(".status").innerText();
-    ok("T missing model -> model.failed text", msg === pending["model.failed"].zh, msg);
+    ok("T missing model -> model.failed text", msg === (ui["model.failed"] ?? pending["model.failed"]).zh, msg);
   }
   // U. parts file missing -> still loads, names parsed from the glTF node names
   {

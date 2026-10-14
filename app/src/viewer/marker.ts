@@ -35,6 +35,8 @@ export class Marker {
   readonly mesh: THREE.Mesh<THREE.PlaneGeometry, THREE.ShaderMaterial>;
   private born = performance.now();
   private phase = Math.random() * BREATH_S; // marks do not breathe in lockstep
+  /** Size multiplier for patch / radiating marks (1 = point). */
+  scaleMul = 1;
 
   constructor(point: THREE.Vector3, normal: THREE.Vector3, intensity = 5) {
     const material = new THREE.ShaderMaterial({
@@ -59,7 +61,7 @@ export class Marker {
     const age = (now - this.born) / 1000;
     const land = reduced ? 1 : Math.min(1, age / 0.6);
     const ease = 1 - Math.pow(1 - land, 3);
-    const scale = SCREEN_PX * worldPerPx * (reduced ? 1 : 1.35 - 0.35 * ease);
+    const scale = SCREEN_PX * worldPerPx * (reduced ? 1 : 1.35 - 0.35 * ease) * this.scaleMul;
     this.mesh.scale.setScalar(scale);
     u.uLand.value = reduced ? 1 : ease;
     if (reduced) { u.uBreath.value = 0.5; u.uRipple.value = -1; return false; }
@@ -68,6 +70,9 @@ export class Marker {
     u.uRipple.value = t > 0.5 ? (t - 0.5) * 2 : -1;            // a ring leaves on the out-breath
     return true;
   }
+
+  setIntensity(intensity: number) { this.mesh.material.uniforms.uPresence.value = 0.55 + 0.045 * Math.max(0, Math.min(10, intensity)); }
+  setShape(shape: string, radius = 0.3) { this.scaleMul = shape === "patch" || shape === "radiating" ? 1 + 2.5 * Math.max(0, Math.min(1, radius)) : 1; }
 
   dispose() { this.mesh.geometry.dispose(); this.mesh.material.dispose(); }
 }
