@@ -18,6 +18,12 @@ A 3D body record. Tap where it hurts, say what it feels like, note how long. Ove
 - **Yours.** Everything stays on your device. Export a backup file whenever you like. No account, no server, no analytics.
 - 中文 / English.
 
+<p align="center">
+  <img src="docs/01_body.png" width="30%" alt="A mark on the body with the record panel" />
+  <img src="docs/02_timeline.png" width="30%" alt="Timeline: dots, mind rows, gaps" />
+  <img src="docs/03_doctor_export.png" width="30%" alt="Export for a clinician" />
+</p>
+
 ## Who it is for
 
 People who find pain hard to put into words. Children and older people. People living with something long-term. People who see doctors rarely and don't know which door. Anyone who has been told "we can't find anything" and knows it is still real.
@@ -25,13 +31,28 @@ People who find pain hard to put into words. Children and older people. People l
 ## Run
 
 ```
+cd app
 npm install
-npm run dev
+npm run dev            # open on a phone: npm run dev -- --host
 ```
+
+Open it in Safari on a phone and add it to the home screen: it works offline after the first load, and the records never leave the device.
+
+## Check
+
+```
+node core/tests/run.mjs                      # data rules, exports, routing, no words of judgement in the strings
+cd app && npm run build && npm test          # types, unit tests
+npm run e2e && npm run e2e:d1                # real browser on a phone viewport: taps, forms, storage, exports, 1000-record and bad-import cases
+```
+
+## Status
+
+The app ships with a placeholder low-poly body (40 named parts, three layers). The anatomical model (Z-Anatomy, CC BY-SA 4.0) is exported by `assets/model/export_zanatomy.py`; see `assets/model/CHANGES.md` for where that stands.
 
 ## Data format
 
-Records are plain JSON. See [`core/schema/README.md`](core/schema/README.md). The format is versioned and append-only.
+Records are plain JSON. See [`core/schema/README.md`](core/schema/README.md). The format is versioned and append-only: an edit writes a new record that `supersedes` the old one, and a backup file carries every version. Deleting a record (the only non-append action) asks first and removes all of its versions.
 
 ## License
 
