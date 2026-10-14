@@ -74,3 +74,17 @@ describe("Z-Anatomy body model", () => {
   });
   it("every part_id has zh and en labels", () => Object.values<any>(bp.nodes).forEach((p) => expect(bp.labels[p.part_id]?.zh && bp.labels[p.part_id]?.en, p.part_id).toBeTruthy()));
 });
+
+// Names: labels.json is the source for every part, and two different parts never show the same Chinese name
+// (a contained-id fallback once named iliotibial_tract "胫骨" and every vertebra "椎骨").
+describe("body part names", () => {
+  const bp = JSON.parse(readFileSync(new URL("../public/model/body.parts.json", import.meta.url), "utf8"));
+  const L = JSON.parse(readFileSync(new URL("../../assets/model/labels.json", import.meta.url), "utf8"));
+  const ids = [...new Set(Object.values<any>(bp.nodes).map((n) => n.part_id))];
+  it("every part_id has an exact labels.json entry, and the parts file shows it", () =>
+    ids.forEach((i) => { expect(L[i], i).toBeTruthy(); expect(bp.labels[i].zh, i).toBe(L[i].zh); }));
+  it("no two part_ids share a Chinese name", () => {
+    const seen = new Map<string, string>();
+    for (const i of ids) { const zh = bp.labels[i].zh; expect(seen.has(zh), `${zh}: ${seen.get(zh)} / ${i}`).toBe(false); seen.set(zh, i); }
+  });
+});

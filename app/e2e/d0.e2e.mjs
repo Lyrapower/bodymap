@@ -86,6 +86,15 @@ try {
 
   // the body re-frames with a tween; with ~0.5 M triangles in software GL a frame can take 100+ ms, so wait for the tween itself
   const idle = () => page.waitForFunction(() => !window.__bodymap.viewer.tween, null, { timeout: 20000 });
+  const settle = async () => {
+    let h = -1;
+    for (let i = 0; i < 40; i++) {
+      await idle(); await sleep(250);
+      const nh = await page.evaluate(() => Math.round(document.querySelector(".panel")?.getBoundingClientRect().height ?? 0));
+      if (nh === h && (await page.evaluate(() => !window.__bodymap.viewer.tween))) return;
+      h = nh;
+    }
+  };
   // Turn to an azimuth and make sure it stuck. A re-frame tween that starts after a tap (panel grows, D1) keeps the old direction
   // and can undo the turn; that is reported to the app owner, the test only needs the camera where it asked for it.
   let refitUndidTurn = 0;
@@ -98,12 +107,13 @@ try {
     }
   };
   const tapWorld = async (x, y, z) => {
-    await idle();
+    await settle();
     const p = await page.evaluate(([x, y, z]) => window.__bodymap.screenOf(x, y, z), [x, y, z]);
     await page.touchscreen.tap(p.x, p.y);
     await sleep(120);
-    // D1: the panel grows when a record opens and the body re-frames (650 ms); wait for it so the next screenOf is current
-    await idle();
+    // D1: the panel grows when a record opens and the body re-frames (650 ms). The resize, and so the re-frame, can start
+    // after a first idle check; wait until the panel height holds still and no tween runs, so the next screenOf is current.
+    await settle();
     await sleep(80);
     return p;
   };

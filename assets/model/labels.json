@@ -1498,5 +1498,397 @@
  "anterior_cells_of_ethmoid": {
   "zh": "筛窦前群",
   "en": "Anterior cells of ethmoid bone"
+ },
+ "inferior_head_of_lateral_pterygoid": {
+  "zh": "翼外肌下头",
+  "en": "Inferior head of lateral pterygoid muscle"
+ },
+ "superior_head_of_lateral_pterygoid": {
+  "zh": "翼外肌上头",
+  "en": "Superior head of lateral pterygoid muscle"
+ },
+ "masseteric_fascia": {
+  "zh": "咬肌筋膜",
+  "en": "Masseteric fascia"
+ },
+ "multifidus_colli": {
+  "zh": "颈多裂肌",
+  "en": "Multifidus colli muscle"
+ },
+ "multifidus_thoracis": {
+  "zh": "胸多裂肌",
+  "en": "Multifidus thoracis muscle"
+ },
+ "multifidus_lumborum": {
+  "zh": "腰多裂肌",
+  "en": "Multifidus lumborum muscle"
+ },
+ "external_intercostal": {
+  "zh": "肋间外肌",
+  "en": "External intercostal muscles"
+ },
+ "internal_intercostal": {
+  "zh": "肋间内肌",
+  "en": "Internal intercostal muscles"
+ },
+ "innermost_intercostal": {
+  "zh": "肋间最内肌",
+  "en": "Innermost intercostal muscles"
+ },
+ "piriformis_fascia": {
+  "zh": "梨状肌筋膜",
+  "en": "Piriformis fascia"
+ },
+ "extensor_carpi_radialis_brevis": {
+  "zh": "桡侧腕短伸肌",
+  "en": "Extensor carpi radialis brevis"
+ },
+ "superficial_head_of_flexor_pollicis_brevis": {
+  "zh": "拇短屈肌浅头",
+  "en": "Superficial head of flexor pollicis brevis"
+ },
+ "deep_head_of_flexor_pollicis_brevis": {
+  "zh": "拇短屈肌深头",
+  "en": "Deep head of flexor pollicis brevis"
+ },
+ "oblique_head_of_adductor_pollicis": {
+  "zh": "拇收肌斜头",
+  "en": "Oblique head of adductor pollicis"
+ },
+ "transverse_head_of_adductor_pollicis": {
+  "zh": "拇收肌横头",
+  "en": "Transverse head of adductor pollicis"
+ },
+ "deltoid_fascia": {
+  "zh": "三角肌筋膜",
+  "en": "Deltoid fascia"
+ },
+ "superficial_transverse_metacarpal_ligament": {
+  "zh": "掌浅横韧带",
+  "en": "Superficial transverse metacarpal ligament"
+ },
+ "lateral_patellar_retinaculum": {
+  "zh": "髌外侧支持带",
+  "en": "Lateral patellar retinaculum"
+ },
+ "medial_patellar_retinaculum": {
+  "zh": "髌内侧支持带",
+  "en": "Medial patellar retinaculum"
+ },
+ "fibularis_tertius": {
+  "zh": "第三腓骨肌",
+  "en": "Fibularis tertius muscle"
+ },
+ "fibularis_brevis": {
+  "zh": "腓骨短肌",
+  "en": "Fibularis brevis muscle"
+ },
+ "medial_head_of_flexor_hallucis_brevis": {
+  "zh": "𧿹短屈肌内侧头",
+  "en": "Medial head of flexor hallucis brevis"
+ },
+ "lateral_head_of_flexor_hallucis_brevis": {
+  "zh": "𧿹短屈肌外侧头",
+  "en": "Lateral head of flexor hallucis brevis"
+ },
+ "oblique_head_of_adductor_hallucis": {
+  "zh": "𧿹收肌斜头",
+  "en": "Oblique head of adductor hallucis"
+ },
+ "transverse_head_of_adductor_hallucis": {
+  "zh": "𧿹收肌横头",
+  "en": "Transverse head of adductor hallucis"
+ },
+ "extensor_digitorum_brevis": {
+  "zh": "趾短伸肌",
+  "en": "Extensor digitorum brevis"
+ },
+ "iliotibial_tract": {
+  "zh": "髂胫束",
+  "en": "Iliotibial tract"
+ },
+ "superior_fibular_retinaculum": {
+  "zh": "腓骨肌上支持带",
+  "en": "Superior fibular retinaculum"
+ },
+ "inferior_fibular_retinaculum": {
+  "zh": "腓骨肌下支持带",
+  "en": "Inferior fibular retinaculum"
+ },
+ "superficial_transverse_metatarsal_ligament": {
+  "zh": "跖浅横韧带",
+  "en": "Superficial transverse metatarsal ligament"
+ },
+ "iliopsoas_fascia": {
+  "zh": "髂腰肌筋膜",
+  "en": "Iliopsoas fascia"
+ },
+ "diaphragmatic_fascia": {
+  "zh": "膈筋膜",
+  "en": "Diaphragmatic fascia"
+ },
+ "subdeltoid_bursa": {
+  "zh": "三角肌下囊",
+  "en": "Subdeltoid bursa"
+ },
+ "subtendinous_prepatellar_bursa": {
+  "zh": "髌前腱下囊",
+  "en": "Subtendinous prepatellar bursa"
+ },
+ "subcutaneous_prepatellar_bursa": {
+  "zh": "髌前皮下囊",
+  "en": "Subcutaneous prepatellar bursa"
+ },
+ "deep_infrapatellar_bursa": {
+  "zh": "髌下深囊",
+  "en": "Deep infrapatellar bursa"
+ },
+ "subfacial_prepatellar_bursa": {
+  "zh": "髌前筋膜下囊",
+  "en": "Subfacial prepatellar bursa"
+ },
+ "subcutaneous_infrapatellar_bursa": {
+  "zh": "髌下皮下囊",
+  "en": "Subcutaneous infrapatellar bursa"
+ },
+ "suprapatellar_bursa": {
+  "zh": "髌上囊",
+  "en": "Suprapatellar bursa"
+ },
+ "semimembranosus_bursa": {
+  "zh": "半膜肌囊",
+  "en": "Semimembranosus bursa"
+ },
+ "tendon_sheath_of_extensor_digitorum_and_extensor_indicis": {
+  "zh": "指伸肌与示指伸肌腱鞘",
+  "en": "Tendon sheath of extensor digitorum and extensor indicis"
+ },
+ "common_tendon_sheath_of_fibularis": {
+  "zh": "腓骨肌总腱鞘",
+  "en": "Common tendon sheath of fibularis muscles"
+ },
+ "atlas_c1": {
+  "zh": "寰椎（C1）",
+  "en": "Atlas (C1)"
+ },
+ "axis_c2": {
+  "zh": "枢椎（C2）",
+  "en": "Axis (C2)"
+ },
+ "vertebra_c3": {
+  "zh": "第3颈椎（C3）",
+  "en": "Vertebra C3"
+ },
+ "vertebra_c4": {
+  "zh": "第4颈椎（C4）",
+  "en": "Vertebra C4"
+ },
+ "vertebra_c5": {
+  "zh": "第5颈椎（C5）",
+  "en": "Vertebra C5"
+ },
+ "vertebra_c6": {
+  "zh": "第6颈椎（C6）",
+  "en": "Vertebra C6"
+ },
+ "vertebra_c7": {
+  "zh": "第7颈椎（C7）",
+  "en": "Vertebra C7"
+ },
+ "vertebra_t1": {
+  "zh": "第1胸椎（T1）",
+  "en": "Vertebra T1"
+ },
+ "vertebra_t2": {
+  "zh": "第2胸椎（T2）",
+  "en": "Vertebra T2"
+ },
+ "vertebra_t3": {
+  "zh": "第3胸椎（T3）",
+  "en": "Vertebra T3"
+ },
+ "vertebra_t4": {
+  "zh": "第4胸椎（T4）",
+  "en": "Vertebra T4"
+ },
+ "vertebra_t5": {
+  "zh": "第5胸椎（T5）",
+  "en": "Vertebra T5"
+ },
+ "vertebra_t6": {
+  "zh": "第6胸椎（T6）",
+  "en": "Vertebra T6"
+ },
+ "vertebra_t7": {
+  "zh": "第7胸椎（T7）",
+  "en": "Vertebra T7"
+ },
+ "vertebra_t8": {
+  "zh": "第8胸椎（T8）",
+  "en": "Vertebra T8"
+ },
+ "vertebra_t9": {
+  "zh": "第9胸椎（T9）",
+  "en": "Vertebra T9"
+ },
+ "vertebra_t10": {
+  "zh": "第10胸椎（T10）",
+  "en": "Vertebra T10"
+ },
+ "vertebra_t11": {
+  "zh": "第11胸椎（T11）",
+  "en": "Vertebra T11"
+ },
+ "vertebra_t12": {
+  "zh": "第12胸椎（T12）",
+  "en": "Vertebra T12"
+ },
+ "vertebra_l1": {
+  "zh": "第1腰椎（L1）",
+  "en": "Vertebra L1"
+ },
+ "vertebra_l2": {
+  "zh": "第2腰椎（L2）",
+  "en": "Vertebra L2"
+ },
+ "vertebra_l3": {
+  "zh": "第3腰椎（L3）",
+  "en": "Vertebra L3"
+ },
+ "vertebra_l4": {
+  "zh": "第4腰椎（L4）",
+  "en": "Vertebra L4"
+ },
+ "vertebra_l5": {
+  "zh": "第5腰椎（L5）",
+  "en": "Vertebra L5"
+ },
+ "first_rib": {
+  "zh": "第1肋",
+  "en": "First rib"
+ },
+ "costal_cartilage_of_first_rib": {
+  "zh": "第1肋软骨",
+  "en": "Costal cartilage of first rib"
+ },
+ "second_rib": {
+  "zh": "第2肋",
+  "en": "Second rib"
+ },
+ "costal_cartilage_of_second_rib": {
+  "zh": "第2肋软骨",
+  "en": "Costal cartilage of second rib"
+ },
+ "third_rib": {
+  "zh": "第3肋",
+  "en": "Third rib"
+ },
+ "costal_cartilage_of_third_rib": {
+  "zh": "第3肋软骨",
+  "en": "Costal cartilage of third rib"
+ },
+ "fourth_rib": {
+  "zh": "第4肋",
+  "en": "Fourth rib"
+ },
+ "costal_cartilage_of_fourth_rib": {
+  "zh": "第4肋软骨",
+  "en": "Costal cartilage of fourth rib"
+ },
+ "fifth_rib": {
+  "zh": "第5肋",
+  "en": "Fifth rib"
+ },
+ "costal_cartilage_of_fifth_rib": {
+  "zh": "第5肋软骨",
+  "en": "Costal cartilage of fifth rib"
+ },
+ "sixth_rib": {
+  "zh": "第6肋",
+  "en": "Sixth rib"
+ },
+ "costal_cartilage_of_sixth_rib": {
+  "zh": "第6肋软骨",
+  "en": "Costal cartilage of sixth rib"
+ },
+ "seventh_rib": {
+  "zh": "第7肋",
+  "en": "Seventh rib"
+ },
+ "costal_cartilage_of_seventh_rib": {
+  "zh": "第7肋软骨",
+  "en": "Costal cartilage of seventh rib"
+ },
+ "eighth_rib": {
+  "zh": "第8肋",
+  "en": "Eighth rib"
+ },
+ "costal_cartilage_of_eighth_rib": {
+  "zh": "第8肋软骨",
+  "en": "Costal cartilage of eighth rib"
+ },
+ "ninth_rib": {
+  "zh": "第9肋",
+  "en": "Ninth rib"
+ },
+ "costal_cartilage_of_ninth_rib": {
+  "zh": "第9肋软骨",
+  "en": "Costal cartilage of ninth rib"
+ },
+ "tenth_rib": {
+  "zh": "第10肋",
+  "en": "Tenth rib"
+ },
+ "costal_cartilage_of_tenth_rib": {
+  "zh": "第10肋软骨",
+  "en": "Costal cartilage of tenth rib"
+ },
+ "eleventh_rib": {
+  "zh": "第11肋",
+  "en": "Eleventh rib"
+ },
+ "twelfth_rib": {
+  "zh": "第12肋",
+  "en": "Twelfth rib"
+ },
+ "first_metatarsal": {
+  "zh": "第1跖骨",
+  "en": "First metatarsal bone"
+ },
+ "first_metacarpal": {
+  "zh": "第1掌骨",
+  "en": "First metacarpal bone"
+ },
+ "second_metatarsal": {
+  "zh": "第2跖骨",
+  "en": "Second metatarsal bone"
+ },
+ "second_metacarpal": {
+  "zh": "第2掌骨",
+  "en": "Second metacarpal bone"
+ },
+ "third_metatarsal": {
+  "zh": "第3跖骨",
+  "en": "Third metatarsal bone"
+ },
+ "third_metacarpal": {
+  "zh": "第3掌骨",
+  "en": "Third metacarpal bone"
+ },
+ "fourth_metatarsal": {
+  "zh": "第4跖骨",
+  "en": "Fourth metatarsal bone"
+ },
+ "fourth_metacarpal": {
+  "zh": "第4掌骨",
+  "en": "Fourth metacarpal bone"
+ },
+ "fifth_metatarsal": {
+  "zh": "第5跖骨",
+  "en": "Fifth metatarsal bone"
+ },
+ "fifth_metacarpal": {
+  "zh": "第5掌骨",
+  "en": "Fifth metacarpal bone"
  }
 }

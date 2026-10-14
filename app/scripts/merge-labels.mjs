@@ -9,7 +9,9 @@ let n = 0;
 for (const id of new Set(Object.values(parts.nodes).map((x) => x.part_id))) {
   const l = labels[id]; if (!l) continue;
   const cur = parts.labels[id] ?? {};
-  const next = { zh: /[一-鿿]/.test(cur.zh ?? "") ? cur.zh : l.zh, en: cur.en ?? l.en };
+  // labels.json is the curated source: its zh always wins, so a correction there reaches the app (an older
+  // Chinese name already in the parts file is not kept). en keeps the model's own name when there is one.
+  const next = { zh: l.zh, en: cur.en ?? l.en };
   if (next.zh !== cur.zh || next.en !== cur.en) { parts.labels[id] = next; n++; }
 }
 writeFileSync(partsPath, JSON.stringify(parts, null, 1) + "\n");

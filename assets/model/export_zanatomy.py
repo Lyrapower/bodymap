@@ -22,8 +22,8 @@ Why it works this way (found by running it on the real file, 2026-10-14):
     feet at y = 0, facing +Z, left at +X, which is exactly the app's convention, so nothing is rotated.
   * Meshes are baked in world space (node transform = identity), so `local` is relative to an axis-aligned box.
   * part_id: the Z-Anatomy name in snake case, side stripped, a trailing "muscle" / "bone" dropped
-    ("Pectoralis major muscle.l" -> pectoralis_major, left). Labels: labels.json exact match; otherwise the
-    labels.json entry whose id is contained in the part_id (zh only, en keeps the full Z-Anatomy name).
+    ("Pectoralis major muscle.l" -> pectoralis_major, left). Labels: labels.json exact match only; a part
+    without an entry shows its English Z-Anatomy name in both languages until labels.json gets one.
 """
 import bpy, bmesh, json, re, sys, os, argparse, unicodedata, mathutils
 
@@ -138,10 +138,9 @@ def main():
         if len(members) > 1 or members[0][0] != name: entry["from"] = [m[0] for m in members]
         nodes[n.name] = entry
         en = re.sub(r"\.[lr]$", "", name)
-        if pid in labels: lab = labels[pid]
-        else:
-            hit = max((k for k in labels if k in pid), key=len, default=None)
-            lab = {"zh": labels[hit]["zh"] if hit else en, "en": en}
+        # exact labels.json entry only. A contained-id fallback gave wrong names ("iliotibial_tract" contains
+        # "tibia" -> 胫骨; "..._head_of_..." contains "head" -> 头), so without an entry the English name is shown.
+        lab = labels[pid] if pid in labels else {"zh": en, "en": en}
         part_labels.setdefault(pid, {"zh": lab["zh"], "en": lab.get("en", en)})
     scene.collection.children.unlink(bake)
 

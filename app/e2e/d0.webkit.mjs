@@ -71,7 +71,17 @@ const face = async (s, r) => {
     refitUndidTurn++;
   }
 };
-const tapWorld = async (s, x, y, z) => { await idle(s); const p = await s.exec((x, y, z) => window.__bodymap.screenOf(x, y, z), x, y, z); await tap(s, p.x, p.y); await sleep(120); await idle(s); return p; };
+// the panel resize (and its re-frame) can start after a first idle check: wait for a still panel and no tween
+const settle = async (s) => {
+  let h = -1;
+  for (let i = 0; i < 40; i++) {
+    await idle(s); await sleep(250);
+    const nh = await s.exec(() => Math.round(document.querySelector(".panel")?.getBoundingClientRect().height ?? 0));
+    if (nh === h && (await s.exec(() => !window.__bodymap.viewer.tween))) return;
+    h = nh;
+  }
+};
+const tapWorld = async (s, x, y, z) => { await settle(s); const p = await s.exec((x, y, z) => window.__bodymap.screenOf(x, y, z), x, y, z); await tap(s, p.x, p.y); await sleep(120); await settle(s); return p; };
 const picks = (s) => s.exec(() => window.__bodymap.picks());
 async function expectPick(s, name, want) {
   const p = (await picks(s)).at(-1); const l = p?.location ?? {};
