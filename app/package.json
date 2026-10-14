@@ -14,7 +14,8 @@
     "e2e:webkit": "e2e/run-webkit.sh 390x844 full && e2e/run-webkit.sh 375x667 layout && e2e/run-webkit.sh 390x844 d1",
     "e2e:d1": "node e2e/d1.e2e.mjs",
     "e2e:all": "npm run e2e && npm run e2e:d1",
-    "shots": "node e2e/shots.mjs"
+    "shots": "node e2e/shots.mjs",
+    "model:labels": "node scripts/merge-labels.mjs public/model/body.parts.json"
   },
   "dependencies": {
     "three": "0.186.1"

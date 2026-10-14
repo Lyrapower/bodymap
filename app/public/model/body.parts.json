@@ -4461,47 +4461,47 @@
  },
  "labels": {
   "lateral_rectus": {
-   "zh": "Lateral rectus muscle",
+   "zh": "外直肌",
    "en": "Lateral rectus muscle"
   },
   "superior_oblique": {
-   "zh": "Superior oblique muscle",
+   "zh": "上斜肌",
    "en": "Superior oblique muscle"
   },
   "common_tendinous_ring": {
-   "zh": "Common tendinous ring",
+   "zh": "总腱环",
    "en": "Common tendinous ring"
   },
   "inferior_oblique": {
-   "zh": "Inferior oblique muscle",
+   "zh": "下斜肌",
    "en": "Inferior oblique muscle"
   },
   "inferior_rectus": {
-   "zh": "Inferior rectus muscle",
+   "zh": "下直肌",
    "en": "Inferior rectus muscle"
   },
   "inferior_tarsus": {
-   "zh": "Inferior tarsus",
+   "zh": "下睑板",
    "en": "Inferior tarsus"
   },
   "levator_palpebrae_superioris": {
-   "zh": "Levator palpebrae superioris",
+   "zh": "上睑提肌",
    "en": "Levator palpebrae superioris"
   },
   "medial_rectus": {
-   "zh": "Medial rectus muscle",
+   "zh": "内直肌",
    "en": "Medial rectus muscle"
   },
   "superior_rectus": {
-   "zh": "Superior rectus muscle",
+   "zh": "上直肌",
    "en": "Superior rectus muscle"
   },
   "superior_tarsus": {
-   "zh": "Superior tarsus",
+   "zh": "上睑板",
    "en": "Superior tarsus"
   },
   "trochlea_of_superior_oblique": {
-   "zh": "Trochlea of superior oblique muscle",
+   "zh": "上斜肌滑车",
    "en": "Trochlea of superior oblique muscle"
   },
   "frontalis": {
@@ -4509,19 +4509,19 @@
    "en": "Frontalis"
   },
   "occipitalis": {
-   "zh": "Occipitalis muscle",
+   "zh": "枕肌",
    "en": "Occipitalis muscle"
   },
   "epicranial_aponeurosis": {
-   "zh": "Epicranial aponeurosis",
+   "zh": "帽状腱膜",
    "en": "Epicranial aponeurosis"
   },
   "temporoparietalis": {
-   "zh": "Temporoparietalis muscle",
+   "zh": "颞顶肌",
    "en": "Temporoparietalis muscle"
   },
   "nasalis": {
-   "zh": "Nasalis muscle",
+   "zh": "鼻肌",
    "en": "Nasalis muscle"
   },
   "orbicularis_oculi": {
@@ -4533,55 +4533,55 @@
    "en": "Orbicularis oris"
   },
   "zygomaticus_major": {
-   "zh": "Zygomaticus major muscle",
+   "zh": "颧大肌",
    "en": "Zygomaticus major muscle"
   },
   "corrugator_supercilii": {
-   "zh": "Corrugator supercilii",
+   "zh": "皱眉肌",
    "en": "Corrugator supercilii"
   },
   "depressor_anguli_oris": {
-   "zh": "Depressor anguli oris",
+   "zh": "降口角肌",
    "en": "Depressor anguli oris"
   },
   "depressor_labii_inferioris": {
-   "zh": "Depressor labii inferioris",
+   "zh": "降下唇肌",
    "en": "Depressor labii inferioris"
   },
   "levator_anguli_oris": {
-   "zh": "Levator anguli oris",
+   "zh": "提口角肌",
    "en": "Levator anguli oris"
   },
   "procerus": {
-   "zh": "Procerus muscle",
+   "zh": "降眉间肌",
    "en": "Procerus muscle"
   },
   "risorius": {
-   "zh": "Risorius muscle",
+   "zh": "笑肌",
    "en": "Risorius muscle"
   },
   "zygomaticus_minor": {
-   "zh": "Zygomaticus minor muscle",
+   "zh": "颧小肌",
    "en": "Zygomaticus minor muscle"
   },
   "levator_labii_superioris": {
-   "zh": "Levator labii superioris",
+   "zh": "提上唇肌",
    "en": "Levator labii superioris"
   },
   "depressor_septi_nasi": {
-   "zh": "Depressor septi nasi",
+   "zh": "降鼻中隔肌",
    "en": "Depressor septi nasi"
   },
   "mentalis": {
-   "zh": "Mentalis muscle",
+   "zh": "颏肌",
    "en": "Mentalis muscle"
   },
   "levator_nasolabialis": {
-   "zh": "Levator nasolabialis",
+   "zh": "提上唇鼻翼肌",
    "en": "Levator nasolabialis"
   },
   "bucinator": {
-   "zh": "Bucinator",
+   "zh": "颊肌",
    "en": "Bucinator"
   },
   "masseter": {
@@ -4589,7 +4589,7 @@
    "en": "Masseter"
   },
   "medial_pterygoid": {
-   "zh": "Medial pterygoid muscle",
+   "zh": "翼内肌",
    "en": "Medial pterygoid muscle"
   },
   "inferior_head_of_lateral_pterygoid": {
@@ -4605,19 +4605,19 @@
    "en": "Temporalis"
   },
   "hyoglossus": {
-   "zh": "Hyoglossus muscle",
+   "zh": "舌骨舌肌",
    "en": "Hyoglossus muscle"
   },
   "genioglossus": {
-   "zh": "Genioglossus muscle",
+   "zh": "颏舌肌",
    "en": "Genioglossus muscle"
   },
   "palatopharyngeus": {
-   "zh": "Palatopharyngeus muscle",
+   "zh": "腭咽肌",
    "en": "Palatopharyngeus muscle"
   },
   "superficial_layer_of_temporal_fascia": {
-   "zh": "Superficial layer of temporal fascia",
+   "zh": "颞筋膜浅层",
    "en": "Superficial layer of temporal fascia"
   },
   "masseteric_fascia": {
@@ -4629,191 +4629,191 @@
    "en": "Sternocleidomastoid"
   },
   "intermediate_tendon_of_digastric": {
-   "zh": "Intermediate tendon of digastric muscle",
+   "zh": "二腹肌中间腱",
    "en": "Intermediate tendon of digastric muscle"
   },
   "anterior_belly_of_digastric": {
-   "zh": "Anterior belly of digastric muscle",
+   "zh": "二腹肌前腹",
    "en": "Anterior belly of digastric muscle"
   },
   "posterior_belly_of_digastric": {
-   "zh": "Posterior belly of digastric muscle",
+   "zh": "二腹肌后腹",
    "en": "Posterior belly of digastric muscle"
   },
   "mylohyoid": {
-   "zh": "Mylohyoid muscle",
+   "zh": "下颌舌骨肌",
    "en": "Mylohyoid muscle"
   },
   "stylohyoid": {
-   "zh": "Stylohyoid muscle",
+   "zh": "茎突舌骨肌",
    "en": "Stylohyoid muscle"
   },
   "geniohyoid": {
-   "zh": "Geniohyoid muscle",
+   "zh": "颏舌骨肌",
    "en": "Geniohyoid muscle"
   },
   "omohyoid": {
-   "zh": "Omohyoid muscle",
+   "zh": "肩胛舌骨肌",
    "en": "Omohyoid muscle"
   },
   "sternohyoid": {
-   "zh": "Sternohyoid muscle",
+   "zh": "胸骨舌骨肌",
    "en": "Sternohyoid muscle"
   },
   "sternothyroid": {
-   "zh": "Sternothyroid muscle",
+   "zh": "胸骨甲状肌",
    "en": "Sternothyroid muscle"
   },
   "thyrohyoid": {
-   "zh": "Thyrohyoid muscle",
+   "zh": "甲状舌骨肌",
    "en": "Thyrohyoid muscle"
   },
   "superior_pharyngeal_constrictor": {
-   "zh": "Superior pharyngeal constrictor",
+   "zh": "咽上缩肌",
    "en": "Superior pharyngeal constrictor"
   },
   "middle_pharyngeal_constrictor": {
-   "zh": "Middle pharyngeal constrictor",
+   "zh": "咽中缩肌",
    "en": "Middle pharyngeal constrictor"
   },
   "inferior_pharyngeal_constrictor": {
-   "zh": "Inferior pharyngeal constrictor",
+   "zh": "咽下缩肌",
    "en": "Inferior pharyngeal constrictor"
   },
   "stylopharyngeus": {
-   "zh": "Stylopharyngeus muscle",
+   "zh": "茎突咽肌",
    "en": "Stylopharyngeus muscle"
   },
   "oblique_part_of_cricothyroid": {
-   "zh": "Oblique part of cricothyroid muscle",
+   "zh": "环甲肌斜部",
    "en": "Oblique part of cricothyroid muscle"
   },
   "straight_part_of_cricothyroid": {
-   "zh": "Straight part of cricothyroid muscle",
+   "zh": "环甲肌直部",
    "en": "Straight part of cricothyroid muscle"
   },
   "external_part_of_thyro_arytenoid": {
-   "zh": "External part of thyro-arytenoid muscle",
+   "zh": "甲杓肌外侧部",
    "en": "External part of thyro-arytenoid muscle"
   },
   "ary_epiglottic_part_of_oblique_arytenoid": {
-   "zh": "Ary-epiglottic part of oblique arytenoid muscle",
+   "zh": "杓会厌部（斜杓肌）",
    "en": "Ary-epiglottic part of oblique arytenoid muscle"
   },
   "thyro_epiglottic_part_of_thyro_arytenoid": {
-   "zh": "Thyro-epiglottic part of thyro-arytenoid muscle",
+   "zh": "甲状会厌部（甲杓肌）",
    "en": "Thyro-epiglottic part of thyro-arytenoid muscle"
   },
   "transverse_arytenoid": {
-   "zh": "Transverse arytenoid muscle",
+   "zh": "杓横肌",
    "en": "Transverse arytenoid muscle"
   },
   "lateral_crico_arytenoid": {
-   "zh": "Lateral crico-arytenoid muscle",
+   "zh": "环杓侧肌",
    "en": "Lateral crico-arytenoid muscle"
   },
   "posterior_crico_arytenoid": {
-   "zh": "Posterior crico-arytenoid muscle",
+   "zh": "环杓后肌",
    "en": "Posterior crico-arytenoid muscle"
   },
   "platysma": {
-   "zh": "Platysma",
+   "zh": "颈阔肌",
    "en": "Platysma"
   },
   "scalenus_medius": {
-   "zh": "Scalenus medius muscle",
+   "zh": "中斜角肌",
    "en": "Scalenus medius muscle"
   },
   "scalenus_posterior": {
-   "zh": "Scalenus posterior muscle",
+   "zh": "后斜角肌",
    "en": "Scalenus posterior muscle"
   },
   "scalenus_anterior": {
-   "zh": "Scalenus anterior muscle",
+   "zh": "前斜角肌",
    "en": "Scalenus anterior muscle"
   },
   "longus_capitis": {
-   "zh": "Longus capitis muscle",
+   "zh": "头长肌",
    "en": "Longus capitis muscle"
   },
   "longus_colli": {
-   "zh": "Longus colli muscle",
+   "zh": "颈长肌",
    "en": "Longus colli muscle"
   },
   "rectus_anterior_capitis": {
-   "zh": "Rectus anterior capitis muscle",
+   "zh": "头前直肌",
    "en": "Rectus anterior capitis muscle"
   },
   "rectus_lateralis_capitis": {
-   "zh": "Rectus lateralis capitis muscle",
+   "zh": "头外侧直肌",
    "en": "Rectus lateralis capitis muscle"
   },
   "superficial_investing_cervical_fascia": {
-   "zh": "Superficial investing cervical fascia",
+   "zh": "颈浅筋膜",
    "en": "Superficial investing cervical fascia"
   },
   "posterior_layer_of_thoracolumbar_fascia": {
-   "zh": "Posterior layer of thoracolumbar fascia",
+   "zh": "胸腰筋膜后层",
    "en": "Posterior layer of thoracolumbar fascia"
   },
   "middle_layer_of_thoracolumbar_fascia": {
-   "zh": "Middle layer of thoracolumbar fascia",
+   "zh": "胸腰筋膜中层",
    "en": "Middle layer of thoracolumbar fascia"
   },
   "anterior_layer_of_thoracolumbar_fascia": {
-   "zh": "Anterior layer of thoracolumbar fascia",
+   "zh": "胸腰筋膜前层",
    "en": "Anterior layer of thoracolumbar fascia"
   },
   "obliquus_inferior_capitis": {
-   "zh": "Obliquus inferior capitis muscle",
+   "zh": "头下斜肌",
    "en": "Obliquus inferior capitis muscle"
   },
   "obliquus_superior_capitis": {
-   "zh": "Obliquus superior capitis muscle",
+   "zh": "头上斜肌",
    "en": "Obliquus superior capitis muscle"
   },
   "rectus_posterior_major_capitis": {
-   "zh": "Rectus posterior major capitis muscle",
+   "zh": "头后大直肌",
    "en": "Rectus posterior major capitis muscle"
   },
   "rectus_posterior_minor_capitis": {
-   "zh": "Rectus posterior minor capitis muscle",
+   "zh": "头后小直肌",
    "en": "Rectus posterior minor capitis muscle"
   },
   "iliocostalis_lumborum": {
-   "zh": "Iliocostalis lumborum muscle",
+   "zh": "腰髂肋肌",
    "en": "Iliocostalis lumborum muscle"
   },
   "iliocostalis_thoracis": {
-   "zh": "Iliocostalis thoracis muscle",
+   "zh": "胸髂肋肌",
    "en": "Iliocostalis thoracis muscle"
   },
   "iliocostalis_colli": {
-   "zh": "Iliocostalis colli muscle",
+   "zh": "颈髂肋肌",
    "en": "Iliocostalis colli muscle"
   },
   "longissimus_thoracis": {
-   "zh": "Longissimus thoracis muscle",
+   "zh": "胸最长肌",
    "en": "Longissimus thoracis muscle"
   },
   "longissimus_capitis": {
-   "zh": "Longissimus capitis muscle",
+   "zh": "头最长肌",
    "en": "Longissimus capitis muscle"
   },
   "longissimus_colli": {
-   "zh": "Longissimus colli muscle",
+   "zh": "颈最长肌",
    "en": "Longissimus colli muscle"
   },
   "spinalis_capitis": {
-   "zh": "Spinalis capitis muscle",
+   "zh": "头棘肌",
    "en": "Spinalis capitis muscle"
   },
   "spinalis_colli": {
-   "zh": "Spinalis colli muscle",
+   "zh": "颈棘肌",
    "en": "Spinalis colli muscle"
   },
   "spinalis_thoracis": {
-   "zh": "Spinalis thoracis muscle",
+   "zh": "胸棘肌",
    "en": "Spinalis thoracis muscle"
   },
   "splenius_capitis": {
@@ -4821,7 +4821,7 @@
    "en": "Splenius capitis"
   },
   "splenius_colli": {
-   "zh": "Splenius colli muscle",
+   "zh": "颈夹肌",
    "en": "Splenius colli muscle"
   },
   "multifidus_colli": {
@@ -4837,27 +4837,27 @@
    "en": "Multifidus lumborum muscle"
   },
   "semispinalis_thoracis": {
-   "zh": "Semispinalis thoracis muscle",
+   "zh": "胸半棘肌",
    "en": "Semispinalis thoracis muscle"
   },
   "semispinalis_colli": {
-   "zh": "Semispinalis colli muscle",
+   "zh": "颈半棘肌",
    "en": "Semispinalis colli muscle"
   },
   "rotatores": {
-   "zh": "Rotatores",
+   "zh": "回旋肌",
    "en": "Rotatores"
   },
   "interspinales_colli": {
-   "zh": "Interspinales colli muscles",
+   "zh": "颈棘间肌",
    "en": "Interspinales colli muscles"
   },
   "interspinales_thoracis": {
-   "zh": "Interspinales thoracis muscles",
+   "zh": "胸棘间肌",
    "en": "Interspinales thoracis muscles"
   },
   "interspinales_lumborum": {
-   "zh": "Interspinales lumborum muscles",
+   "zh": "腰棘间肌",
    "en": "Interspinales lumborum muscles"
   },
   "trapezius": {
@@ -4865,11 +4865,11 @@
    "en": "Trapezius"
   },
   "dorsal_parts_of_lateral_intertransversarii_lumborum": {
-   "zh": "Dorsal parts of lateral intertransversarii lumborum muscles",
+   "zh": "腰外侧横突间肌背侧部",
    "en": "Dorsal parts of lateral intertransversarii lumborum muscles"
   },
   "ventral_parts_of_lateral_intertransversarii_lumborum": {
-   "zh": "Ventral parts of lateral intertransversarii lumborum muscles",
+   "zh": "腰外侧横突间肌腹侧部",
    "en": "Ventral parts of lateral intertransversarii lumborum muscles"
   },
   "levator_scapulae": {
@@ -4889,11 +4889,11 @@
    "en": "Latissimus dorsi"
   },
   "serratus_posterior_inferior": {
-   "zh": "Serratus posterior inferior muscle",
+   "zh": "下后锯肌",
    "en": "Serratus posterior inferior muscle"
   },
   "serratus_posterior_superior": {
-   "zh": "Serratus posterior superior muscle",
+   "zh": "上后锯肌",
    "en": "Serratus posterior superior muscle"
   },
   "pectoralis_major": {
@@ -4901,11 +4901,11 @@
    "en": "Pectoralis major"
   },
   "levatores_longi_costarum": {
-   "zh": "Levatores longi costarum",
+   "zh": "肋长提肌",
    "en": "Levatores longi costarum"
   },
   "levatores_breves_costarum": {
-   "zh": "Levatores breves costarum",
+   "zh": "肋短提肌",
    "en": "Levatores breves costarum"
   },
   "pectoralis_minor": {
@@ -4929,15 +4929,15 @@
    "en": "Innermost intercostal muscles"
   },
   "subclavius": {
-   "zh": "Subclavius muscle",
+   "zh": "锁骨下肌",
    "en": "Subclavius muscle"
   },
   "transversus_thoracis": {
-   "zh": "Transversus thoracis muscle",
+   "zh": "胸横肌",
    "en": "Transversus thoracis muscle"
   },
   "pectoral_fascia": {
-   "zh": "Pectoral fascia",
+   "zh": "胸肌筋膜",
    "en": "Pectoral fascia"
   },
   "diaphragm": {
@@ -4949,15 +4949,15 @@
    "en": "Rectus abdominis"
   },
   "inguinal_ligament": {
-   "zh": "Inguinal ligament",
+   "zh": "腹股沟韧带",
    "en": "Inguinal ligament"
   },
   "external_abdominal_oblique": {
-   "zh": "External abdominal oblique muscle",
+   "zh": "腹外斜肌",
    "en": "External abdominal oblique muscle"
   },
   "internal_abdominal_oblique": {
-   "zh": "Internal abdominal oblique muscle",
+   "zh": "腹内斜肌",
    "en": "Internal abdominal oblique muscle"
   },
   "transversus_abdominis": {
@@ -4965,11 +4965,11 @@
    "en": "Transversus abdominis"
   },
   "linea_alba": {
-   "zh": "Linea alba",
+   "zh": "白线",
    "en": "Linea alba"
   },
   "pyramidalis": {
-   "zh": "Pyramidalis muscle",
+   "zh": "锥状肌",
    "en": "Pyramidalis muscle"
   },
   "quadratus_lumborum": {
@@ -4977,23 +4977,23 @@
    "en": "Quadratus lumborum"
   },
   "investing_abdominal_fascia": {
-   "zh": "Investing abdominal fascia",
+   "zh": "腹部浅筋膜",
    "en": "Investing abdominal fascia"
   },
   "coccygeus": {
-   "zh": "Coccygeus muscle",
+   "zh": "尾骨肌",
    "en": "Coccygeus muscle"
   },
   "iliococcygeus": {
-   "zh": "Iliococcygeus muscle",
+   "zh": "髂尾肌",
    "en": "Iliococcygeus muscle"
   },
   "pubo_analis": {
-   "zh": "Pubo-analis muscle",
+   "zh": "耻骨肛门肌",
    "en": "Pubo-analis muscle"
   },
   "pubococcygeus": {
-   "zh": "Pubococcygeus muscle",
+   "zh": "耻尾肌",
    "en": "Pubococcygeus muscle"
   },
   "piriformis_fascia": {
@@ -5057,19 +5057,19 @@
    "en": "Flexor carpi radialis"
   },
   "palmaris_longus": {
-   "zh": "Palmaris longus muscle",
+   "zh": "掌长肌",
    "en": "Palmaris longus muscle"
   },
   "flexor_digitorum_profundus": {
-   "zh": "Flexor digitorum profundus",
+   "zh": "指深屈肌",
    "en": "Flexor digitorum profundus"
   },
   "flexor_pollicis_longus": {
-   "zh": "Flexor pollicis longus",
+   "zh": "拇长屈肌",
    "en": "Flexor pollicis longus"
   },
   "pronator_quadratus": {
-   "zh": "Pronator quadratus",
+   "zh": "旋前方肌",
    "en": "Pronator quadratus"
   },
   "extensor_digitorum": {
@@ -5093,31 +5093,31 @@
    "en": "Extensor carpi radialis brevis"
   },
   "anconeus": {
-   "zh": "Anconeus muscle",
+   "zh": "肘肌",
    "en": "Anconeus muscle"
   },
   "extensor_digiti_minimi": {
-   "zh": "Extensor digiti minimi",
+   "zh": "小指伸肌",
    "en": "Extensor digiti minimi"
   },
   "supinator": {
-   "zh": "Supinator",
+   "zh": "旋后肌",
    "en": "Supinator"
   },
   "abductor_pollicis_longus": {
-   "zh": "Abductor pollicis longus",
+   "zh": "拇长展肌",
    "en": "Abductor pollicis longus"
   },
   "extensor_indicis": {
-   "zh": "Extensor indicis",
+   "zh": "示指伸肌",
    "en": "Extensor indicis"
   },
   "extensor_pollicis_brevis": {
-   "zh": "Extensor pollicis brevis",
+   "zh": "拇短伸肌",
    "en": "Extensor pollicis brevis"
   },
   "extensor_pollicis_longus": {
-   "zh": "Extensor pollicis longus",
+   "zh": "拇长伸肌",
    "en": "Extensor pollicis longus"
   },
   "superficial_head_of_flexor_pollicis_brevis": {
@@ -5137,11 +5137,11 @@
    "en": "Transverse head of adductor pollicis"
   },
   "abductor_pollicis_brevis": {
-   "zh": "Abductor pollicis brevis",
+   "zh": "拇短展肌",
    "en": "Abductor pollicis brevis"
   },
   "opponens_pollicis": {
-   "zh": "Opponens pollicis muscle",
+   "zh": "拇对掌肌",
    "en": "Opponens pollicis muscle"
   },
   "hand": {
@@ -5149,15 +5149,15 @@
    "en": "Hand"
   },
   "palmar_interossei": {
-   "zh": "Palmar interossei muscles",
+   "zh": "骨间掌侧肌",
    "en": "Palmar interossei muscles"
   },
   "medial_intermuscular_septum_of_arm": {
-   "zh": "Medial intermuscular septum of arm",
+   "zh": "臂内侧肌间隔",
    "en": "Medial intermuscular septum of arm"
   },
   "lateral_intermuscular_septum_of_arm": {
-   "zh": "Lateral intermuscular septum of arm",
+   "zh": "臂外侧肌间隔",
    "en": "Lateral intermuscular septum of arm"
   },
   "deltoid_fascia": {
@@ -5165,11 +5165,11 @@
    "en": "Deltoid fascia"
   },
   "brachial_fascia": {
-   "zh": "Brachial fascia",
+   "zh": "臂筋膜",
    "en": "Brachial fascia"
   },
   "antebrachial_fascia": {
-   "zh": "Antebrachial fascia",
+   "zh": "前臂筋膜",
    "en": "Antebrachial fascia"
   },
   "wrist": {
@@ -5181,7 +5181,7 @@
    "en": "Superficial transverse metacarpal ligament"
   },
   "palmar_aponeurosis": {
-   "zh": "Palmar aponeurosis",
+   "zh": "掌腱膜",
    "en": "Palmar aponeurosis"
   },
   "iliacus": {
@@ -5213,19 +5213,19 @@
    "en": "Piriformis"
   },
   "quadratus_femoris": {
-   "zh": "Quadratus femoris muscle",
+   "zh": "股方肌",
    "en": "Quadratus femoris muscle"
   },
   "inferior_gemellus": {
-   "zh": "Inferior gemellus muscle",
+   "zh": "下孖肌",
    "en": "Inferior gemellus muscle"
   },
   "obturator_internus": {
-   "zh": "Obturator internus",
+   "zh": "闭孔内肌",
    "en": "Obturator internus"
   },
   "superior_gemellus": {
-   "zh": "Superior gemellus muscle",
+   "zh": "上孖肌",
    "en": "Superior gemellus muscle"
   },
   "lateral_patellar_retinaculum": {
@@ -5269,11 +5269,11 @@
    "en": "Pectineus"
   },
   "adductor_brevis": {
-   "zh": "Adductor brevis",
+   "zh": "短收肌",
    "en": "Adductor brevis"
   },
   "adductor_minimus": {
-   "zh": "(Adductor minimus)",
+   "zh": "小收肌",
    "en": "(Adductor minimus)"
   },
   "gracilis": {
@@ -5281,7 +5281,7 @@
    "en": "Gracilis"
   },
   "obturator_externus": {
-   "zh": "Obturator externus",
+   "zh": "闭孔外肌",
    "en": "Obturator externus"
   },
   "biceps_femoris": {
@@ -5309,7 +5309,7 @@
    "en": "Fibularis tertius muscle"
   },
   "extensor_hallucis_longus": {
-   "zh": "Extensor hallucis longus",
+   "zh": "𧿹长伸肌",
    "en": "Extensor hallucis longus"
   },
   "fibularis_longus": {
@@ -5325,7 +5325,7 @@
    "en": "Gastrocnemius"
   },
   "calcaneal_tendon": {
-   "zh": "Calcaneal tendon",
+   "zh": "跟腱",
    "en": "Calcaneal tendon"
   },
   "soleus": {
@@ -5333,7 +5333,7 @@
    "en": "Soleus"
   },
   "plantaris": {
-   "zh": "Plantaris muscle",
+   "zh": "跖肌",
    "en": "Plantaris muscle"
   },
   "flexor_digitorum_longus": {
@@ -5341,7 +5341,7 @@
    "en": "Flexor digitorum longus"
   },
   "popliteus": {
-   "zh": "Popliteus muscle",
+   "zh": "腘肌",
    "en": "Popliteus muscle"
   },
   "tibialis_posterior": {
@@ -5349,7 +5349,7 @@
    "en": "Tibialis posterior"
   },
   "flexor_hallucis_longus": {
-   "zh": "Flexor hallucis longus",
+   "zh": "𧿹长屈肌",
    "en": "Flexor hallucis longus"
   },
   "medial_head_of_flexor_hallucis_brevis": {
@@ -5373,7 +5373,7 @@
    "en": "Foot"
   },
   "abductor_hallucis": {
-   "zh": "Abductor hallucis",
+   "zh": "𧿹展肌",
    "en": "Abductor hallucis"
   },
   "extensor_digitorum_brevis": {
@@ -5381,19 +5381,19 @@
    "en": "Extensor digitorum brevis"
   },
   "extensor_hallucis_brevis": {
-   "zh": "Extensor hallucis brevis",
+   "zh": "𧿹短伸肌",
    "en": "Extensor hallucis brevis"
   },
   "flexor_digitorum_brevis": {
-   "zh": "Flexor digitorum brevis",
+   "zh": "趾短屈肌",
    "en": "Flexor digitorum brevis"
   },
   "plantar_interossei": {
-   "zh": "Plantar interossei muscles",
+   "zh": "骨间足底肌",
    "en": "Plantar interossei muscles"
   },
   "quadratus_plantae": {
-   "zh": "Quadratus plantae muscle",
+   "zh": "足底方肌",
    "en": "Quadratus plantae muscle"
   },
   "iliotibial_tract": {
@@ -5401,35 +5401,35 @@
    "en": "Iliotibial tract"
   },
   "fascia_lata": {
-   "zh": "Fascia lata",
+   "zh": "阔筋膜",
    "en": "Fascia lata"
   },
   "medial_femoral_intermuscular_septum": {
-   "zh": "Medial femoral intermuscular septum",
+   "zh": "股内侧肌间隔",
    "en": "Medial femoral intermuscular septum"
   },
   "lateral_femoral_intermuscular_septum": {
-   "zh": "Lateral femoral intermuscular septum",
+   "zh": "股外侧肌间隔",
    "en": "Lateral femoral intermuscular septum"
   },
   "popliteal_fascia": {
-   "zh": "Popliteal fascia",
+   "zh": "腘筋膜",
    "en": "Popliteal fascia"
   },
   "crural_fascia": {
-   "zh": "Crural fascia",
+   "zh": "小腿筋膜",
    "en": "Crural fascia"
   },
   "anterior_intermuscular_septum_of_leg": {
-   "zh": "Anterior intermuscular septum of leg",
+   "zh": "小腿前肌间隔",
    "en": "Anterior intermuscular septum of leg"
   },
   "posterior_intermuscular_septum_of_leg": {
-   "zh": "Posterior intermuscular septum of leg",
+   "zh": "小腿后肌间隔",
    "en": "Posterior intermuscular septum of leg"
   },
   "transverse_intermuscular_septum_of_leg": {
-   "zh": "Transverse intermuscular septum of leg",
+   "zh": "小腿横肌间隔",
    "en": "Transverse intermuscular septum of leg"
   },
   "ankle": {
@@ -5449,19 +5449,19 @@
    "en": "Superficial transverse metatarsal ligament"
   },
   "plantar_aponeurosis": {
-   "zh": "Plantar aponeurosis",
+   "zh": "足底腱膜",
    "en": "Plantar aponeurosis"
   },
   "iliopectineal_arch": {
-   "zh": "Iliopectineal arch",
+   "zh": "髂耻弓",
    "en": "Iliopectineal arch"
   },
   "external_anal_sphincter": {
-   "zh": "External anal sphincter",
+   "zh": "肛门外括约肌",
    "en": "External anal sphincter"
   },
   "clavipectoral_fascia": {
-   "zh": "Clavipectoral fascia",
+   "zh": "锁胸筋膜",
    "en": "Clavipectoral fascia"
   },
   "iliopsoas_fascia": {
@@ -5469,7 +5469,7 @@
    "en": "Iliopsoas fascia"
   },
   "transversalis_fascia": {
-   "zh": "Transversalis fascia",
+   "zh": "腹横筋膜",
    "en": "Transversalis fascia"
   },
   "diaphragmatic_fascia": {
@@ -5477,15 +5477,15 @@
    "en": "Diaphragmatic fascia"
   },
   "tendinous_arch_of_levator_ani": {
-   "zh": "Tendinous arch of levator ani",
+   "zh": "肛提肌腱弓",
    "en": "Tendinous arch of levator ani"
   },
   "subcutaneous_acromial_bursa": {
-   "zh": "Subcutaneous acromial bursa",
+   "zh": "肩峰皮下囊",
    "en": "Subcutaneous acromial bursa"
   },
   "subacromial_bursa": {
-   "zh": "Subacromial bursa",
+   "zh": "肩峰下囊",
    "en": "Subacromial bursa"
   },
   "subdeltoid_bursa": {
@@ -5493,31 +5493,31 @@
    "en": "Subdeltoid bursa"
   },
   "coracobrachial_bursa": {
-   "zh": "Coracobrachial bursa",
+   "zh": "喙肱囊",
    "en": "Coracobrachial bursa"
   },
   "bicipitoradial_bursa": {
-   "zh": "Bicipitoradial bursa",
+   "zh": "二头肌桡骨囊",
    "en": "Bicipitoradial bursa"
   },
   "subcutaneous_trochanteric_bursa": {
-   "zh": "Subcutaneous trochanteric bursa",
+   "zh": "转子皮下囊",
    "en": "Subcutaneous trochanteric bursa"
   },
   "sciatic_bursa_of_obturator_internus": {
-   "zh": "Sciatic bursa of obturator internus",
+   "zh": "闭孔内肌坐骨囊",
    "en": "Sciatic bursa of obturator internus"
   },
   "subtendinous_bursa_of_obturator_internus": {
-   "zh": "Subtendinous bursa of obturator internus",
+   "zh": "闭孔内肌腱下囊",
    "en": "Subtendinous bursa of obturator internus"
   },
   "intermuscular_gluteal_bursae": {
-   "zh": "Intermuscular gluteal bursae",
+   "zh": "臀肌间囊",
    "en": "Intermuscular gluteal bursae"
   },
   "iliopectineal_bursa": {
-   "zh": "(Iliopectineal bursa)",
+   "zh": "髂耻囊",
    "en": "(Iliopectineal bursa)"
   },
   "subtendinous_prepatellar_bursa": {
@@ -5549,7 +5549,7 @@
    "en": "Tibia"
   },
   "anserine_bursa": {
-   "zh": "Anserine bursa",
+   "zh": "鹅足囊",
    "en": "Anserine bursa"
   },
   "semimembranosus_bursa": {
@@ -5557,47 +5557,47 @@
    "en": "Semimembranosus bursa"
   },
   "subcutaneous_bursa_of_lateral_malleolus": {
-   "zh": "Subcutaneous bursa of lateral malleolus",
+   "zh": "外踝皮下囊",
    "en": "Subcutaneous bursa of lateral malleolus"
   },
   "subcutaneous_bursa_of_medial_malleolus": {
-   "zh": "Subcutaneous bursa of medial malleolus",
+   "zh": "内踝皮下囊",
    "en": "Subcutaneous bursa of medial malleolus"
   },
   "subcutaneous_calcaneal_bursa": {
-   "zh": "Subcutaneous calcaneal bursa",
+   "zh": "跟骨皮下囊",
    "en": "Subcutaneous calcaneal bursa"
   },
   "subtendinous_calcaneal_bursa": {
-   "zh": "Subtendinous calcaneal bursa",
+   "zh": "跟腱下囊",
    "en": "Subtendinous calcaneal bursa"
   },
   "intertubercular_tendon_sheath": {
-   "zh": "Intertubercular tendon sheath",
+   "zh": "结节间腱鞘",
    "en": "Intertubercular tendon sheath"
   },
   "tendon_sheath_of_flexor_pollicis_longus": {
-   "zh": "Tendon sheath of flexor pollicis longus",
+   "zh": "拇长屈肌腱鞘",
    "en": "Tendon sheath of flexor pollicis longus"
   },
   "common_flexor_tendon_sheath": {
-   "zh": "Common flexor tendon sheath",
+   "zh": "屈肌总腱鞘",
    "en": "Common flexor tendon sheath"
   },
   "tendon_sheath_of_extensor_digiti_minimi_manus": {
-   "zh": "Tendon sheath of extensor digiti minimi manus",
+   "zh": "小指伸肌腱鞘",
    "en": "Tendon sheath of extensor digiti minimi manus"
   },
   "tendon_sheath_of_extensor_pollicis_longus": {
-   "zh": "Tendon sheath of extensor pollicis longus",
+   "zh": "拇长伸肌腱鞘",
    "en": "Tendon sheath of extensor pollicis longus"
   },
   "tendon_sheath_abd_pollicis_longus_ext_pollicis_brevis": {
-   "zh": "Tendon sheath - abd. pollicis longus - ext. pollicis brevis",
+   "zh": "拇长展肌与拇短伸肌腱鞘",
    "en": "Tendon sheath - abd. pollicis longus - ext. pollicis brevis"
   },
   "tendon_sheath_of_extensors_carpi_radialis": {
-   "zh": "Tendon sheath of extensors carpi radialis",
+   "zh": "桡侧腕伸肌腱鞘",
    "en": "Tendon sheath of extensors carpi radialis"
   },
   "tendon_sheath_of_extensor_digitorum_and_extensor_indicis": {
@@ -5605,11 +5605,11 @@
    "en": "Tendon sheath of extensor digitorum and extensor indicis"
   },
   "tendon_sheath_of_extensor_hallucis_longus": {
-   "zh": "Tendon sheath of extensor hallucis longus",
+   "zh": "𧿹长伸肌腱鞘",
    "en": "Tendon sheath of extensor hallucis longus"
   },
   "tendon_sheath_of_flexor_hallucis_longus": {
-   "zh": "Tendon sheath of flexor hallucis longus",
+   "zh": "𧿹长屈肌腱鞘",
    "en": "Tendon sheath of flexor hallucis longus"
   },
   "common_tendon_sheath_of_fibularis": {
@@ -5617,47 +5617,47 @@
    "en": "Common tendon sheath of fibularis muscles"
   },
   "parietal": {
-   "zh": "Parietal bone",
+   "zh": "顶骨",
    "en": "Parietal bone"
   },
   "sinus_of_frontal": {
-   "zh": "Sinus of frontal bone",
+   "zh": "额窦",
    "en": "Sinus of frontal bone"
   },
   "frontal": {
-   "zh": "Frontal bone",
+   "zh": "额骨",
    "en": "Frontal bone"
   },
   "occipital": {
-   "zh": "Occipital bone",
+   "zh": "枕骨",
    "en": "Occipital bone"
   },
   "sinus_of_sphenoid": {
-   "zh": "Sinus of sphenoid bone",
+   "zh": "蝶窦",
    "en": "Sinus of sphenoid bone"
   },
   "sphenoid": {
-   "zh": "Sphenoid bone",
+   "zh": "蝶骨",
    "en": "Sphenoid bone"
   },
   "temporal": {
-   "zh": "Temporal bone",
+   "zh": "颞骨",
    "en": "Temporal bone"
   },
   "ethmoid": {
-   "zh": "Ethmoid bone",
+   "zh": "筛骨",
    "en": "Ethmoid bone"
   },
   "inferior_nasal_concha": {
-   "zh": "Inferior nasal concha bone",
+   "zh": "下鼻甲",
    "en": "Inferior nasal concha bone"
   },
   "lacrimal": {
-   "zh": "Lacrimal bone",
+   "zh": "泪骨",
    "en": "Lacrimal bone"
   },
   "nasal": {
-   "zh": "Nasal bone",
+   "zh": "鼻骨",
    "en": "Nasal bone"
   },
   "maxilla": {
@@ -5665,11 +5665,11 @@
    "en": "Maxilla"
   },
   "palatine": {
-   "zh": "Palatine bone",
+   "zh": "腭骨",
    "en": "Palatine bone"
   },
   "zygomatic": {
-   "zh": "Zygomatic bone",
+   "zh": "颧骨",
    "en": "Zygomatic bone"
   },
   "mandible": {
@@ -5677,103 +5677,103 @@
    "en": "Mandible"
   },
   "hyoid": {
-   "zh": "Hyoid bone",
+   "zh": "舌骨",
    "en": "Hyoid bone"
   },
   "malleus": {
-   "zh": "Malleus",
+   "zh": "锤骨",
    "en": "Malleus"
   },
   "incus": {
-   "zh": "Incus",
+   "zh": "砧骨",
    "en": "Incus"
   },
   "stapes": {
-   "zh": "Stapes",
+   "zh": "镫骨",
    "en": "Stapes"
   },
   "upper_medial_incisor": {
-   "zh": "Upper medial incisor",
+   "zh": "上中切牙",
    "en": "Upper medial incisor"
   },
   "upper_lateral_incisor": {
-   "zh": "Upper lateral incisor",
+   "zh": "上侧切牙",
    "en": "Upper lateral incisor"
   },
   "upper_canine": {
-   "zh": "Upper canine",
+   "zh": "上尖牙",
    "en": "Upper canine"
   },
   "lower_medial_incisor": {
-   "zh": "Lower medial incisor",
+   "zh": "下中切牙",
    "en": "Lower medial incisor"
   },
   "lower_lateral_incisor": {
-   "zh": "Lower lateral incisor",
+   "zh": "下侧切牙",
    "en": "Lower lateral incisor"
   },
   "lower_canine": {
-   "zh": "Lower canine",
+   "zh": "下尖牙",
    "en": "Lower canine"
   },
   "upper_first_premolar": {
-   "zh": "Upper first premolar",
+   "zh": "上第一前磨牙",
    "en": "Upper first premolar"
   },
   "upper_second_premolar": {
-   "zh": "Upper second premolar",
+   "zh": "上第二前磨牙",
    "en": "Upper second premolar"
   },
   "upper_first_molar_tooth": {
-   "zh": "Upper first molar tooth",
+   "zh": "上第一磨牙",
    "en": "Upper first molar tooth"
   },
   "upper_second_molar_tooth": {
-   "zh": "Upper second molar tooth",
+   "zh": "上第二磨牙",
    "en": "Upper second molar tooth"
   },
   "lower_first_premolar": {
-   "zh": "Lower first premolar",
+   "zh": "下第一前磨牙",
    "en": "Lower first premolar"
   },
   "lower_second_premolar": {
-   "zh": "Lower second premolar",
+   "zh": "下第二前磨牙",
    "en": "Lower second premolar"
   },
   "lower_first_molar_tooth": {
-   "zh": "Lower first molar tooth",
+   "zh": "下第一磨牙",
    "en": "Lower first molar tooth"
   },
   "lower_second_molar_tooth": {
-   "zh": "Lower second molar tooth",
+   "zh": "下第二磨牙",
    "en": "Lower second molar tooth"
   },
   "major_alar_cartilage": {
-   "zh": "Major alar cartilage",
+   "zh": "鼻翼大软骨",
    "en": "Major alar cartilage"
   },
   "lateral_process_of_nasal_septal_cartilage": {
-   "zh": "Lateral process of nasal septal cartilage",
+   "zh": "鼻中隔软骨外侧突",
    "en": "Lateral process of nasal septal cartilage"
   },
   "nasal_septal_cartilage": {
-   "zh": "Nasal septal cartilage",
+   "zh": "鼻中隔软骨",
    "en": "Nasal septal cartilage"
   },
   "thyroid_cartilage": {
-   "zh": "Thyroid cartilage",
+   "zh": "甲状软骨",
    "en": "Thyroid cartilage"
   },
   "cricoid_cartilage": {
-   "zh": "Cricoid cartilage",
+   "zh": "环状软骨",
    "en": "Cricoid cartilage"
   },
   "arytenoid_cartilage": {
-   "zh": "Arytenoid cartilage",
+   "zh": "杓状软骨",
    "en": "Arytenoid cartilage"
   },
   "corniculate_cartilage": {
-   "zh": "Corniculate cartilage",
+   "zh": "小角软骨",
    "en": "Corniculate cartilage"
   },
   "atlas_c1": {
@@ -5925,7 +5925,7 @@
    "en": "Sternum"
   },
   "xiphoid_process": {
-   "zh": "Xiphoid process",
+   "zh": "剑突",
    "en": "Xiphoid process"
   },
   "costal_cartilage_of_first_rib": {
@@ -5989,23 +5989,23 @@
    "en": "Calcaneus"
   },
   "navicular": {
-   "zh": "Navicular bone",
+   "zh": "足舟骨",
    "en": "Navicular bone"
   },
   "cuboid": {
-   "zh": "Cuboid bone",
+   "zh": "骰骨",
    "en": "Cuboid bone"
   },
   "intermediate_cuneiform": {
-   "zh": "Intermediate cuneiform bone",
+   "zh": "中间楔骨",
    "en": "Intermediate cuneiform bone"
   },
   "lateral_cuneiform": {
-   "zh": "Lateral cuneiform bone",
+   "zh": "外侧楔骨",
    "en": "Lateral cuneiform bone"
   },
   "medial_cuneiform": {
-   "zh": "Medial cuneiform bone",
+   "zh": "内侧楔骨",
    "en": "Medial cuneiform bone"
   },
   "first_metatarsal": {
@@ -6049,35 +6049,35 @@
    "en": "Fifth metacarpal bone"
   },
   "capitate": {
-   "zh": "Capitate bone",
+   "zh": "头状骨",
    "en": "Capitate bone"
   },
   "hamate": {
-   "zh": "Hamate bone",
+   "zh": "钩骨",
    "en": "Hamate bone"
   },
   "lunate": {
-   "zh": "Lunate bone",
+   "zh": "月骨",
    "en": "Lunate bone"
   },
   "pisiform": {
-   "zh": "Pisiform bone",
+   "zh": "豌豆骨",
    "en": "Pisiform bone"
   },
   "scaphoid": {
-   "zh": "Scaphoid bone",
+   "zh": "手舟骨",
    "en": "Scaphoid bone"
   },
   "trapezium": {
-   "zh": "Trapezium bone",
+   "zh": "大多角骨",
    "en": "Trapezium bone"
   },
   "trapezoid": {
-   "zh": "Trapezoid bone",
+   "zh": "小多角骨",
    "en": "Trapezoid bone"
   },
   "triquetrum": {
-   "zh": "Triquetrum bone",
+   "zh": "三角骨",
    "en": "Triquetrum bone"
   },
   "axis_c2": {
@@ -6113,19 +6113,19 @@
    "en": "Sacrum"
   },
   "vomer": {
-   "zh": "Vomer",
+   "zh": "犁骨",
    "en": "Vomer"
   },
   "posterior_cells_of_ethmoid": {
-   "zh": "Posterior cells of ethmoid bone",
+   "zh": "筛窦后群",
    "en": "Posterior cells of ethmoid bone"
   },
   "middle_cells_of_ethmoid": {
-   "zh": "Middle cells of ethmoid bone",
+   "zh": "筛窦中群",
    "en": "Middle cells of ethmoid bone"
   },
   "anterior_cells_of_ethmoid": {
-   "zh": "Anterior cells of ethmoid bone",
+   "zh": "筛窦前群",
    "en": "Anterior cells of ethmoid bone"
   },
   "skin": {

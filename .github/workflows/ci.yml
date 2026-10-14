@@ -6,6 +6,7 @@ permissions:
 jobs:
   test:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -25,4 +26,23 @@ jobs:
       - run: CHROMIUM_PATH="$(node -e "console.log(require('playwright-core').chromium.executablePath())")" npm run e2e
         working-directory: app
       - run: CHROMIUM_PATH="$(node -e "console.log(require('playwright-core').chromium.executablePath())")" npm run e2e:d1
+        working-directory: app
+  # WebKit (Safari's engine) on Linux. Not verified on a GitHub runner yet: kept non-blocking until it has passed there once.
+  webkit:
+    runs-on: ubuntu-24.04
+    continue-on-error: true
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: app/package-lock.json
+      - run: sudo apt-get update && sudo apt-get install -y libwebkit2gtk-4.1-0 webkit2gtk-driver xvfb matchbox-window-manager
+      - run: npm ci
+        working-directory: app
+      - run: npm run build
+        working-directory: app
+      - run: npm run e2e:webkit
         working-directory: app
