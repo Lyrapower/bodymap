@@ -1,0 +1,562 @@
+{
+ "frontalis": {
+  "zh": "额肌",
+  "en": "Frontalis"
+ },
+ "temporalis": {
+  "zh": "颞肌",
+  "en": "Temporalis"
+ },
+ "masseter": {
+  "zh": "咬肌",
+  "en": "Masseter"
+ },
+ "orbicularis_oculi": {
+  "zh": "眼轮匝肌",
+  "en": "Orbicularis oculi"
+ },
+ "orbicularis_oris": {
+  "zh": "口轮匝肌",
+  "en": "Orbicularis oris"
+ },
+ "sternocleidomastoid": {
+  "zh": "胸锁乳突肌",
+  "en": "Sternocleidomastoid"
+ },
+ "trapezius": {
+  "zh": "斜方肌",
+  "en": "Trapezius"
+ },
+ "deltoid": {
+  "zh": "三角肌",
+  "en": "Deltoid"
+ },
+ "pectoralis_major": {
+  "zh": "胸大肌",
+  "en": "Pectoralis major"
+ },
+ "pectoralis_minor": {
+  "zh": "胸小肌",
+  "en": "Pectoralis minor"
+ },
+ "serratus_anterior": {
+  "zh": "前锯肌",
+  "en": "Serratus anterior"
+ },
+ "latissimus_dorsi": {
+  "zh": "背阔肌",
+  "en": "Latissimus dorsi"
+ },
+ "rhomboid_major": {
+  "zh": "大菱形肌",
+  "en": "Rhomboid major"
+ },
+ "rhomboid_minor": {
+  "zh": "小菱形肌",
+  "en": "Rhomboid minor"
+ },
+ "levator_scapulae": {
+  "zh": "肩胛提肌",
+  "en": "Levator scapulae"
+ },
+ "supraspinatus": {
+  "zh": "冈上肌",
+  "en": "Supraspinatus"
+ },
+ "infraspinatus": {
+  "zh": "冈下肌",
+  "en": "Infraspinatus"
+ },
+ "teres_major": {
+  "zh": "大圆肌",
+  "en": "Teres major"
+ },
+ "teres_minor": {
+  "zh": "小圆肌",
+  "en": "Teres minor"
+ },
+ "subscapularis": {
+  "zh": "肩胛下肌",
+  "en": "Subscapularis"
+ },
+ "biceps_brachii": {
+  "zh": "肱二头肌",
+  "en": "Biceps brachii"
+ },
+ "triceps_brachii": {
+  "zh": "肱三头肌",
+  "en": "Triceps brachii"
+ },
+ "brachialis": {
+  "zh": "肱肌",
+  "en": "Brachialis"
+ },
+ "brachioradialis": {
+  "zh": "肱桡肌",
+  "en": "Brachioradialis"
+ },
+ "coracobrachialis": {
+  "zh": "喙肱肌",
+  "en": "Coracobrachialis"
+ },
+ "flexor_carpi_radialis": {
+  "zh": "桡侧腕屈肌",
+  "en": "Flexor carpi radialis"
+ },
+ "flexor_carpi_ulnaris": {
+  "zh": "尺侧腕屈肌",
+  "en": "Flexor carpi ulnaris"
+ },
+ "extensor_carpi_radialis_longus": {
+  "zh": "桡侧腕长伸肌",
+  "en": "Extensor carpi radialis longus"
+ },
+ "extensor_carpi_ulnaris": {
+  "zh": "尺侧腕伸肌",
+  "en": "Extensor carpi ulnaris"
+ },
+ "extensor_digitorum": {
+  "zh": "指伸肌",
+  "en": "Extensor digitorum"
+ },
+ "flexor_digitorum_superficialis": {
+  "zh": "指浅屈肌",
+  "en": "Flexor digitorum superficialis"
+ },
+ "pronator_teres": {
+  "zh": "旋前圆肌",
+  "en": "Pronator teres"
+ },
+ "rectus_abdominis": {
+  "zh": "腹直肌",
+  "en": "Rectus abdominis"
+ },
+ "external_oblique": {
+  "zh": "腹外斜肌",
+  "en": "External oblique"
+ },
+ "internal_oblique": {
+  "zh": "腹内斜肌",
+  "en": "Internal oblique"
+ },
+ "transversus_abdominis": {
+  "zh": "腹横肌",
+  "en": "Transversus abdominis"
+ },
+ "erector_spinae": {
+  "zh": "竖脊肌",
+  "en": "Erector spinae"
+ },
+ "quadratus_lumborum": {
+  "zh": "腰方肌",
+  "en": "Quadratus lumborum"
+ },
+ "multifidus": {
+  "zh": "多裂肌",
+  "en": "Multifidus"
+ },
+ "iliopsoas": {
+  "zh": "髂腰肌",
+  "en": "Iliopsoas"
+ },
+ "psoas_major": {
+  "zh": "腰大肌",
+  "en": "Psoas major"
+ },
+ "iliacus": {
+  "zh": "髂肌",
+  "en": "Iliacus"
+ },
+ "gluteus_maximus": {
+  "zh": "臀大肌",
+  "en": "Gluteus maximus"
+ },
+ "gluteus_medius": {
+  "zh": "臀中肌",
+  "en": "Gluteus medius"
+ },
+ "gluteus_minimus": {
+  "zh": "臀小肌",
+  "en": "Gluteus minimus"
+ },
+ "piriformis": {
+  "zh": "梨状肌",
+  "en": "Piriformis"
+ },
+ "tensor_fasciae_latae": {
+  "zh": "阔筋膜张肌",
+  "en": "Tensor fasciae latae"
+ },
+ "rectus_femoris": {
+  "zh": "股直肌",
+  "en": "Rectus femoris"
+ },
+ "vastus_lateralis": {
+  "zh": "股外侧肌",
+  "en": "Vastus lateralis"
+ },
+ "vastus_medialis": {
+  "zh": "股内侧肌",
+  "en": "Vastus medialis"
+ },
+ "vastus_intermedius": {
+  "zh": "股中间肌",
+  "en": "Vastus intermedius"
+ },
+ "sartorius": {
+  "zh": "缝匠肌",
+  "en": "Sartorius"
+ },
+ "gracilis": {
+  "zh": "股薄肌",
+  "en": "Gracilis"
+ },
+ "adductor_longus": {
+  "zh": "长收肌",
+  "en": "Adductor longus"
+ },
+ "adductor_magnus": {
+  "zh": "大收肌",
+  "en": "Adductor magnus"
+ },
+ "pectineus": {
+  "zh": "耻骨肌",
+  "en": "Pectineus"
+ },
+ "biceps_femoris": {
+  "zh": "股二头肌",
+  "en": "Biceps femoris"
+ },
+ "semitendinosus": {
+  "zh": "半腱肌",
+  "en": "Semitendinosus"
+ },
+ "semimembranosus": {
+  "zh": "半膜肌",
+  "en": "Semimembranosus"
+ },
+ "gastrocnemius": {
+  "zh": "腓肠肌",
+  "en": "Gastrocnemius"
+ },
+ "soleus": {
+  "zh": "比目鱼肌",
+  "en": "Soleus"
+ },
+ "tibialis_anterior": {
+  "zh": "胫骨前肌",
+  "en": "Tibialis anterior"
+ },
+ "tibialis_posterior": {
+  "zh": "胫骨后肌",
+  "en": "Tibialis posterior"
+ },
+ "peroneus_longus": {
+  "zh": "腓骨长肌",
+  "en": "Peroneus longus"
+ },
+ "fibularis_longus": {
+  "zh": "腓骨长肌",
+  "en": "Fibularis longus"
+ },
+ "extensor_digitorum_longus": {
+  "zh": "趾长伸肌",
+  "en": "Extensor digitorum longus"
+ },
+ "flexor_digitorum_longus": {
+  "zh": "趾长屈肌",
+  "en": "Flexor digitorum longus"
+ },
+ "plantar_fascia": {
+  "zh": "足底筋膜",
+  "en": "Plantar fascia"
+ },
+ "diaphragm": {
+  "zh": "膈肌",
+  "en": "Diaphragm"
+ },
+ "intercostal": {
+  "zh": "肋间肌",
+  "en": "Intercostal muscles"
+ },
+ "splenius_capitis": {
+  "zh": "头夹肌",
+  "en": "Splenius capitis"
+ },
+ "scalene": {
+  "zh": "斜角肌",
+  "en": "Scalene"
+ },
+ "skull": {
+  "zh": "颅骨",
+  "en": "Skull"
+ },
+ "frontal_bone": {
+  "zh": "额骨",
+  "en": "Frontal bone"
+ },
+ "parietal_bone": {
+  "zh": "顶骨",
+  "en": "Parietal bone"
+ },
+ "occipital_bone": {
+  "zh": "枕骨",
+  "en": "Occipital bone"
+ },
+ "temporal_bone": {
+  "zh": "颞骨",
+  "en": "Temporal bone"
+ },
+ "mandible": {
+  "zh": "下颌骨",
+  "en": "Mandible"
+ },
+ "maxilla": {
+  "zh": "上颌骨",
+  "en": "Maxilla"
+ },
+ "zygomatic_bone": {
+  "zh": "颧骨",
+  "en": "Zygomatic bone"
+ },
+ "nasal_bone": {
+  "zh": "鼻骨",
+  "en": "Nasal bone"
+ },
+ "cervical_vertebrae": {
+  "zh": "颈椎",
+  "en": "Cervical vertebrae"
+ },
+ "thoracic_vertebrae": {
+  "zh": "胸椎",
+  "en": "Thoracic vertebrae"
+ },
+ "lumbar_vertebrae": {
+  "zh": "腰椎",
+  "en": "Lumbar vertebrae"
+ },
+ "sacrum": {
+  "zh": "骶骨",
+  "en": "Sacrum"
+ },
+ "coccyx": {
+  "zh": "尾骨",
+  "en": "Coccyx"
+ },
+ "vertebra": {
+  "zh": "椎骨",
+  "en": "Vertebra"
+ },
+ "atlas": {
+  "zh": "寰椎",
+  "en": "Atlas"
+ },
+ "axis": {
+  "zh": "枢椎",
+  "en": "Axis"
+ },
+ "clavicle": {
+  "zh": "锁骨",
+  "en": "Clavicle"
+ },
+ "scapula": {
+  "zh": "肩胛骨",
+  "en": "Scapula"
+ },
+ "sternum": {
+  "zh": "胸骨",
+  "en": "Sternum"
+ },
+ "rib": {
+  "zh": "肋骨",
+  "en": "Rib"
+ },
+ "ribs": {
+  "zh": "肋骨",
+  "en": "Ribs"
+ },
+ "humerus": {
+  "zh": "肱骨",
+  "en": "Humerus"
+ },
+ "radius": {
+  "zh": "桡骨",
+  "en": "Radius"
+ },
+ "ulna": {
+  "zh": "尺骨",
+  "en": "Ulna"
+ },
+ "carpal_bones": {
+  "zh": "腕骨",
+  "en": "Carpal bones"
+ },
+ "metacarpal": {
+  "zh": "掌骨",
+  "en": "Metacarpal"
+ },
+ "phalanges_of_hand": {
+  "zh": "指骨",
+  "en": "Finger bones"
+ },
+ "pelvis": {
+  "zh": "骨盆",
+  "en": "Pelvis"
+ },
+ "hip_bone": {
+  "zh": "髋骨",
+  "en": "Hip bone"
+ },
+ "ilium": {
+  "zh": "髂骨",
+  "en": "Ilium"
+ },
+ "ischium": {
+  "zh": "坐骨",
+  "en": "Ischium"
+ },
+ "pubis": {
+  "zh": "耻骨",
+  "en": "Pubis"
+ },
+ "femur": {
+  "zh": "股骨",
+  "en": "Femur"
+ },
+ "patella": {
+  "zh": "髌骨",
+  "en": "Patella"
+ },
+ "tibia": {
+  "zh": "胫骨",
+  "en": "Tibia"
+ },
+ "fibula": {
+  "zh": "腓骨",
+  "en": "Fibula"
+ },
+ "talus": {
+  "zh": "距骨",
+  "en": "Talus"
+ },
+ "calcaneus": {
+  "zh": "跟骨",
+  "en": "Calcaneus"
+ },
+ "tarsal_bones": {
+  "zh": "跗骨",
+  "en": "Tarsal bones"
+ },
+ "metatarsal": {
+  "zh": "跖骨",
+  "en": "Metatarsal"
+ },
+ "phalanges_of_foot": {
+  "zh": "趾骨",
+  "en": "Toe bones"
+ },
+ "skin": {
+  "zh": "皮肤",
+  "en": "Skin"
+ },
+ "head": {
+  "zh": "头",
+  "en": "Head"
+ },
+ "face": {
+  "zh": "脸",
+  "en": "Face"
+ },
+ "neck": {
+  "zh": "颈",
+  "en": "Neck"
+ },
+ "shoulder": {
+  "zh": "肩",
+  "en": "Shoulder"
+ },
+ "chest": {
+  "zh": "胸",
+  "en": "Chest"
+ },
+ "abdomen": {
+  "zh": "腹",
+  "en": "Abdomen"
+ },
+ "back": {
+  "zh": "背",
+  "en": "Back"
+ },
+ "lower_back": {
+  "zh": "腰",
+  "en": "Lower back"
+ },
+ "upper_arm": {
+  "zh": "上臂",
+  "en": "Upper arm"
+ },
+ "forearm": {
+  "zh": "前臂",
+  "en": "Forearm"
+ },
+ "hand": {
+  "zh": "手",
+  "en": "Hand"
+ },
+ "hip": {
+  "zh": "髋",
+  "en": "Hip"
+ },
+ "thigh": {
+  "zh": "大腿",
+  "en": "Thigh"
+ },
+ "knee": {
+  "zh": "膝",
+  "en": "Knee"
+ },
+ "lower_leg": {
+  "zh": "小腿",
+  "en": "Lower leg"
+ },
+ "foot": {
+  "zh": "脚",
+  "en": "Foot"
+ },
+ "ankle": {
+  "zh": "踝",
+  "en": "Ankle"
+ },
+ "wrist": {
+  "zh": "腕",
+  "en": "Wrist"
+ },
+ "elbow": {
+  "zh": "肘",
+  "en": "Elbow"
+ },
+ "rib_cage": {
+  "zh": "胸廓",
+  "en": "Rib cage"
+ },
+ "extensor_carpi": {
+  "zh": "腕伸肌",
+  "en": "Wrist extensors"
+ },
+ "flexor_carpi": {
+  "zh": "腕屈肌",
+  "en": "Wrist flexors"
+ },
+ "metatarsals": {
+  "zh": "跖骨",
+  "en": "Metatarsals"
+ },
+ "metacarpals": {
+  "zh": "掌骨",
+  "en": "Metacarpals"
+ },
+ "erector_spinae_lumbar": {
+  "zh": "竖脊肌（腰段）",
+  "en": "Erector spinae (lumbar)"
+ }
+}
