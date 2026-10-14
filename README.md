@@ -1,4 +1,4 @@
-# <name>
+# BodyMap
 
 **Anything that hurts can be written down. Nothing is wrong, nothing is judged.**
 **怎样的不舒服都能记下来。没有问题，没有评判。**
