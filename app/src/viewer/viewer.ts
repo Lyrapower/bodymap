@@ -80,6 +80,8 @@ export class Viewer {
     Object.assign(this.controls, { enableDamping: true, dampingFactor: 0.09, minDistance: 0.35, maxDistance: 7, rotateSpeed: 0.8, screenSpacePanning: true });
     this.controls.minPolarAngle = 0.15; this.controls.maxPolarAngle = Math.PI - 0.15;
     this.controls.addEventListener("change", () => (this.dirty = true));
+    // A touch on the body ends any re-framing animation: the person's turn wins over the panel's re-fit.
+    this.controls.addEventListener("start", () => { this.tween = null; });
     this.camera.position.set(0, 0.93, 5);
     this.controls.target.set(0, 0.93, 0);
     this.listenTaps();
@@ -147,6 +149,7 @@ export class Viewer {
 
   // Rotate around the body to face a given side. Used by tests and later by a front/back control.
   faceAzimuth(radians: number) {
+    this.tween = null; // a turn, from a finger or from code, ends any re-framing animation
     const d = this.camera.position.distanceTo(this.controls.target);
     this.camera.position.set(this.controls.target.x + Math.sin(radians) * d, this.controls.target.y, this.controls.target.z + Math.cos(radians) * d);
     this.controls.update(); this.dirty = true;

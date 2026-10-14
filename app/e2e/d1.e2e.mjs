@@ -73,6 +73,20 @@ try {
   c = await cur();
   ok("2 next tap sets `to`, no third mark", c.marks.length === 2 && c.marks[1].to && c.marks[1].to.part_id, JSON.stringify(c.marks[1].to));
   ok("2 markers on body = marks", (await bm(() => window.__bodymap.viewer.markers.length)) === 2);
+  // a drag that starts while a re-frame animation (panel grew, view preset) is running must not be undone by it
+  {
+    await page.evaluate(() => window.__bodymap.viewer.frameView("full", true)); // same tween the panel re-fit uses
+    const c = await page.evaluate(() => window.__bodymap.screenOf(0, 1.0, 0.1));
+    const cdp = await page.context().newCDPSession(page);
+    const tp = (x, y) => [{ x, y, radiusX: 3, radiusY: 3, force: 1, id: 1 }];
+    await cdp.send("Input.dispatchTouchEvent", { type: "touchStart", touchPoints: tp(c.x, c.y) });
+    for (let i = 1; i <= 8; i++) await cdp.send("Input.dispatchTouchEvent", { type: "touchMove", touchPoints: tp(c.x + i * 14, c.y) });
+    await cdp.send("Input.dispatchTouchEvent", { type: "touchEnd", touchPoints: [] });
+    const az = () => page.evaluate(() => { const v = window.__bodymap.viewer; const d = v.camera.position.clone().sub(v.controls.target); return Math.atan2(d.x, d.z); });
+    const turned = await az(); await sleep(1200); const later = await az();
+    ok("2 a turn during the re-frame animation is kept", Math.abs(turned) > 0.05 && Math.abs(later - turned) < 0.2, `turned=${turned.toFixed(3)} later=${later.toFixed(3)}`);
+    await page.evaluate(() => window.__bodymap.viewer.faceAzimuth(0));
+  }
 
   // 3. feels like sheet: descriptors + note
   await page.locator('.readout [data-t="feels_like"]').click(); await sleep(400);
