@@ -120,13 +120,16 @@ function summarize(eps, locale, partLabels) {
 export function doctorView(records, { locale = "en", partLabels = {} } = {}) {
   const all = effective(records);
   const visit = latestVisit(all);
-  const from = visit ? ms(visit.started_at) : -Infinity;
-  const eps = all.filter((r) => r.kind === "episode" && ms(r.started_at) >= from);
+  let from = visit ? ms(visit.started_at) : -Infinity;
+  let eps = all.filter((r) => r.kind === "episode" && ms(r.started_at) >= from);
+  // A visit logged just now has nothing after it yet: fall back to everything, so the page is never empty by accident.
+  let sinceVisit = Boolean(visit);
+  if (visit && !eps.length) { from = -Infinity; sinceVisit = false; eps = all.filter((r) => r.kind === "episode"); }
   const s = summarize(eps, locale, partLabels);
   return {
     view: "doctor",
     locale,
-    window: { since_visit: Boolean(visit), from: visit?.started_at ?? s.first_at, to: s.last_at, label: t(visit ? "export.since_visit" : "export.all", locale) },
+    window: { since_visit: sinceVisit, from: sinceVisit ? visit.started_at : s.first_at, to: s.last_at, label: t(sinceVisit ? "export.since_visit" : "export.all", locale) },
     last_visit: visit ? { at: visit.started_at, department: deptLabel(visit.visit.department, locale), clinician: visit.visit.clinician ?? null, said: visit.visit.said ?? null, did: visit.visit.did ?? null, next: visit.visit.next ?? null } : null,
     sections: socrates.sections.map((sec) => ({ id: sec.id, heading: sec[locale] ?? sec.en })),
     summary: s,

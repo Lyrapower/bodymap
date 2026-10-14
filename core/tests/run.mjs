@@ -37,6 +37,13 @@ ok("SOCRATES has 10 sections", dv.sections.length === 10 && dv.sections[0].headi
 ok("ruled out has ECG normal", dv.ruled_out.some((x) => x.name === "ECG" && x.result === "normal"));
 ok("intensity listed not averaged", Array.isArray(dv.summary.intensity.values) && !("mean" in dv.summary.intensity));
 
+// 4b. A visit with nothing after it: the doctor view falls back to all episodes instead of an empty page.
+{
+  const justVisited = [...records, { schema_version: "1.0", id: "visit-now-0001", kind: "visit", created_at: "2026-12-01T10:00:00-07:00", started_at: "2026-12-01T10:00:00-07:00", visit: { department: "general" } }];
+  const dv2 = doctorView(justVisited, { locale: "en" });
+  ok("doctor view falls back to all when nothing follows the latest visit", dv2.window.since_visit === false && dv2.summary.episodes === 4 && dv2.last_visit.at === "2026-12-01T10:00:00-07:00");
+}
+
 // 5. Self view: whole timeline, gaps, mind alongside.
 const sv = selfView(records, { locale: "en" });
 ok("self episodes = 4", sv.summary.episodes === 4);
