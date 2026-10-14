@@ -5,9 +5,11 @@ import rules from "./rules.json" with { type: "json" };
 import regions from "./regions.json" with { type: "json" };
 import { effective, ruledOut, durationMin, deptLabel, t } from "../export/export.mjs";
 
+/** Longest matching key wins: "biceps_femoris" is a leg before it is a "biceps" arm. */
+const REGION_KEYS = Object.entries(regions.part_prefixes).flatMap(([region, keys]) => keys.map((k) => [k, region])).sort((a, b) => b[0].length - a[0].length);
 export function regionOf(part_id) {
-  const p = part_id.toLowerCase();
-  for (const [region, prefixes] of Object.entries(regions.part_prefixes)) if (prefixes.some((x) => p.startsWith(x) || p.includes(x))) return region;
+  const p = String(part_id ?? "").toLowerCase();
+  for (const [key, region] of REGION_KEYS) if (p.includes(key)) return region;
   return "other";
 }
 

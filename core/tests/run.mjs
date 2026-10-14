@@ -44,6 +44,15 @@ ok("intensity listed not averaged", Array.isArray(dv.summary.intensity.values) &
   ok("doctor view falls back to all when nothing follows the latest visit", dv2.window.since_visit === false && dv2.summary.episodes === 4 && dv2.last_visit.at === "2026-12-01T10:00:00-07:00");
 }
 
+// 4c. regionOf: longest key wins; the real model's parts are covered (only the generic skin is 'other').
+ok("regionOf longest match", regionOf("biceps_femoris") === "leg" && regionOf("oblique_head_of_adductor_hallucis") === "foot" && regionOf("external_abdominal_oblique") === "abdomen" && regionOf("superior_oblique") === "head" && regionOf("iliocostalis_lumborum") === "lower_back" && regionOf("longissimus_capitis") === "neck");
+try {
+  const parts = JSON.parse(readFileSync(new URL("../../app/public/model/body.parts.json", import.meta.url)));
+  const ids = [...new Set(Object.values(parts.nodes).map((n) => n.part_id))];
+  const other = ids.filter((i) => regionOf(i) === "other");
+  ok("regionOf covers the Z-Anatomy parts", other.length <= 1 && (other[0] ?? "skin") === "skin", other.join(","));
+} catch { console.log("skip regionOf coverage (no body.parts.json)"); }
+
 // 5. Self view: whole timeline, gaps, mind alongside.
 const sv = selfView(records, { locale: "en" });
 ok("self episodes = 4", sv.summary.episodes === 4);
