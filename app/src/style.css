@@ -233,6 +233,8 @@ textarea.field { resize: vertical; min-height: 56px; }
 .tl .mind { fill: var(--accent); fill-opacity: 0.35; }
 .tl .gap { fill: rgba(38, 37, 45, 0.045); }
 .tl .gap-label { font: 11px var(--sans); fill: var(--muted); }
+.tl-legend { display: flex; align-items: center; gap: 6px; margin: 6px 0 0; font-size: 11.5px; color: var(--muted); }
+.tl-swatch { width: 14px; height: 10px; border-radius: 2px; background: rgba(38, 37, 45, 0.09); }
 
 .print-doc { background: #fff; color: #1c1c22; border-radius: var(--r); padding: 20px 22px; box-shadow: var(--shadow); font-size: 13.5px; line-height: 1.5; }
 .print-doc header h2 { margin: 0 0 4px; font-size: 18px; }

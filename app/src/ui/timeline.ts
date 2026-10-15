@@ -80,6 +80,8 @@ export function buildTimeline(records: Rec[], opts: TimelineOpts): HTMLElement {
   }
   const scroller = h("div", { class: "tl-scroll" }, svg);
   wrap.append(scroller);
+  // Narrow gaps only carry "8 days"; the legend keeps the meaning of the shading visible whenever there is a gap.
+  if (gp.length) wrap.append(h("p", { class: "tl-legend" }, h("span", { class: "tl-swatch", "aria-hidden": "true" }), t("timeline.gap")));
   if (!opts.print) requestAnimationFrame(() => (scroller.scrollLeft = scroller.scrollWidth));
   void getLocale;
   return wrap;
