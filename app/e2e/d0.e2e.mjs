@@ -29,6 +29,8 @@ const OVERLAP = () => {
   if (hit(P, B)) out.push("panel×header");
   if (hit(B, L)) out.push("brand×lang");
   if (F.bottom > innerHeight + 0.5) out.push("footer below screen");
+  const S = document.querySelector(".rec-state");
+  if (S) for (const b of document.querySelectorAll(".rec-actions .btn")) if (hit(S.getBoundingClientRect(), b.getBoundingClientRect())) { out.push("record state×button"); break; }
   const bm = window.__bodymap; const feet = bm && bm.screenOf(0.105, 0.0, 0.05);
   if (feet && feet.y > r(".hint").top) out.push(`feet under hint (${Math.round(feet.y)}>${Math.round(r(".hint").top)})`);
   return out;
@@ -237,6 +239,7 @@ try {
   ok("M no CJK left in en (except the 中文 switch)", !/[㐀-鿿]/.test(enText.replace("中文", "")), (enText.match(/[㐀-鿿]+/g) || []).join(","));
   ok("M readout label switches", (await page.locator(".readout strong").innerText()) === "Deltoid");
   for (const [name, txt] of [["zh", zhText], ["en", enText]]) ok(`N no verdict/warning words on page (${name})`, !FORBIDDEN.some((re) => re.test(txt)), FORBIDDEN.filter((re) => re.test(txt)).join(","));
+  await settle(); // English wraps the record row onto a second line: the panel grows and the body re-frames
   ok("S no overlap (en, 390×844)", (await page.evaluate(OVERLAP)).length === 0, (await page.evaluate(OVERLAP)).join(","));
   await page.screenshot({ path: OUT + "07_en.png" });
   await page.locator(".lang").click();

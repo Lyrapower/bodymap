@@ -75,7 +75,11 @@ function measure() {
   // the view presets float in the free area, never over the panel
   viewDock.style.top = wide ? "50%" : `${Math.round((top + hintTop) / 2)}px`;
 }
-new ResizeObserver(measure).observe(panel);
+// Watch the whole dock, not just the panel: the footer wraps to more lines in some languages, which moves the hint
+// without resizing the panel, and the body must still re-frame above it.
+const insetsWatch = new ResizeObserver(measure);
+insetsWatch.observe(panel);
+insetsWatch.observe(dock);
 window.addEventListener("resize", measure);
 
 // ---------- records on the body ----------

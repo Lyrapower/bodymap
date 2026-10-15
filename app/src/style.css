@@ -146,7 +146,7 @@ body {
 .quick-side { display: flex; flex-direction: column; gap: 6px; align-items: flex-start; }
 .quick-side p { margin: 0; }
 .record-row { flex-wrap: wrap; gap: 8px; min-height: 36px; }
-.rec-line { display: flex; align-items: baseline; gap: 8px; min-width: 0; flex: 1; white-space: nowrap; }
+.rec-line { display: flex; align-items: baseline; gap: 8px; min-width: max-content; flex: 1; white-space: nowrap; } /* never narrower than its text: the actions wrap instead of covering it */
 .rec-time { font-size: 13px; color: var(--muted); }
 .rec-state { font-size: 14.5px; font-weight: 600; }
 .rec-actions { display: flex; gap: 6px; flex-wrap: wrap; justify-content: flex-end; }
