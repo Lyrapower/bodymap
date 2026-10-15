@@ -83,7 +83,11 @@ try {
     for (let i = 1; i <= 8; i++) await cdp.send("Input.dispatchTouchEvent", { type: "touchMove", touchPoints: tp(c.x + i * 14, c.y) });
     await cdp.send("Input.dispatchTouchEvent", { type: "touchEnd", touchPoints: [] });
     const az = () => page.evaluate(() => { const v = window.__bodymap.viewer; const d = v.camera.position.clone().sub(v.controls.target); return Math.atan2(d.x, d.z); });
-    const turned = await az(); await sleep(1200); const later = await az();
+    // the controls have inertia: let the turn finish (two readings 100 ms apart agree) before taking it as "turned".
+    // If the re-frame undid the turn, it is back near 0 by then and the first condition fails.
+    let turned = await az();
+    for (let i = 0; i < 40; i++) { await sleep(100); const a = await az(); if (Math.abs(a - turned) < 0.002) break; turned = a; }
+    await sleep(1200); const later = await az();
     ok("2 a turn during the re-frame animation is kept", Math.abs(turned) > 0.05 && Math.abs(later - turned) < 0.2, `turned=${turned.toFixed(3)} later=${later.toFixed(3)}`);
     await page.evaluate(() => window.__bodymap.viewer.faceAzimuth(0));
   }
