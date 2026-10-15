@@ -5,6 +5,7 @@ import { t, getLocale } from "../i18n";
 import { h, tx } from "../dom";
 import { fmtShortDate } from "../format";
 import type { Rec } from "../records";
+import { gapLabel } from "./gapLabel";
 
 const NS = "http://www.w3.org/2000/svg";
 const s = (tag: string, attrs: Record<string, string | number>, ...kids: (Node | string)[]) => {
@@ -40,7 +41,8 @@ export function buildTimeline(records: Rec[], opts: TimelineOpts): HTMLElement {
   for (const g of gp) {
     const a = x(g.from), b = x(g.to);
     svg.append(s("rect", { x: a, y: 0, width: Math.max(1, b - a), height: plotH, class: "gap" }));
-    if (b - a > 70) svg.append(s("text", { x: (a + b) / 2, y: plotH / 2, class: "gap-label", "text-anchor": "middle" }, `${t("timeline.gap")} · ${g.days} ${t("days")}`));
+    const label = gapLabel(b - a, `${t("timeline.gap")} · ${g.days} ${t("days")}`, `${g.days} ${t("days")}`);
+    if (label) svg.append(s("text", { x: (a + b) / 2, y: plotH / 2, class: "gap-label", "text-anchor": "middle" }, label));
   }
   // intensity grid
   for (const v of [0, 5, 10]) {
