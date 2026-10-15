@@ -4,6 +4,7 @@
 import * as THREE from "three";
 
 export const MARK_COLOR = new THREE.Color("#5b55d6");
+const PRINT_COLOR = new THREE.Color("#3a33b0"); // one step deeper ink for printed figures
 const BREATH_S = 4.8;
 const SCREEN_PX = 54; // rendered diameter of the halo, in CSS px, at any zoom
 
@@ -26,7 +27,7 @@ void main() {
     ring = (smoothstep(rr - 0.05, rr, r) - smoothstep(rr, rr + 0.03, r)) * (1.0 - uRipple) * 0.38;
   }
   float a = max(core * 0.92, max(halo, ring)) + coreRing * 0.35;
-  a *= uPresence * uLand;
+  a = min(1.0, a * uPresence * uLand);
   vec3 c = mix(uColor, vec3(1.0), coreRing * 0.65);
   gl_FragColor = vec4(c, a);
 }`;
@@ -72,6 +73,12 @@ export class Marker {
   }
 
   setIntensity(intensity: number) { this.mesh.material.uniforms.uPresence.value = 0.55 + 0.045 * Math.max(0, Math.min(10, intensity)); }
+  /** On paper the mark has no motion and no screen glow behind it: a deeper ink and full presence so it reads. */
+  setPrint(intensity: number) {
+    const u = this.mesh.material.uniforms;
+    u.uColor.value.copy(PRINT_COLOR);
+    u.uPresence.value = 1.25 + 0.03 * Math.max(0, Math.min(10, intensity));
+  }
   setShape(shape: string, radius = 0.3) { this.scaleMul = shape === "patch" || shape === "radiating" ? 1 + 2.5 * Math.max(0, Math.min(1, radius)) : 1; }
 
   dispose() { this.mesh.geometry.dispose(); this.mesh.material.dispose(); }

@@ -3,7 +3,7 @@ import { doctorView, selfView } from "../../../core/export/export.mjs";
 import { route } from "../../../core/routing/routing.mjs";
 import { t, getLocale, setLocale, type Locale } from "../i18n";
 import { h, tx, btn, chip, setPressed, refreshText } from "../dom";
-import { fmtDate, fmtDateTime, fmtDuration, sep } from "../format";
+import { fmtDate, fmtDateTime, fmtDuration, sep, dateRange } from "../format";
 import { isoLocal, type Rec, type Mark } from "../records";
 import { state, type Region } from "../state";
 import { parseBackup, type Backup } from "../store/db";
@@ -40,20 +40,20 @@ export function openDoctorExport(hooks: ExportHooks) {
   const p = (txt: string | null | undefined) => (txt ? h("p", {}, txt) : null);
   const windowRecs = recs.filter((r) => r.kind === "episode" && (!d.window.from || r.started_at >= d.window.from));
   const doc = h("article", { class: "print-doc", lang: getLocale() === "zh" ? "zh-CN" : "en" },
-    h("header", {}, tx("export.doctor", "h2"), h("p", { class: "muted" }, `${d.window.label}${d.window.from ? " · " + fmtDate(d.window.from) : ""}${d.window.to ? " – " + fmtDate(d.window.to) : ""} · ${S.episodes} ${t("export.episodes")} · ${t("export.generated")} ${fmtDateTime(isoLocal())}`)),
+    h("header", {}, tx("export.doctor", "h2"), h("p", { class: "muted" }, `${d.window.label}${dateRange(d.window.from, d.window.to)} · ${S.episodes} ${t("export.episodes")} · ${t("export.generated")} ${fmtDateTime(isoLocal())}`)),
     bodyFigures(windowRecs, hooks),
-    sec("S", S.sites.length ? h("ul", {}, ...S.sites.map((x: { label: string; count: number }) => h("li", {}, `${x.label} ×${x.count}`))) : p(t("none"))),
+    sec("S", S.sites.length ? h("ul", {}, ...S.sites.map((x: { label: string; count: number }) => h("li", {}, `${x.label} ×${x.count}`))) : p(t("not_recorded"))),
     sec("O", p(S.first_at ? `${t("started")} ${fmtDateTime(S.first_at)}` : null), p(S.onset.length ? countList(S.onset) : null)),
-    sec("C", p(S.character.length ? countList(S.character) : t("none"))),
-    sec("R", S.radiating.length ? h("ul", {}, ...S.radiating.map((x: { from: string; to: string | null }) => h("li", {}, x.to ? `${x.from} → ${x.to}` : x.from))) : p(t("none"))),
-    sec("A", p(S.associated.length ? countList(S.associated) : t("none")), mindLine(d.mind)),
+    sec("C", p(S.character.length ? countList(S.character) : t("not_recorded"))),
+    sec("R", S.radiating.length ? h("ul", {}, ...S.radiating.map((x: { from: string; to: string | null }) => h("li", {}, x.to ? `${x.from} → ${x.to}` : x.from))) : p(t("not_recorded"))),
+    sec("A", p(S.associated.length ? countList(S.associated) : t("not_recorded")), mindLine(d.mind)),
     sec("T", p(`${S.episodes} ${t("export.episodes")}${S.first_at ? " · " + fmtDate(S.first_at) : ""}${S.last_at ? " – " + fmtDate(S.last_at) : ""}`),
       p(S.pattern.length ? countList(S.pattern) : null),
       p(S.duration_min.n ? `${fmtDuration(S.duration_min.min ?? null)} – ${fmtDuration(S.duration_min.max ?? null)} (n=${S.duration_min.n})${S.duration_min.unknown ? ` · ${S.duration_min.unknown} ${t("export.unknown_end")}` : ""}` : S.duration_min.unknown ? `${S.duration_min.unknown} ${t("export.unknown_end")}` : null)),
-    sec("E", p(S.triggers.length ? `${t("context.triggers")}: ${countList(S.triggers)}` : null), p(S.relief.length ? `${t("context.relief")}: ${countList(S.relief)}` : null), !S.triggers.length && !S.relief.length ? p(t("none")) : null),
-    sec("S2", p(S.intensity ? `${S.intensity.min} – ${S.intensity.max} · ${S.intensity.values.join(" ")}` : t("none"))),
-    sec("X", d.ruled_out.length ? h("table", {}, h("tbody", {}, ...d.ruled_out.map((x: { name: string; result: string; date: string | null; record_at: string }) => h("tr", {}, h("td", {}, x.name), h("td", {}, t("result." + (x.result === "abnormal" ? "finding" : x.result))), h("td", {}, fmtDate(x.date ?? x.record_at)))))) : p(t("none"))),
-    sec("V", d.last_visit ? h("div", {}, p(`${fmtDate(d.last_visit.at)} · ${d.last_visit.department}${d.last_visit.clinician ? " · " + d.last_visit.clinician : ""}`), p(d.last_visit.said), p(d.last_visit.did), p(d.last_visit.next ? `${t("visit.next")} ${d.last_visit.next}` : null)) : p(t("none"))),
+    sec("E", p(S.triggers.length ? `${t("context.triggers")}: ${countList(S.triggers)}` : null), p(S.relief.length ? `${t("context.relief")}: ${countList(S.relief)}` : null), !S.triggers.length && !S.relief.length ? p(t("not_recorded")) : null),
+    sec("S2", p(S.intensity ? `${S.intensity.min} – ${S.intensity.max} · ${S.intensity.values.join(" ")}` : t("not_recorded"))),
+    sec("X", d.ruled_out.length ? h("table", {}, h("tbody", {}, ...d.ruled_out.map((x: { name: string; result: string; date: string | null; record_at: string }) => h("tr", {}, h("td", {}, x.name), h("td", {}, t("result." + (x.result === "abnormal" ? "finding" : x.result))), h("td", {}, fmtDate(x.date ?? x.record_at)))))) : p(t("not_recorded"))),
+    sec("V", d.last_visit ? h("div", {}, p(`${fmtDate(d.last_visit.at)} · ${d.last_visit.department}${d.last_visit.clinician ? " · " + d.last_visit.clinician : ""}`), p(d.last_visit.said), p(d.last_visit.did), p(d.last_visit.next ? `${t("visit.next")} ${d.last_visit.next}` : null)) : p(t("not_recorded"))),
     h("footer", {}, ...d.footer.map((f: string) => h("p", {}, f))));
   openPrintSheet("export.doctor", doc);
 }
@@ -72,9 +72,9 @@ export function openSelfExport(hooks: ExportHooks) {
     h("header", {}, tx("export.self", "h2"), h("p", { class: "muted" }, `${sv.summary.episodes} ${t("export.episodes")} · ${t("export.passed")} ${sv.passed} · ${t("export.still")} ${sv.still} · ${t("export.generated")} ${fmtDateTime(isoLocal())}`)),
     buildTimeline(recs, { width: 640, print: true }),
     bodyFigures(recs.filter((r) => r.kind === "episode"), hooks),
-    h("section", { class: "sec" }, tx("export.sites", "h3"), sv.summary.sites.length ? h("ul", {}, ...sv.summary.sites.map((x: { label: string; count: number }) => h("li", {}, `${x.label} ×${x.count}`))) : h("p", {}, t("none"))),
+    h("section", { class: "sec" }, tx("export.sites", "h3"), sv.summary.sites.length ? h("ul", {}, ...sv.summary.sites.map((x: { label: string; count: number }) => h("li", {}, `${x.label} ×${x.count}`))) : h("p", {}, t("not_recorded"))),
     sv.gaps.length ? h("section", { class: "sec" }, tx("timeline.gap", "h3"), h("ul", {}, ...sv.gaps.map((g: { from: string; to: string; days: number }) => h("li", {}, `${fmtDate(g.from)} – ${fmtDate(g.to)} · ${g.days} ${t("days")}`)))) : null,
-    h("section", { class: "sec" }, tx("export.visits", "h3"), sv.visits.length ? h("ul", {}, ...sv.visits.map((v: { at: string; department: string; said: string | null }) => h("li", {}, `${fmtDate(v.at)} · ${v.department}${v.said ? " · " + v.said : ""}`))) : h("p", {}, t("none"))),
+    h("section", { class: "sec" }, tx("export.visits", "h3"), sv.visits.length ? h("ul", {}, ...sv.visits.map((v: { at: string; department: string; said: string | null }) => h("li", {}, `${fmtDate(v.at)} · ${v.department}${v.said ? " · " + v.said : ""}`))) : h("p", {}, t("not_recorded"))),
     h("footer", {}, ...sv.footer.map((f: string) => h("p", {}, f))));
   openPrintSheet("export.self", doc);
 }

@@ -15,3 +15,10 @@ export function fmtDuration(min: number | null): string | null {
   return `${Math.round(min / 1440)} ${t("days")}`;
 }
 export const sep = () => (getLocale() === "zh" ? "、" : ", ");
+
+/** " · 10/14/2026" when both ends fall on the same day, " · 10/1/2026 – 10/14/2026" otherwise. */
+export function dateRange(from: string | null | undefined, to: string | null | undefined): string {
+  const a = from ? fmtDate(from) : "", b = to ? fmtDate(to) : "";
+  if (a && b) return a === b ? ` · ${a}` : ` · ${a} – ${b}`;
+  return a ? ` · ${a}` : b ? ` – ${b}` : "";
+}

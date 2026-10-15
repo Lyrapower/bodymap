@@ -31,6 +31,10 @@ const OVERLAP = () => {
   if (F.bottom > innerHeight + 0.5) out.push("footer below screen");
   if (document.documentElement.scrollWidth > innerWidth + 1) out.push(`page wider than screen (${document.documentElement.scrollWidth}>${innerWidth})`);
   for (const b of document.querySelectorAll(".where .btn")) if (b.getBoundingClientRect().height > 44) out.push("readout button wraps");
+  const sw = document.querySelector(".layer-row .switch span:not(.knob)");
+  if (sw && sw.getBoundingClientRect().width < 20) out.push("motion switch has no visible label");
+  const nm = document.querySelector(".where strong");
+  if (nm && nm.scrollHeight > nm.clientHeight + 1 && nm.textContent.length <= 24) out.push("part name cut");
   const S = document.querySelector(".rec-state");
   if (S) for (const b of document.querySelectorAll(".rec-actions .btn")) if (hit(S.getBoundingClientRect(), b.getBoundingClientRect())) { out.push("record state×button"); break; }
   const bm = window.__bodymap; const feet = bm && bm.screenOf(0.105, 0.0, 0.05);

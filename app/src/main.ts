@@ -37,7 +37,7 @@ const motionSwitch = h("label", { class: "switch", for: "reduced" }, motion, h("
 const tabs = h("nav", { class: "tabs", role: "tablist" });
 const panel = h("section", { class: "panel" },
   readout, shapeRow, recordRow,
-  h("div", { class: "row" }, tx("layer", "span", { class: "label" }), layerRow, motionSwitch));
+  h("div", { class: "row layer-row" }, tx("layer", "span", { class: "label" }), layerRow, motionSwitch));
 const viewDock = h("div", { class: "view-dock" }, viewRow);
 const footer = h("footer", { class: "foot-note" }, tx("footer.record_only", "p"), tx("footer.emergency", "p"), tx("built_with", "p", { class: "built" }));
 const placeholderTag = h("span", { class: "tag", hidden: "" }, tx("model.placeholder"));

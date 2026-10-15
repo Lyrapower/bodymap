@@ -75,7 +75,8 @@ body {
 }
 .row { display: flex; align-items: center; gap: 12px; min-height: 34px; }
 .row .switch { margin-left: auto; white-space: nowrap; }
-@media (max-width: 430px) { .row .switch span:not(.knob) { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); } }
+/* narrow screens: the switch takes its own line under the layer chips, label visible */
+@media (max-width: 430px) { .layer-row { flex-wrap: wrap; row-gap: 8px; } .layer-row .switch { flex-basis: 100%; margin-left: calc(3.2em + 12px); } }
 .label { flex: none; width: 3.2em; color: var(--muted); font-size: 12.5px; }
 .chips { display: flex; gap: 6px; flex-wrap: wrap; }
 .chip {
@@ -94,7 +95,7 @@ body {
 }
 .readout[hidden] { display: none; }
 .where { display: flex; align-items: baseline; gap: 8px; min-width: 0; }
-.where strong { font-size: 16px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.where strong { font-size: 16px; font-weight: 600; overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-height: 1.25; overflow-wrap: anywhere; } /* long anatomical names take two lines instead of being cut */
 .where .meta { color: var(--muted); font-size: 12.5px; white-space: nowrap; }
 /* a long part name is the only thing that gives way: the dot and the buttons keep their size and stay on one line */
 .where .dot, .where .meta, .where .btn { flex: none; }

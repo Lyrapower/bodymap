@@ -331,7 +331,7 @@ export class Viewer {
       for (const m of marks) {
         const wld = this.locationToWorld({ ...m.location, depth: "skin" }); if (!wld) continue;
         const mk = new Marker(wld.point, wld.normal, m.intensity); mk.setShape(m.shape, m.radius ?? 0.3);
-        mk.update(performance.now() + 5000, this.camera, h, true); this.scene.add(mk.mesh); this.markers.push(mk);
+        mk.update(performance.now() + 5000, this.camera, h, true); mk.setPrint(m.intensity); this.scene.add(mk.mesh); this.markers.push(mk);
         if (m.to) { const t = this.locationToWorld({ ...m.to, depth: "skin" }); if (t) this.addLink(wld.point, t.point, wld.normal, t.normal); }
       }
       this.renderer.render(this.scene, this.camera);

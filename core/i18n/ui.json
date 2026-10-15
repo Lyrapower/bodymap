@@ -568,9 +568,9 @@
     "zh": "结果",
     "en": "Result"
   },
-  "none": {
-    "zh": "无",
-    "en": "None"
+  "not_recorded": {
+    "zh": "未记录",
+    "en": "Not recorded"
   },
   "routing.open": {
     "zh": "看看该找谁",
