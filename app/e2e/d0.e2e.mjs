@@ -29,6 +29,8 @@ const OVERLAP = () => {
   if (hit(P, B)) out.push("panel×header");
   if (hit(B, L)) out.push("brand×lang");
   if (F.bottom > innerHeight + 0.5) out.push("footer below screen");
+  if (document.documentElement.scrollWidth > innerWidth + 1) out.push(`page wider than screen (${document.documentElement.scrollWidth}>${innerWidth})`);
+  for (const b of document.querySelectorAll(".where .btn")) if (b.getBoundingClientRect().height > 44) out.push("readout button wraps");
   const S = document.querySelector(".rec-state");
   if (S) for (const b of document.querySelectorAll(".rec-actions .btn")) if (hit(S.getBoundingClientRect(), b.getBoundingClientRect())) { out.push("record state×button"); break; }
   const bm = window.__bodymap; const feet = bm && bm.screenOf(0.105, 0.0, 0.05);

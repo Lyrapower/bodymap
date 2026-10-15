@@ -1,8 +1,11 @@
-# Every commit on a pull request must carry a Signed-off-by line (git commit -s). See CONTRIBUTING.md.
+# Every commit on a pull request, and every commit pushed to main, must carry a Signed-off-by line (git commit -s).
+# See CONTRIBUTING.md.
 name: DCO
 on:
   pull_request:
     types: [opened, synchronize, reopened]
+  push:
+    branches: [main]
 permissions:
   contents: read
 jobs:
@@ -15,10 +18,15 @@ jobs:
       - name: Check Signed-off-by on every commit
         run: |
           set -eu
-          base="${{ github.event.pull_request.base.sha }}"
-          head="${{ github.event.pull_request.head.sha }}"
+          base="${{ github.event.pull_request.base.sha || github.event.before }}"
+          head="${{ github.event.pull_request.head.sha || github.sha }}"
+          case "$base" in
+            ""|0000000000000000000000000000000000000000) commits=$(git rev-list --max-count=100 "$head") ;;
+            *) commits=$(git rev-list "$base..$head") ;;
+          esac
+          [ -n "$commits" ] || { echo "::error::no commits to check"; exit 1; }
           missing=0
-          for c in $(git rev-list "$base".."$head"); do
+          for c in $commits; do
             if ! git log -1 --format=%B "$c" | grep -qiE '^Signed-off-by: .+ <.+@.+>$'; then
               echo "::error::commit $c has no Signed-off-by line (use: git commit -s)"
               missing=1

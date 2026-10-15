@@ -16,7 +16,7 @@
   color-scheme: light;
 }
 * { box-sizing: border-box; }
-html, body { margin: 0; height: 100%; }
+html, body { margin: 0; height: 100%; overflow-x: hidden; } /* never a sideways page: iOS lets you pan it */
 body {
   background:
     radial-gradient(60% 45% at 50% 42%, #ffffff 0%, rgba(255, 255, 255, 0) 70%),
@@ -96,6 +96,10 @@ body {
 .where { display: flex; align-items: baseline; gap: 8px; min-width: 0; }
 .where strong { font-size: 16px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .where .meta { color: var(--muted); font-size: 12.5px; white-space: nowrap; }
+/* a long part name is the only thing that gives way: the dot and the buttons keep their size and stay on one line */
+.where .dot, .where .meta, .where .btn { flex: none; }
+.where .btn { white-space: nowrap; }
+.where strong { min-width: 0; flex: 0 1 auto; }
 .dot { width: 9px; height: 9px; border-radius: 50%; background: var(--accent); align-self: center; box-shadow: 0 0 0 4px var(--accent-soft); animation: breathe 4.8s ease-in-out infinite; }
 @keyframes breathe { 50% { box-shadow: 0 0 0 7px rgba(91, 85, 214, 0.06); } }
 .coord { font: 11.5px var(--mono); color: var(--faint); white-space: nowrap; }

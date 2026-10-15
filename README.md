@@ -1,5 +1,7 @@
 # BodyMap — tap where it hurts on a 3D body, keep a record a doctor can read
 
+[![CI](https://github.com/Lyrapower/bodymap/actions/workflows/ci.yml/badge.svg)](https://github.com/Lyrapower/bodymap/actions/workflows/ci.yml) [![DCO](https://github.com/Lyrapower/bodymap/actions/workflows/dco.yml/badge.svg)](https://github.com/Lyrapower/bodymap/actions/workflows/dco.yml)
+
 **[▶ Open the live demo](https://lyrapower.github.io/bodymap/)** (best on a phone) · records never leave your device. If it helps you or someone you care for, a ⭐ helps other people find it.
 
 <p align="center"><img src="docs/demo.gif" width="300" alt="Turning the 3D body, tapping the left shoulder to mark it, then switching to the muscle layer" /></p>
