@@ -3,7 +3,7 @@ import { dateRange } from "../src/format";
 
 describe("dateRange", () => {
   it("writes one date when both ends fall on the same day", () => {
-    const r = dateRange("2026-10-14T12:00:00Z", "2026-10-14T12:30:00Z") // same calendar day in every time zone;
+    const r = dateRange("2026-10-14T12:00:00Z", "2026-10-14T12:30:00Z"); // same calendar day in every time zone
     expect(r.split("–").length).toBe(1);
     expect(r.startsWith(" · ")).toBe(true);
   });
