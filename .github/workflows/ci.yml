@@ -23,9 +23,16 @@ jobs:
         working-directory: app
       - run: npx playwright-core install chromium --with-deps || true
         working-directory: app
-      - run: CHROMIUM_PATH="$(node -e "console.log(require('playwright-core').chromium.executablePath())")" npm run e2e
+      # Each failed check also becomes an annotation, so a red run says which check failed without opening the log.
+      - run: |
+          set -o pipefail
+          CHROMIUM_PATH="$(node -e "console.log(require('playwright-core').chromium.executablePath())")" npm run e2e 2>&1 | tee e2e-d0.log \
+            || { grep -E '^FAIL' e2e-d0.log | sed 's/^/::error title=e2e d0::/'; exit 1; }
         working-directory: app
-      - run: CHROMIUM_PATH="$(node -e "console.log(require('playwright-core').chromium.executablePath())")" npm run e2e:d1
+      - run: |
+          set -o pipefail
+          CHROMIUM_PATH="$(node -e "console.log(require('playwright-core').chromium.executablePath())")" npm run e2e:d1 2>&1 | tee e2e-d1.log \
+            || { grep -E '^FAIL|Error|watchdog' e2e-d1.log | head -20 | sed 's/^/::error title=e2e d1::/'; exit 1; }
         working-directory: app
   # WebKit (Safari's engine) on Linux. Not verified on a GitHub runner yet: kept non-blocking until it has passed there once.
   webkit:
