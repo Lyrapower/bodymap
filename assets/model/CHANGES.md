@@ -26,8 +26,8 @@ Export done 2026-10-14 with `assets/model/export_zanatomy.py` (command in its do
 - Triangles: muscle 272 377 (573 nodes), bone 173 829 (222 nodes), skin 60 000 (1 node); total 506 206.
 - File size: body.glb 12 963 400 bytes (12.4 MiB); body.parts.json 143 793 bytes.
 - Mesh naming: node names are the Z-Anatomy names (or the joined name above); part_id = snake case, side stripped, a trailing
-  "muscle" / "bone" dropped. Mapping file: `body.parts.json` (written by the script). zh labels: 183 of 418 part_ids from labels.json
-  (exact or contained id); the rest show the English Z-Anatomy name in both languages.
+  "muscle" / "bone" dropped. Mapping file: `body.parts.json` (written by the script). zh labels: all 418 part_ids from an exact
+  labels.json entry (since D4); a part with no entry would show its English Z-Anatomy name in both languages.
 - Export: glTF 2.0 binary (.glb), no Draco (the app has no decoder), no materials, no UVs. Meshes are baked in world space (no node
   transforms), so `local` is relative to an axis-aligned box.
 - Units / origin: metres, feet at y = 0 (min y 0.002), height 1.711 m, facing +Z, patient's left = +X. Z-Anatomy is Z-up, facing -Y,
