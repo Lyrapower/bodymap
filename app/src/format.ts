@@ -2,10 +2,16 @@
 import { getLocale, t } from "./i18n";
 
 const tag = () => (getLocale() === "zh" ? "zh-CN" : "en-US");
-export const fmtDateTime = (iso: string) => { const d = new Date(iso); return Number.isNaN(d.getTime()) ? iso : new Intl.DateTimeFormat(tag(), { month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit", hour12: false }).format(d); };
-export const fmtDate = (iso: string) => { const d = new Date(iso); return Number.isNaN(d.getTime()) ? iso : new Intl.DateTimeFormat(tag(), { year: "numeric", month: "numeric", day: "numeric" }).format(d); };
-export const fmtTime = (iso: string) => { const d = new Date(iso); return Number.isNaN(d.getTime()) ? iso : new Intl.DateTimeFormat(tag(), { hour: "2-digit", minute: "2-digit", hour12: false }).format(d); };
-export const fmtShortDate = (iso: string) => { const d = new Date(iso); return Number.isNaN(d.getTime()) ? iso : new Intl.DateTimeFormat(tag(), { month: "numeric", day: "numeric" }).format(d); };
+/** A date-only string ("2026-09-24", from a date field) is a calendar day, not UTC midnight. `new Date("2026-09-24")`
+ * reads it as UTC, which shows as the day before anywhere west of UTC; read it as local midnight instead. */
+export const parseWhen = (iso: string): Date => {
+  const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(iso);
+  return m ? new Date(+m[1]!, +m[2]! - 1, +m[3]!) : new Date(iso);
+};
+export const fmtDateTime = (iso: string) => { const d = parseWhen(iso); return Number.isNaN(d.getTime()) ? iso : new Intl.DateTimeFormat(tag(), { month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit", hour12: false }).format(d); };
+export const fmtDate = (iso: string) => { const d = parseWhen(iso); return Number.isNaN(d.getTime()) ? iso : new Intl.DateTimeFormat(tag(), { year: "numeric", month: "numeric", day: "numeric" }).format(d); };
+export const fmtTime = (iso: string) => { const d = parseWhen(iso); return Number.isNaN(d.getTime()) ? iso : new Intl.DateTimeFormat(tag(), { hour: "2-digit", minute: "2-digit", hour12: false }).format(d); };
+export const fmtShortDate = (iso: string) => { const d = parseWhen(iso); return Number.isNaN(d.getTime()) ? iso : new Intl.DateTimeFormat(tag(), { month: "numeric", day: "numeric" }).format(d); };
 
 /** "25 min", "3.5 h", "2 days". Null when there is no end. */
 export function fmtDuration(min: number | null): string | null {
