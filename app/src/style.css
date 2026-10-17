@@ -49,7 +49,7 @@ body {
   pointer-events: auto; flex: none;
   font: 500 13px var(--sans); color: var(--ink);
   padding: 7px 13px; border-radius: 999px; border: 1px solid var(--glass-line);
-  background: var(--glass); backdrop-filter: blur(14px) saturate(1.4); -webkit-backdrop-filter: blur(14px) saturate(1.4);
+  background: var(--glass); -webkit-backdrop-filter: blur(14px) saturate(1.4); backdrop-filter: blur(14px) saturate(1.4);
   box-shadow: var(--shadow); cursor: pointer;
 }
 
@@ -69,7 +69,7 @@ body {
   pointer-events: auto; width: 100%; max-width: 520px; margin: 0 auto;
   padding: 14px 16px 12px; border-radius: var(--r);
   background: var(--glass); border: 1px solid var(--glass-line);
-  backdrop-filter: blur(22px) saturate(1.5); -webkit-backdrop-filter: blur(22px) saturate(1.5);
+  -webkit-backdrop-filter: blur(22px) saturate(1.5); backdrop-filter: blur(22px) saturate(1.5);
   box-shadow: var(--shadow);
   display: flex; flex-direction: column; gap: 10px;
 }
@@ -159,7 +159,7 @@ body {
 .btn.icon { width: 32px; padding: 0; font-size: 18px; line-height: 1; }
 .view-dock { position: absolute; right: 12px; top: 50%; transform: translateY(-50%); pointer-events: auto; }
 .view-dock .chips { flex-direction: column; gap: 6px; }
-.view-dock .chip { background: var(--glass); border-color: var(--glass-line); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); box-shadow: var(--shadow); min-width: 56px; text-align: center; }
+.view-dock .chip { background: var(--glass); border-color: var(--glass-line); -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px); box-shadow: var(--shadow); min-width: 56px; text-align: center; }
 .panel { gap: 8px; }
 .readout { padding-bottom: 6px; gap: 4px; }
 .shape-row { gap: 8px; flex-wrap: wrap; }
@@ -180,7 +180,7 @@ body {
   position: relative; z-index: 6; pointer-events: auto;
   display: flex; gap: 4px; padding: 4px; width: 100%; max-width: 520px; margin: 0 auto;
   border-radius: 999px; background: var(--glass); border: 1px solid var(--glass-line);
-  backdrop-filter: blur(22px) saturate(1.5); -webkit-backdrop-filter: blur(22px) saturate(1.5); box-shadow: var(--shadow);
+  -webkit-backdrop-filter: blur(22px) saturate(1.5); backdrop-filter: blur(22px) saturate(1.5); box-shadow: var(--shadow);
 }
 .tab { flex: 1; font: 500 13px var(--sans); color: var(--muted); padding: 8px 4px; min-height: 36px; border: 0; background: transparent; border-radius: 999px; cursor: pointer; transition: background 0.2s, color 0.2s; }
 .tab[aria-selected="true"] { color: var(--accent); background: var(--accent-soft); }
@@ -188,7 +188,7 @@ body {
 .sheets { position: absolute; inset: 0; pointer-events: none; }
 .sheet {
   position: absolute; inset: 0; display: flex; flex-direction: column; pointer-events: auto;
-  background: rgba(244, 243, 239, 0.93); backdrop-filter: blur(26px) saturate(1.4); -webkit-backdrop-filter: blur(26px) saturate(1.4);
+  background: rgba(244, 243, 239, 0.93); -webkit-backdrop-filter: blur(26px) saturate(1.4); backdrop-filter: blur(26px) saturate(1.4);
   opacity: 0; transform: translateY(14px); transition: opacity 0.22s ease, transform 0.22s ease;
 }
 .sheet.in { opacity: 1; transform: none; }
