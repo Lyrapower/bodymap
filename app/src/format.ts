@@ -8,6 +8,8 @@ export const parseWhen = (iso: string): Date => {
   const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(iso);
   return m ? new Date(+m[1]!, +m[2]! - 1, +m[3]!) : new Date(iso);
 };
+/** "Left Deltoid" in English, "左三角肌" in Chinese: a side and a part name, spaced the way each language writes them. */
+export const siteName = (side: string, part: string, l = getLocale()) => (l === "zh" ? `${t("side." + side, l)}${part}` : `${t("side." + side, l)} ${part}`);
 export const fmtDateTime = (iso: string) => { const d = parseWhen(iso); return Number.isNaN(d.getTime()) ? iso : new Intl.DateTimeFormat(tag(), { month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit", hour12: false }).format(d); };
 export const fmtDate = (iso: string) => { const d = parseWhen(iso); return Number.isNaN(d.getTime()) ? iso : new Intl.DateTimeFormat(tag(), { year: "numeric", month: "numeric", day: "numeric" }).format(d); };
 export const fmtTime = (iso: string) => { const d = parseWhen(iso); return Number.isNaN(d.getTime()) ? iso : new Intl.DateTimeFormat(tag(), { hour: "2-digit", minute: "2-digit", hour12: false }).format(d); };

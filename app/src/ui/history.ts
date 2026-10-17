@@ -2,7 +2,7 @@
 import { durationMin } from "../../../core/export/export.mjs";
 import { t } from "../i18n";
 import { h, tx, btn } from "../dom";
-import { fmtDateTime, fmtDuration, sep } from "../format";
+import { fmtDateTime, fmtDuration, sep, siteName } from "../format";
 import type { Rec } from "../records";
 import { state } from "../state";
 import { openSheet, closeSheet, closeAllSheets } from "./sheet";
@@ -28,7 +28,7 @@ export function buildHistory(hooks: HistoryHooks): HTMLElement {
 function summaryLine(r: Rec, partLabel: (id: string) => string): string {
   if (r.kind === "visit") return `${deptLabel(r.visit!.department)}${r.visit?.clinician ? " · " + r.visit.clinician : ""}`;
   if (r.kind === "note") return r.note ?? "";
-  const sites = [...new Set((r.marks ?? []).map((m) => `${t("side." + m.location.side)}${partLabel(m.location.part_id)}`))];
+  const sites = [...new Set((r.marks ?? []).map((m) => siteName(m.location.side, partLabel(m.location.part_id))))];
   return sites.join(sep()) || t("quick_hint");
 }
 function subLine(r: Rec): string {
@@ -50,7 +50,7 @@ export function openDetail(r: Rec, hooks: HistoryHooks) {
     rows.push(h("div", { class: "kv mark" },
       h("span", { class: "k" }, h("span", { class: "dot", "aria-hidden": "true" })),
       h("span", { class: "v" },
-        h("strong", {}, `${t("side." + m.location.side)} ${hooks.partLabel(m.location.part_id)}`),
+        h("strong", {}, siteName(m.location.side, hooks.partLabel(m.location.part_id))),
         ` · ${t("depth." + m.location.depth)} · ${t("shape." + m.shape)} · ${t("intensity")} ${m.intensity}`,
         m.descriptors?.length ? h("div", { class: "muted" }, m.descriptors.map(descLabel).join(sep())) : "",
         m.note ? h("div", { class: "muted" }, m.note) : "")));
