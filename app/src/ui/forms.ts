@@ -2,7 +2,7 @@
 import descriptors from "../../../core/i18n/descriptors.json";
 import departments from "../../../core/routing/departments.json";
 import { t, getLocale } from "../i18n";
-import { h, tx, btn, chip, chipText, setPressed, slider, textField, listField, refreshText } from "../dom";
+import { h, tx, btn, chip, chipText, setPressed, slider, textField, listField, refreshText, isOn } from "../dom";
 import { fromInputDT, toInputDT, clean, type Rec, type Mark, type Context, type Mind, type Visit, type Test, type Onset, type Pattern, type TestResult } from "../records";
 import { state } from "../state";
 import { openSheet, closeSheet, toast } from "./sheet";
@@ -28,7 +28,7 @@ function dateField(key: string, value: string | null, onChange: (v: string | nul
 function radioRow<T extends string>(key: string, options: T[], prefix: string, value: T | undefined, onChange: (v: T | undefined) => void) {
   const row = h("div", { class: "chips", role: "radiogroup" });
   const bs = options.map((o) => chip(`${prefix}.${o}`, value === o, (b) => {
-    const on = b.getAttribute("aria-pressed") !== "true";
+    const on = !isOn(b);
     bs.forEach((x) => setPressed(x, false)); if (on) setPressed(b, true);
     onChange(on ? o : undefined);
   }, "radio"));

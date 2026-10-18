@@ -34,6 +34,11 @@ jobs:
           CHROMIUM_PATH="$(node -e "console.log(require('playwright-core').chromium.executablePath())")" npm run e2e:d1 2>&1 | tee e2e-d1.log \
             || { grep -E '^FAIL|Error|watchdog' e2e-d1.log | head -20 | sed 's/^/::error title=e2e d1::/'; exit 1; }
         working-directory: app
+      - run: |
+          set -o pipefail
+          CHROMIUM_PATH="$(node -e "console.log(require('playwright-core').chromium.executablePath())")" npm run e2e:a11y 2>&1 | tee e2e-a11y.log \
+            || { grep -E '^FAIL' e2e-a11y.log | sed 's/^/::error title=e2e a11y::/'; exit 1; }
+        working-directory: app
   # WebKit (Safari's engine) on Linux. Not verified on a GitHub runner yet: kept non-blocking until it has passed there once.
   webkit:
     runs-on: ubuntu-24.04

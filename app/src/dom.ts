@@ -19,10 +19,10 @@ export const btn = (key: string, onClick: () => void, cls = "btn") => {
   b.addEventListener("click", onClick);
   return b;
 };
-/** A pill that toggles aria-pressed. */
+/** A pill. A toggle carries aria-pressed; one option of a radiogroup carries aria-checked only (aria-pressed is not allowed on role="radio"). */
 export function chip(key: string, pressed: boolean, onClick: (b: HTMLButtonElement) => void, role = "button") {
-  const b = h("button", { type: "button", class: "chip", "data-t": key, "aria-pressed": String(pressed), role }, t(key)) as HTMLButtonElement;
-  if (role === "radio") b.setAttribute("aria-checked", String(pressed));
+  const b = h("button", { type: "button", class: "chip", "data-t": key, role }, t(key)) as HTMLButtonElement;
+  setPressed(b, pressed);
   b.addEventListener("click", () => onClick(b));
   return b;
 }
@@ -31,7 +31,9 @@ export function chipText(text: string, pressed: boolean, onClick: (b: HTMLButton
   b.addEventListener("click", () => onClick(b));
   return b;
 }
-export function setPressed(b: HTMLButtonElement, on: boolean) { b.setAttribute("aria-pressed", String(on)); if (b.getAttribute("role") === "radio") b.setAttribute("aria-checked", String(on)); }
+export function setPressed(b: HTMLButtonElement, on: boolean) { b.setAttribute(b.getAttribute("role") === "radio" ? "aria-checked" : "aria-pressed", String(on)); }
+/** Whether a chip is on, whichever attribute it carries. */
+export const isOn = (b: HTMLElement) => (b.getAttribute("role") === "radio" ? b.getAttribute("aria-checked") : b.getAttribute("aria-pressed")) === "true";
 
 /** 0..10 slider with "less / more" at the ends and no numbers in the label. */
 export function slider(opts: { labelKey: string; min: number; max: number; step?: number; value: number | null; onInput: (v: number | null) => void; ends?: boolean; name?: string }) {

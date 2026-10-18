@@ -6,10 +6,12 @@ let host: HTMLElement | null = null;
 
 export function sheetHost() { if (!host) { host = h("div", { class: "sheets" }); document.getElementById("app")!.append(host); } return host; }
 
+let titleSeq = 0;
 export function openSheet(titleKey: string | null, body: Node, opts: { onClose?: () => void; cls?: string; titleText?: string } = {}) {
   const back = tx("back", "button", { type: "button", class: "back" });
-  const title = titleKey ? tx(titleKey, "h2") : h("h2", {}, opts.titleText ?? "");
-  const el = h("section", { class: "sheet " + (opts.cls ?? ""), role: "dialog", "aria-modal": "true" },
+  const titleId = `sheet-title-${++titleSeq}`;
+  const title = titleKey ? tx(titleKey, "h2", { id: titleId }) : h("h2", { id: titleId }, opts.titleText ?? "");
+  const el = h("section", { class: "sheet " + (opts.cls ?? ""), role: "dialog", "aria-modal": "true", "aria-labelledby": titleId },
     h("header", { class: "sheet-head" }, back, title),
     h("div", { class: "sheet-body" }, body));
   back.addEventListener("click", () => closeSheet(el));

@@ -6,7 +6,7 @@ import { loadBody } from "./body/model";
 import type { Depth } from "./body/naming";
 import { Viewer, type Pick, type ViewPreset } from "./viewer/viewer";
 import { MODEL } from "./config";
-import { $, h, tx, btn, chip, setPressed, slider, refreshText } from "./dom";
+import { $, h, tx, btn, chip, setPressed, slider, refreshText, isOn } from "./dom";
 import { fmtTime, fmtDuration } from "./format";
 import { isoLocal, clean, type Rec, type Mark, type Shape } from "./records";
 import { state } from "./state";
@@ -196,7 +196,7 @@ function renderRecordRow() {
 function buildChips() {
   layerRow.replaceChildren(...viewer.layers().map((l: Depth) => {
     const b = chip("depth." + l, viewer.isVisible(l), (b2) => {
-      const want = b2.getAttribute("aria-pressed") !== "true";
+      const want = !isOn(b2);
       if (viewer.setLayer(l, want)) setPressed(b2, want);
       else { b2.classList.remove("nudge"); void b2.offsetWidth; b2.classList.add("nudge"); }
     });
