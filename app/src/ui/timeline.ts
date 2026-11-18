@@ -78,7 +78,7 @@ export function buildTimeline(records: Rec[], opts: TimelineOpts): HTMLElement {
     svg.append(s("line", { x1: xx, x2: xx, y1: plotH + rows * rowH + 10, y2: plotH + rows * rowH + 14, class: "grid" }));
     svg.append(s("text", { x: xx, y: H - 4, class: "tick", "text-anchor": "middle" }, fmtShortDate(new Date(d).toISOString())));
   }
-  const scroller = h("div", { class: "tl-scroll" }, svg);
+  const scroller = h("div", { class: "tl-scroll", tabindex: "0", role: "region", "aria-label": t("timeline") }, svg); // keyboard users can scroll it too
   wrap.append(scroller);
   // Narrow gaps only carry "8 days"; the legend keeps the meaning of the shading visible whenever there is a gap.
   if (gp.length) wrap.append(h("p", { class: "tl-legend" }, h("span", { class: "tl-swatch", "aria-hidden": "true" }), t("timeline.gap")));
