@@ -1,4 +1,4 @@
-// BodyMap core — export module. Pure functions. No DOM, no network, no storage.
+// RELAE core — export module. Pure functions. No DOM, no network, no storage.
 // Input: records (array matching schema/record.schema.json), locale 'zh'|'en', region 'CN'|'US'|'other'.
 // Output: plain data the frontend renders (print view -> PDF). Nothing here interprets; it lists.
 

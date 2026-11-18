@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "bodymap/backup/1.0",
-  "title": "BodyMap backup file v1.0",
+  "title": "RELAE backup file v1.0",
   "description": "What export-backup writes and import-backup reads. Plain JSON, no compression, no encryption at v1 (the user chooses where the file lives).",
   "type": "object",
   "required": ["format", "schema_version", "exported_at", "records"],

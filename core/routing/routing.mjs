@@ -1,4 +1,4 @@
-// BodyMap core — routing ("who to see"). A transparent lookup. Opened only when the person asks.
+// RELAE core — routing ("who to see"). A transparent lookup. Opened only when the person asks.
 // Input: records, region 'CN'|'US'|'other', locale. Output: 2-3 entries with the basis for each, red flags last, never a disease name.
 
 import rules from "./rules.json" with { type: "json" };

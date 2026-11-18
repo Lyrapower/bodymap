@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "bodymap/record/1.0",
-  "title": "BodyMap record v1.0",
+  "title": "RELAE record v1.0",
   "description": "One record. Three kinds: episode (something felt), visit (saw a clinician), note (anything else). All times ISO-8601 with offset. Records are append-only; a correction is a new record with supersedes set.",
   "type": "object",
   "required": ["schema_version", "id", "kind", "created_at", "started_at"],

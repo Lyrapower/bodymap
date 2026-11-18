@@ -529,8 +529,8 @@
     "en": "Imported"
   },
   "backup.bad": {
-    "zh": "这不是 BodyMap 的备份文件。",
-    "en": "Not a BodyMap backup file."
+    "zh": "这不是 RELAE 的备份文件。",
+    "en": "Not a RELAE backup file."
   },
   "backup.skipped": {
     "zh": "条已存在，跳过",
