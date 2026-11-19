@@ -97,3 +97,7 @@ Issues and pull requests are welcome; issues labelled [`good first issue`](https
 Code: [AGPL-3.0](LICENSE). Body model: CC BY-SA 4.0, see [ATTRIBUTION.md](ATTRIBUTION.md). Contributions: see [CONTRIBUTING.md](CONTRIBUTING.md) (DCO).
 
 Built with Claude (Anthropic).
+
+## More by Lyrapower
+
+Playable in the browser: [蟒行记 MangXingJi](https://lyrapower.github.io/Lyrapower/mangxingji/) (learn Python in five-minute sessions) · [地球Online · 玩家指南](https://lyrapower.github.io/Lyrapower/earth-online-guide/) (seven Chinese classics, bilingual, narrated) · [Night Shift · 港城夜班](https://lyrapower.github.io/Lyrapower/night-shift/) · [all works](https://lyrapower.github.io/Lyrapower/)
