@@ -1,13 +1,13 @@
 # RELAE — tap where it hurts on a 3D body, keep a record a doctor can read
 
-[![CI](https://github.com/Lyrapower/relae/actions/workflows/ci.yml/badge.svg)](https://github.com/Lyrapower/relae/actions/workflows/ci.yml) [![DCO](https://github.com/Lyrapower/relae/actions/workflows/dco.yml/badge.svg)](https://github.com/Lyrapower/relae/actions/workflows/dco.yml)
+[![CI](https://github.com/Lyrapower/bodymap/actions/workflows/ci.yml/badge.svg)](https://github.com/Lyrapower/bodymap/actions/workflows/ci.yml) [![DCO](https://github.com/Lyrapower/bodymap/actions/workflows/dco.yml/badge.svg)](https://github.com/Lyrapower/bodymap/actions/workflows/dco.yml)
 
-**[▶ Open the live demo](https://lyrapower.github.io/relae/)** (best on a phone) · records never leave your device. If it helps you or someone you care for, a ⭐ helps other people find it.
+**[▶ Open the live demo](https://lyrapower.github.io/bodymap/)** (best on a phone) · records never leave your device. If it helps you or someone you care for, a ⭐ helps other people find it.
 
 <p align="center"><img src="docs/demo.gif" width="300" alt="Turning the 3D body, tapping the left shoulder to mark it, then switching to the muscle layer" /></p>
 
 ```
-git clone https://github.com/Lyrapower/relae && cd relae/app
+git clone https://github.com/Lyrapower/bodymap && cd bodymap/app
 npm install
 npm run dev -- --host      # open the printed Network address on your phone
 ```
@@ -90,7 +90,7 @@ Records are plain JSON. See [`core/schema/README.md`](core/schema/README.md). Th
 
 ## Contributing
 
-Issues and pull requests are welcome; issues labelled [`good first issue`](https://github.com/Lyrapower/relae/labels/good%20first%20issue) are small and self-contained. Please read [CONTRIBUTING.md](CONTRIBUTING.md) first: every commit is signed off (DCO), and two rules are not negotiable (it records, it never judges; records are points, never interpolated).
+Issues and pull requests are welcome; issues labelled [`good first issue`](https://github.com/Lyrapower/bodymap/labels/good%20first%20issue) are small and self-contained. Please read [CONTRIBUTING.md](CONTRIBUTING.md) first: every commit is signed off (DCO), and two rules are not negotiable (it records, it never judges; records are points, never interpolated).
 
 ## License
 

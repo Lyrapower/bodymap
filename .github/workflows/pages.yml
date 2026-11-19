@@ -1,4 +1,4 @@
-# Build the app and publish it to GitHub Pages (https://lyrapower.github.io/relae/) on every push to main.
+# Build the app and publish it to GitHub Pages (https://lyrapower.github.io/bodymap/) on every push to main.
 name: Deploy demo to GitHub Pages
 on:
   push:
